@@ -11,8 +11,10 @@ import UIKit
 class CollectionViewController: UICollectionViewController {
 
     private let reuseIdentifier = "dealCounterView"
-//    private let sectionInsets = UIEdgeInsets(top: 50.0, left: UIScreen.mainScreen().bounds.width/12, bottom: 50.0, right: UIScreen.mainScreen().bounds.width/12)
-    private var searches = ["HM","Urban","JCrew","Zara","Mango","Forever21"]
+    var searches :[String:Int]!
+    var dictKeys : [String]!
+    var dictValues : [Int]!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +23,15 @@ class CollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView!.registerClass(ReusableVCCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView!.backgroundColor = UIColor.clearColor()
+        searches = ["HM":0,"Urban":0,"JCrew":0,"Zara":0,"Mango":0,"Forever21":0]
+        dictKeys = Array(searches.keys)
+        dictValues = Array(searches.values)
+
+
         // Do any additional setup after loading the view.
+  
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +39,20 @@ class CollectionViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func disableCell(indexPath:NSIndexPath, key:String)
+    {
+        println("HIT")
+        let cell = collectionView?.cellForItemAtIndexPath(indexPath) as! ReusableVCCell
+        
+        self.searches.removeValueForKey(key)
+        dictKeys?.removeAtIndex(indexPath.row)
+        dictValues?.removeAtIndex(indexPath.row)
+        self.collectionView?.deleteItemsAtIndexPaths([indexPath])
+        self.collectionView?.reloadData()
+        println(dictKeys)
+        println(dictValues)
+        
+    }
     
     
     //3
@@ -57,18 +80,21 @@ class CollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-          let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
+          let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ReusableVCCell
+        println(indexPath.row)
         self.performSegueWithIdentifier("goToTinder", sender: cell)
 
     }
-
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
-        cell.backgroundColor = UIColor.blackColor()
-        cell.layer.cornerRadius = cell.frame.width/2
-        
-        // Configure the cell
     
+    
+
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> ReusableVCCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ReusableVCCell
+        
+        var key  = dictKeys?[indexPath.row]
+        cell.textLabel.text = key
+        cell.layer.cornerRadius = cell.frame.width/2
+        // Configure the cell
         return cell
     }
 
@@ -103,18 +129,33 @@ class CollectionViewController: UICollectionViewController {
     }
     */
     
+    func mainTransition()
+    {
+        var transition = CATransition()
+        transition.duration = 0.3
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionFade
+        transition.subtype = kCATransitionFromTop
+        self.navigationController?.view.layer.addAnimation(transition, forKey: nil)
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
         if segue.identifier == "goToTinder"
         {
+            var makeSender = sender as! ReusableVCCell
+            let indexPath: NSIndexPath = self.collectionView!.indexPathForItemAtPoint(makeSender.center)!
             
-            var transition = CATransition()
-            transition.duration = 0.3
-            transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-            transition.type = kCATransitionFade
-            transition.subtype = kCATransitionFromTop
-            self.navigationController?.view.layer.addAnimation(transition, forKey: nil)
-            var targetVC = ViewController()
-            targetVC = segue.destinationViewController as! ViewController
+            var key  = dictKeys?[indexPath.row]
+            var value  = dictValues?[indexPath.row]
+            let theSelectedItem = key
+            let theSelectedItemIndex = value
+            mainTransition()
+            let targetVC = segue.destinationViewController as! ViewController
+            targetVC.cellIndexPath = indexPath
+            targetVC.companyText = theSelectedItem
+            targetVC.currentIndex = theSelectedItemIndex
+           
         }
     }
 

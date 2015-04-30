@@ -16,10 +16,10 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="pgd-73-aBp">
             <objects>
-                <viewController id="T7S-Rm-VJk" sceneMemberID="viewController">
+                <viewController id="T7S-Rm-VJk" customClass="MainVC" customModule="ProductSwipe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1vJ-d6-EDm"/>
                         <viewControllerLayoutGuide type="bottom" id="Edb-SI-2z4"/>
@@ -28,6 +28,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBack" translatesAutoresizingMaskIntoConstraints="NO" id="gfE-OU-h8t">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="528-c8-tSL">
                                 <rect key="frame" x="149" y="70" width="303" height="530"/>
                                 <constraints>
@@ -48,10 +51,14 @@
                             <constraint firstAttribute="trailingMargin" secondItem="528-c8-tSL" secondAttribute="trailing" constant="6" id="GFh-nd-dXF"/>
                             <constraint firstItem="528-c8-tSL" firstAttribute="leading" secondItem="nmD-zX-vno" secondAttribute="leadingMargin" id="NJf-r0-6iQ"/>
                             <constraint firstItem="528-c8-tSL" firstAttribute="top" secondItem="1vJ-d6-EDm" secondAttribute="bottom" constant="50" id="RMW-Bz-PJ1"/>
+                            <constraint firstItem="gfE-OU-h8t" firstAttribute="top" secondItem="1vJ-d6-EDm" secondAttribute="bottom" constant="-20" id="SNL-qd-gjd"/>
                             <constraint firstItem="528-c8-tSL" firstAttribute="centerY" secondItem="nmD-zX-vno" secondAttribute="centerY" id="UiV-SK-c1H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gfE-OU-h8t" secondAttribute="trailing" constant="-16" id="Vbk-gG-wy9"/>
+                            <constraint firstItem="Edb-SI-2z4" firstAttribute="top" secondItem="gfE-OU-h8t" secondAttribute="bottom" id="Xqv-jU-Vrm"/>
                             <constraint firstItem="528-c8-tSL" firstAttribute="leading" secondItem="nmD-zX-vno" secondAttribute="leadingMargin" constant="48" id="YTd-bd-hUu"/>
                             <constraint firstItem="528-c8-tSL" firstAttribute="leading" secondItem="nmD-zX-vno" secondAttribute="leading" constant="149" id="ZdL-pg-1eZ"/>
                             <constraint firstItem="528-c8-tSL" firstAttribute="centerX" secondItem="nmD-zX-vno" secondAttribute="centerX" id="apg-LO-Myb"/>
+                            <constraint firstItem="gfE-OU-h8t" firstAttribute="leading" secondItem="nmD-zX-vno" secondAttribute="leadingMargin" constant="-16" id="ex4-Cg-ud5"/>
                             <constraint firstItem="Edb-SI-2z4" firstAttribute="top" secondItem="528-c8-tSL" secondAttribute="bottom" constant="40" id="ffr-6E-9JX"/>
                             <constraint firstItem="528-c8-tSL" firstAttribute="leading" secondItem="nmD-zX-vno" secondAttribute="leading" constant="149" id="hif-1Q-bWv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="528-c8-tSL" secondAttribute="trailing" constant="6" id="jya-fg-LbK"/>
@@ -85,6 +92,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="g8q-f7-y8y"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="containerView" destination="528-c8-tSL" id="E8p-lE-nB7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rOk-tc-DsN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,7 +107,6 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="l4i-7h-l3A">
                         <rect key="frame" x="0.0" y="0.0" width="303" height="530"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="40" minimumInteritemSpacing="15" id="eAh-6s-20o">
                             <size key="itemSize" width="113" height="113"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -105,7 +114,7 @@
                             <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dealCounterView" id="ViX-cj-FQq">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dealCounterView" id="ViX-cj-FQq" customClass="ReusableVCCell" customModule="ProductSwipe" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -113,7 +122,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="0.54000000000000004" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="custom" identifier="goToTinder" customClass="PushNoAnimationSegue" customModule="ProductSwipe" customModuleProvider="target" id="MCe-aR-Fpx"/>
                                 </connections>
@@ -128,7 +137,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CBg-RF-VZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="949" y="337"/>
+            <point key="canvasLocation" x="948.5" y="337"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -309,5 +318,6 @@
     </scenes>
     <resources>
         <image name="back" width="640" height="1136"/>
+        <image name="mainBack" width="750" height="1334"/>
     </resources>
 </document>

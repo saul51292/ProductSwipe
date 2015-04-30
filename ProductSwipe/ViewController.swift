@@ -15,10 +15,15 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     @IBOutlet weak var backImage: UIImageView!
     @IBOutlet weak var swipeableView: ZLSwipeableView!
     var productIndex = 0
+    var cellIndexPath:NSIndexPath!
+    var currentIndex:Int!
+    var deleteCompany:Bool!
     var count = 0
     var productArray = ["Fitted Cropped Tank Top","COPE Babydoll Cami","High-Neck Crochet Bra Top","Cropped Tank Top","Recycled Trimmed Tank Top","Cropped Rib Tank Top","Crochet-Yoke Printed Dress","Ecote Clary Godet Trapeze Dress","Mock-Neck Mini Swing Dress","Riley Trapeze Dress","Witchy T-Shirt Dress"]
     
     @IBOutlet weak var companyName: UILabel!
+    
+    var companyText:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,18 +38,29 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
         blurView.frame = self.view.frame
         self.view.insertSubview(blurView, aboveSubview: backImage)
         self.view.insertSubview(productName, aboveSubview: blurView)
-        self.view.insertSubview(companyName, aboveSubview: blurView)
+        checkCurrent()
         productName.text = self.productArray[count]
         count++
         backBttnCircle.layer.cornerRadius = backBttnCircle.frame.width/2
         backBttnCircle.layer.borderWidth = 2
         backBttnCircle.layer.borderColor = UIColor.whiteColor().CGColor
-         self.view.insertSubview(backBttnCircle, aboveSubview: blurView)
-
-
-        
-        
+        self.view.insertSubview(backBttnCircle, aboveSubview: blurView)
       
+    }
+    
+    func checkCurrent()
+    {
+        if currentIndex != nil
+        {
+            productIndex = currentIndex
+            count = currentIndex
+        }
+        
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        companyName.text = companyText
     }
     
     func swipeableView(swipeableView: ZLSwipeableView!, didSwipeView view: UIView!, inDirection direction: ZLSwipeableViewDirection) {
@@ -52,9 +68,14 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
             productName.text = self.productArray[count]
             count++
         }
+        
+        
         else{
+            deleteCompany = true
            self.view.insertSubview(backBttnCircle, aboveSubview: swipeableView)
         }
+        
+        
 
 
     }
@@ -66,28 +87,41 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
         count++
         self.view.insertSubview(backBttnCircle, belowSubview: swipeableView)
         swipeableView.discardAllSwipeableViews()
-    swipeableView.loadNextSwipeableViewsIfNeeded()
+        swipeableView.loadNextSwipeableViewsIfNeeded()
         
 
+    }
+    
+    func mainTransition()
+    {
+        var transition = CATransition()
+        transition.duration = 0.3
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionFade
+        transition.subtype = kCATransitionFromBottom
+        self.navigationController?.view.layer.addAnimation(transition, forKey: nil)
     }
     
     
     func popBackToMain()
     {
         if let navController = self.navigationController {
-            var transition = CATransition()
-            transition.duration = 0.3
-            transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-            transition.type = kCATransitionFade
-            transition.subtype = kCATransitionFromBottom
-            self.navigationController?.view.layer.addAnimation(transition, forKey: nil)
+            let main = self.navigationController?.viewControllers.first as! MainVC
+            let vc = main.childViewControllers.first as! CollectionViewController
+            mainTransition()
             navController.popViewControllerAnimated(false)
+            currentIndex = count - 1
+            vc.dictValues[find(vc.dictKeys,companyText)!] = currentIndex
+            if(deleteCompany != nil)
+            {
+                vc.disableCell(cellIndexPath,key:companyText)
+                
+            }
         }
-
     }
     
     @IBAction func backBttnClicked(sender: AnyObject) {
-        println("In Tinder")
+        println("Back To Main")
         popBackToMain()
     }
 
@@ -103,13 +137,11 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     
     func nextViewForSwipeableView(swipeableView: ZLSwipeableView!) -> UIView! {
         if (self.productIndex < self.productArray.count){
-            println(self.productIndex)
             var currentProductImage = UIImage(named: self.productArray[self.productIndex])
 
             var view = CardView(frame:swipeableView.bounds)
             view.cardViewImage.image = currentProductImage
             productIndex++
-            println(view.frame)
              return view
         }
        return nil
