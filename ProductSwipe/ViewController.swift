@@ -10,12 +10,13 @@ import UIKit
 
 class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableViewDelegate {
 
+    @IBOutlet weak var backBttnCircle: UIButton!
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var backImage: UIImageView!
     @IBOutlet weak var swipeableView: ZLSwipeableView!
     var productIndex = 0
     var count = 0
-    var productArray = ["Fitted Cropped Tank Top","COPE Babydoll Cami","High-Neck Crochet Bra Top","Cropped Tank Top","Recycled Trimmed Tank Top","Cropped Rib Tank Top"]
+    var productArray = ["Fitted Cropped Tank Top","COPE Babydoll Cami","High-Neck Crochet Bra Top","Cropped Tank Top","Recycled Trimmed Tank Top","Cropped Rib Tank Top","Crochet-Yoke Printed Dress","Ecote Clary Godet Trapeze Dress","Mock-Neck Mini Swing Dress","Riley Trapeze Dress","Witchy T-Shirt Dress"]
     
     @IBOutlet weak var companyName: UILabel!
     
@@ -23,18 +24,22 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.swipeableView.delegate = self
-        //You can choose between ExtraLight, Light and Dark
+        self.swipeableView.direction = .Horizontal
+
         let blurEffect: UIBlurEffect = UIBlurEffect(style: .Light)
         
         let blurView: UIVisualEffectView = UIVisualEffectView(effect: blurEffect)
         blurView.setTranslatesAutoresizingMaskIntoConstraints(false)
         blurView.frame = self.view.frame
-        blurView.alpha = 0.5
         self.view.insertSubview(blurView, aboveSubview: backImage)
         self.view.insertSubview(productName, aboveSubview: blurView)
         self.view.insertSubview(companyName, aboveSubview: blurView)
         productName.text = self.productArray[count]
         count++
+        backBttnCircle.layer.cornerRadius = backBttnCircle.frame.width/2
+        backBttnCircle.layer.borderWidth = 2
+        backBttnCircle.layer.borderColor = UIColor.whiteColor().CGColor
+         self.view.insertSubview(backBttnCircle, aboveSubview: blurView)
 
 
         
@@ -43,10 +48,12 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     }
     
     func swipeableView(swipeableView: ZLSwipeableView!, didSwipeView view: UIView!, inDirection direction: ZLSwipeableViewDirection) {
-        
         if(count<productArray.count){
             productName.text = self.productArray[count]
             count++
+        }
+        else{
+           self.view.insertSubview(backBttnCircle, aboveSubview: swipeableView)
         }
 
 
@@ -57,11 +64,31 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
         count = 0
         productName.text = self.productArray[count]
         count++
-
+        self.view.insertSubview(backBttnCircle, belowSubview: swipeableView)
         swipeableView.discardAllSwipeableViews()
     swipeableView.loadNextSwipeableViewsIfNeeded()
         
 
+    }
+    
+    
+    func popBackToMain()
+    {
+        if let navController = self.navigationController {
+            var transition = CATransition()
+            transition.duration = 0.3
+            transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+            transition.type = kCATransitionFade
+            transition.subtype = kCATransitionFromBottom
+            self.navigationController?.view.layer.addAnimation(transition, forKey: nil)
+            navController.popViewControllerAnimated(false)
+        }
+
+    }
+    
+    @IBAction func backBttnClicked(sender: AnyObject) {
+        println("In Tinder")
+        popBackToMain()
     }
 
     override func didReceiveMemoryWarning() {
