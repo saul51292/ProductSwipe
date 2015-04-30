@@ -28,10 +28,13 @@ class CardView: UIView {
         contentView.layer.cornerRadius = 10
         contentView.layer.borderColor = UIColor.whiteColor().CGColor
         contentView.frame = bounds
+        
+        
         contentView.translatesAutoresizingMaskIntoConstraints()
         cardViewImage.frame = contentView.frame
         cardViewImage.bounds = contentView.bounds
         cardViewImage.clipsToBounds = true
+        cardViewImage.layer.masksToBounds = true
         cardViewImage.translatesAutoresizingMaskIntoConstraints()
         contentView.addSubview(cardViewImage)
         self.addSubview(contentView)

@@ -4,6 +4,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </mutableArray>
+        <mutableArray key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -21,36 +30,88 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Kt-fl-YTc" customClass="ZLSwipeableView">
-                                <rect key="frame" x="177" y="121" width="246" height="357"/>
+                                <rect key="frame" x="177" y="101" width="246" height="357"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="357" id="OVx-ao-Kg6"/>
                                     <constraint firstAttribute="width" constant="246" id="oZZ-BK-eAB"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Of Product" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zxg-LJ-Woa">
+                                <rect key="frame" x="18" y="477" width="568" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="37Y-5G-qzx"/>
+                                    <constraint firstAttribute="height" constant="34" id="yeN-CV-eQm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="37Y-5G-qzx"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Urban Outfitters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vn-8h-JZp">
+                                <rect key="frame" x="221" y="524" width="159" height="24"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5z-bh-JU0">
+                                <rect key="frame" x="531" y="20" width="53" height="30"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <state key="normal" title="Reload">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reloadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4OA-sQ-NjM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="euo-Ys-sgK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="2OC-mh-Srb"/>
                             <constraint firstItem="1Kt-fl-YTc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="4my-8u-o1D"/>
+                            <constraint firstItem="3Vn-8h-JZp" firstAttribute="top" secondItem="Zxg-LJ-Woa" secondAttribute="bottom" constant="13" id="Cvj-tA-hAX"/>
+                            <constraint firstItem="3Vn-8h-JZp" firstAttribute="centerX" secondItem="1Kt-fl-YTc" secondAttribute="centerX" constant="0.5" id="EIx-OG-7s9"/>
                             <constraint firstAttribute="centerX" secondItem="1Kt-fl-YTc" secondAttribute="centerX" constant="-5.5" id="EJk-dq-pxX"/>
+                            <constraint firstAttribute="centerY" secondItem="1Kt-fl-YTc" secondAttribute="centerY" constant="20.5" id="I9l-uU-91A"/>
                             <constraint firstItem="1Kt-fl-YTc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="47" id="IbR-aL-jOJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="euo-Ys-sgK" secondAttribute="trailing" constant="-16" id="Mju-ec-89Z"/>
+                            <constraint firstAttribute="centerX" secondItem="1Kt-fl-YTc" secondAttribute="centerX" id="NbY-px-eoq"/>
+                            <constraint firstItem="3Vn-8h-JZp" firstAttribute="leading" secondItem="1Kt-fl-YTc" secondAttribute="leading" constant="43" id="RJs-2P-dfV"/>
                             <constraint firstAttribute="centerY" secondItem="1Kt-fl-YTc" secondAttribute="centerY" id="STT-NU-iyD"/>
+                            <constraint firstItem="K5z-bh-JU0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="X21-co-Qqu"/>
+                            <constraint firstItem="3Vn-8h-JZp" firstAttribute="top" secondItem="Zxg-LJ-Woa" secondAttribute="bottom" constant="13" id="Xfi-v6-nKC"/>
+                            <constraint firstItem="K5z-bh-JU0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bOm-4w-Oag"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="euo-Ys-sgK" secondAttribute="bottom" id="cRH-0e-7SP"/>
                             <constraint firstAttribute="centerX" secondItem="1Kt-fl-YTc" secondAttribute="centerX" id="ccG-7i-Qtf"/>
+                            <constraint firstItem="Zxg-LJ-Woa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="jxe-Pc-0x0"/>
+                            <constraint firstItem="3Vn-8h-JZp" firstAttribute="top" secondItem="Zxg-LJ-Woa" secondAttribute="bottom" constant="21" id="l4j-ZY-LLb"/>
+                            <constraint firstItem="Zxg-LJ-Woa" firstAttribute="top" secondItem="1Kt-fl-YTc" secondAttribute="bottom" constant="19" id="nyC-x1-Z4s"/>
                             <constraint firstAttribute="centerY" secondItem="1Kt-fl-YTc" secondAttribute="centerY" constant="0.5" id="xTq-Un-13y"/>
                             <constraint firstItem="euo-Ys-sgK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="xdd-ZL-AR0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zxg-LJ-Woa" secondAttribute="trailing" constant="-2" id="zWh-oT-6Zw"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="4my-8u-o1D"/>
                                 <exclude reference="EJk-dq-pxX"/>
                                 <exclude reference="IbR-aL-jOJ"/>
+                                <exclude reference="STT-NU-iyD"/>
+                                <exclude reference="ccG-7i-Qtf"/>
                                 <exclude reference="xTq-Un-13y"/>
+                                <exclude reference="RJs-2P-dfV"/>
+                                <exclude reference="Xfi-v6-nKC"/>
+                                <exclude reference="l4j-ZY-LLb"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="backImage" destination="euo-Ys-sgK" id="Y0f-Hi-qdO"/>
+                        <outlet property="companyName" destination="3Vn-8h-JZp" id="3Qb-GS-9um"/>
+                        <outlet property="productName" destination="Zxg-LJ-Woa" id="2LK-v6-hY0"/>
                         <outlet property="swipeableView" destination="1Kt-fl-YTc" id="IyI-Y1-Kee"/>
                     </connections>
                 </viewController>

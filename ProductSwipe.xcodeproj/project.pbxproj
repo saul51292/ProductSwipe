@@ -17,6 +17,8 @@
 		C7A496621AF1936E00310889 /* ZLSwipeableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A496601AF1936E00310889 /* ZLSwipeableView.m */; };
 		C7A496651AF19A5B00310889 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A496641AF19A5B00310889 /* CardView.swift */; };
 		C7A496671AF19A6B00310889 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A496661AF19A6B00310889 /* CardView.xib */; };
+		C7E2374B1AF1DD9700DC80B8 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */; };
+		C7E2374C1AF1DD9700DC80B8 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7E2374A1AF1DD9700DC80B8 /* Montserrat-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C7A496601AF1936E00310889 /* ZLSwipeableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSwipeableView.m; sourceTree = "<group>"; };
 		C7A496641AF19A5B00310889 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C7A496661AF19A6B00310889 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		C7E2374A1AF1DD9700DC80B8 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 				C734D5ED1AF19165000C4D86 /* Images.xcassets */,
 				C734D5EF1AF19165000C4D86 /* LaunchScreen.xib */,
 				C734D6121AF19250000C4D86 /* ProductSwipe-Bridging-Header.h */,
+				C7E237481AF1DD8300DC80B8 /* Resources */,
 				C734D5E41AF19164000C4D86 /* Supporting Files */,
 			);
 			path = ProductSwipe;
@@ -137,6 +142,16 @@
 			);
 			name = ZLSwipe;
 			sourceTree = "<group>";
+		};
+		C7E237481AF1DD8300DC80B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */,
+				C7E2374A1AF1DD9700DC80B8 /* Montserrat-Regular.otf */,
+			);
+			name = Resources;
+			path = ProductSwipeTests;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -218,10 +233,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7E2374B1AF1DD9700DC80B8 /* Montserrat-Light.otf in Resources */,
 				C734D5EC1AF19165000C4D86 /* Main.storyboard in Resources */,
 				C734D5F11AF19165000C4D86 /* LaunchScreen.xib in Resources */,
 				C7A496671AF19A6B00310889 /* CardView.xib in Resources */,
 				C734D5EE1AF19165000C4D86 /* Images.xcassets in Resources */,
+				C7E2374C1AF1DD9700DC80B8 /* Montserrat-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

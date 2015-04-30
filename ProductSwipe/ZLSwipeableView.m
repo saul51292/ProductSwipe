@@ -220,6 +220,7 @@ ZLSwipeableViewDirection ZLDirectionVectorToSwipeableViewDirection(CGVector dire
                     animated:YES];
         }
     }
+    
 }
 
 #pragma mark - Action
