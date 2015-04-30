@@ -13,6 +13,10 @@
 		C734D5EE1AF19165000C4D86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C734D5ED1AF19165000C4D86 /* Images.xcassets */; };
 		C734D5F11AF19165000C4D86 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C734D5EF1AF19165000C4D86 /* LaunchScreen.xib */; };
 		C734D5FD1AF19165000C4D86 /* ProductSwipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C734D5FC1AF19165000C4D86 /* ProductSwipeTests.swift */; };
+		C7A496611AF1936E00310889 /* ZLPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A4965E1AF1936E00310889 /* ZLPanGestureRecognizer.m */; };
+		C7A496621AF1936E00310889 /* ZLSwipeableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A496601AF1936E00310889 /* ZLSwipeableView.m */; };
+		C7A496651AF19A5B00310889 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A496641AF19A5B00310889 /* CardView.swift */; };
+		C7A496671AF19A6B00310889 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A496661AF19A6B00310889 /* CardView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,13 @@
 		C734D5F61AF19165000C4D86 /* ProductSwipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductSwipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C734D5FB1AF19165000C4D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C734D5FC1AF19165000C4D86 /* ProductSwipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSwipeTests.swift; sourceTree = "<group>"; };
+		C734D6121AF19250000C4D86 /* ProductSwipe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProductSwipe-Bridging-Header.h"; sourceTree = "<group>"; };
+		C7A4965D1AF1936E00310889 /* ZLPanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPanGestureRecognizer.h; sourceTree = "<group>"; };
+		C7A4965E1AF1936E00310889 /* ZLPanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPanGestureRecognizer.m; sourceTree = "<group>"; };
+		C7A4965F1AF1936E00310889 /* ZLSwipeableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSwipeableView.h; sourceTree = "<group>"; };
+		C7A496601AF1936E00310889 /* ZLSwipeableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSwipeableView.m; sourceTree = "<group>"; };
+		C7A496641AF19A5B00310889 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C7A496661AF19A6B00310889 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +88,15 @@
 		C734D5E31AF19164000C4D86 /* ProductSwipe */ = {
 			isa = PBXGroup;
 			children = (
+				C7A496631AF1937500310889 /* ZLSwipe */,
 				C734D5E61AF19165000C4D86 /* AppDelegate.swift */,
 				C734D5E81AF19165000C4D86 /* ViewController.swift */,
+				C7A496641AF19A5B00310889 /* CardView.swift */,
+				C7A496661AF19A6B00310889 /* CardView.xib */,
 				C734D5EA1AF19165000C4D86 /* Main.storyboard */,
 				C734D5ED1AF19165000C4D86 /* Images.xcassets */,
 				C734D5EF1AF19165000C4D86 /* LaunchScreen.xib */,
+				C734D6121AF19250000C4D86 /* ProductSwipe-Bridging-Header.h */,
 				C734D5E41AF19164000C4D86 /* Supporting Files */,
 			);
 			path = ProductSwipe;
@@ -110,6 +125,17 @@
 				C734D5FB1AF19165000C4D86 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7A496631AF1937500310889 /* ZLSwipe */ = {
+			isa = PBXGroup;
+			children = (
+				C7A4965D1AF1936E00310889 /* ZLPanGestureRecognizer.h */,
+				C7A4965E1AF1936E00310889 /* ZLPanGestureRecognizer.m */,
+				C7A4965F1AF1936E00310889 /* ZLSwipeableView.h */,
+				C7A496601AF1936E00310889 /* ZLSwipeableView.m */,
+			);
+			name = ZLSwipe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +220,7 @@
 			files = (
 				C734D5EC1AF19165000C4D86 /* Main.storyboard in Resources */,
 				C734D5F11AF19165000C4D86 /* LaunchScreen.xib in Resources */,
+				C7A496671AF19A6B00310889 /* CardView.xib in Resources */,
 				C734D5EE1AF19165000C4D86 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +240,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C734D5E91AF19165000C4D86 /* ViewController.swift in Sources */,
+				C7A496621AF1936E00310889 /* ZLSwipeableView.m in Sources */,
 				C734D5E71AF19165000C4D86 /* AppDelegate.swift in Sources */,
+				C7A496611AF1936E00310889 /* ZLPanGestureRecognizer.m in Sources */,
+				C7A496651AF19A5B00310889 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +325,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ProductSwipe/ProductSwipe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +364,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -411,6 +443,7 @@
 				C734D6021AF19165000C4D86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C734D6031AF19165000C4D86 /* Build configuration list for PBXNativeTarget "ProductSwipeTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +452,7 @@
 				C734D6051AF19165000C4D86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
