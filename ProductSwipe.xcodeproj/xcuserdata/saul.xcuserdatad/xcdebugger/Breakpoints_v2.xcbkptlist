@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProductSwipe/ViewController.swift"
-            timestampString = "452134285.922032"
+            timestampString = "452147359.383449"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "viewDidLayoutSubviews()"
             landmarkType = "5">
          </BreakpointContent>

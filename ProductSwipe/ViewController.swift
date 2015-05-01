@@ -49,7 +49,7 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
         backBttnCircle.layer.borderWidth = 2
         backBttnCircle.layer.borderColor = UIColor.whiteColor().CGColor
         self.view.insertSubview(backBttnCircle, aboveSubview: blurView)
-      
+        styleLikeDislikeImages()
     }
     
     func checkCurrent()
@@ -63,11 +63,28 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
         
     }
     
+    func styleLikeDislikeImages()
+    {
+        likeImage.alpha = 0
+        likeImage.frame = CGRectMake(30, 30, likeImage.frame.width, likeImage.frame.height)
+        self.likeImage.transform = CGAffineTransformMakeRotation(((CGFloat)(-30 * M_PI) / 180))
+        
+        dislikeImage.alpha = 0
+        dislikeImage.frame = CGRectMake((256-dislikeImage.frame.width), 30, dislikeImage.frame.width, dislikeImage.frame.height)
+        self.dislikeImage.transform = CGAffineTransformMakeRotation(((CGFloat)(30 * M_PI) / 180))
+
+            }
+    
     override func viewWillAppear(animated: Bool) {
         companyName.text = companyText
     }
     
     func swipeableView(swipeableView: ZLSwipeableView!, didSwipeView view: UIView!, inDirection direction: ZLSwipeableViewDirection) {
+        likeImage.alpha = 0
+        dislikeImage.alpha = 0
+        productName.alpha = 1
+        companyName.alpha = 1
+        
         if(count<productArray.count){
             productName.text = self.productArray[count]
             count++
@@ -76,11 +93,15 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
         
         else{
             deleteCompany = true
+            productName.alpha = 0
+            companyName.alpha = 0
            self.view.insertSubview(backBttnCircle, aboveSubview: swipeableView)
         }
     }
     
     func swipeableView(swipeableView: ZLSwipeableView!, didCancelSwipe view: UIView!) {
+        productName.alpha = 1
+        companyName.alpha = 1
         if(likeImage.alpha > 0)
         {
             UIView.animateWithDuration(0.2, animations: {
@@ -98,30 +119,31 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     
     func swipeableView(swipeableView: ZLSwipeableView!, didStartSwipingView view: UIView!, atLocation location: CGPoint) {
         println("did start swiping at location: x \( location.x), y \(location.y)")
-        likeImage.alpha = 0
-        view.addSubview(likeImage)
-        dislikeImage.alpha = 0
-        dislikeImage.frame = CGRectMake((view.bounds.width-dislikeImage.bounds.width), 0, dislikeImage.bounds.width, dislikeImage.bounds.height)
         view.addSubview(dislikeImage)
+        view.addSubview(likeImage)
+
     }
     
     
     func swipeableView(swipeableView: ZLSwipeableView!, swipingView view: UIView!, atLocation location: CGPoint, translation: CGPoint) {
-        println("translation: x \( translation.x)")
-
         
         if(translation.x > 0)
         {
-            likeImage.alpha = translation.x/150
+            likeImage.alpha = translation.x/100
             dislikeImage.alpha = 0
 
         }
         else{
             likeImage.alpha = 0
-            dislikeImage.alpha = abs(translation.x)/150
+            dislikeImage.alpha = abs(translation.x)/100
         }
+        
+        productName.alpha = 1 - abs(translation.x)/250
+        companyName.alpha = 1 - abs(translation.x)/250
+
 
     }
+    
     
     @IBAction func reloadButton(sender: AnyObject) {
         self.productIndex = 0;
