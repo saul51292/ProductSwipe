@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70BD0FB1AF4138400C09EC1 /* CompaniesFinished.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70BD0FA1AF4138400C09EC1 /* CompaniesFinished.swift */; };
+		C72703C81AF3F9D00002E3A6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72703C71AF3F9D00002E3A6 /* Card.swift */; };
+		C72703CA1AF3FA8A0002E3A6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72703C71AF3F9D00002E3A6 /* Card.swift */; };
+		C72703CC1AF3FCBB0002E3A6 /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72703CB1AF3FCBB0002E3A6 /* StyleManager.swift */; };
+		C72703CE1AF3FCC80002E3A6 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72703CD1AF3FCC80002E3A6 /* AnimationManager.swift */; };
+		C72703D11AF4005C0002E3A6 /* BaseFinishedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72703D01AF4005C0002E3A6 /* BaseFinishedView.swift */; };
+		C72703D31AF400710002E3A6 /* BaseFinishedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C72703D21AF400710002E3A6 /* BaseFinishedView.xib */; };
+		C72703D81AF4062B0002E3A6 /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = C72703D71AF406240002E3A6 /* Montserrat-Hairline.otf */; };
 		C734D5E71AF19165000C4D86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C734D5E61AF19165000C4D86 /* AppDelegate.swift */; };
 		C734D5E91AF19165000C4D86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C734D5E81AF19165000C4D86 /* ViewController.swift */; };
 		C734D5EC1AF19165000C4D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C734D5EA1AF19165000C4D86 /* Main.storyboard */; };
@@ -36,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C70BD0FA1AF4138400C09EC1 /* CompaniesFinished.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesFinished.swift; sourceTree = "<group>"; };
+		C72703C71AF3F9D00002E3A6 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C72703CB1AF3FCBB0002E3A6 /* StyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
+		C72703CD1AF3FCC80002E3A6 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
+		C72703D01AF4005C0002E3A6 /* BaseFinishedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFinishedView.swift; sourceTree = "<group>"; };
+		C72703D21AF400710002E3A6 /* BaseFinishedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseFinishedView.xib; sourceTree = "<group>"; };
+		C72703D71AF406240002E3A6 /* Montserrat-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Hairline.otf"; sourceTree = "<group>"; };
 		C734D5E11AF19164000C4D86 /* ProductSwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductSwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C734D5E51AF19165000C4D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C734D5E61AF19165000C4D86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +94,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C72703C91AF3F9D60002E3A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C72703C71AF3F9D00002E3A6 /* Card.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C72703CF1AF3FCCC0002E3A6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C7F8F24F1AF2B04300CD1309 /* PushNoAnimationSegue.swift */,
+				C72703CB1AF3FCBB0002E3A6 /* StyleManager.swift */,
+				C72703CD1AF3FCC80002E3A6 /* AnimationManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		C72703D41AF400750002E3A6 /* BaseFinished */ = {
+			isa = PBXGroup;
+			children = (
+				C72703D01AF4005C0002E3A6 /* BaseFinishedView.swift */,
+				C72703D21AF400710002E3A6 /* BaseFinishedView.xib */,
+				C70BD0FA1AF4138400C09EC1 /* CompaniesFinished.swift */,
+			);
+			name = BaseFinished;
+			sourceTree = "<group>";
+		};
+		C72703D51AF4007D0002E3A6 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				C7A496641AF19A5B00310889 /* CardView.swift */,
+				C7A496661AF19A6B00310889 /* CardView.xib */,
+			);
+			name = Card;
+			sourceTree = "<group>";
+		};
+		C72703D61AF400840002E3A6 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				C7F8F2471AF299FE00CD1309 /* CollectionViewController.swift */,
+				C7F8F2531AF2B9F600CD1309 /* ReusableVCCell.swift */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
 		C734D5D81AF19164000C4D86 = {
 			isa = PBXGroup;
 			children = (
@@ -102,17 +163,17 @@
 			children = (
 				C7A496631AF1937500310889 /* ZLSwipe */,
 				C734D5E61AF19165000C4D86 /* AppDelegate.swift */,
-				C7F8F24F1AF2B04300CD1309 /* PushNoAnimationSegue.swift */,
-				C7F8F2471AF299FE00CD1309 /* CollectionViewController.swift */,
-				C7F8F2531AF2B9F600CD1309 /* ReusableVCCell.swift */,
+				C72703D61AF400840002E3A6 /* CollectionView */,
 				C734D5E81AF19165000C4D86 /* ViewController.swift */,
 				C7F8F2551AF2CAC400CD1309 /* MainVC.swift */,
-				C7A496641AF19A5B00310889 /* CardView.swift */,
-				C7A496661AF19A6B00310889 /* CardView.xib */,
+				C72703D41AF400750002E3A6 /* BaseFinished */,
+				C72703D51AF4007D0002E3A6 /* Card */,
 				C734D5EA1AF19165000C4D86 /* Main.storyboard */,
 				C734D5ED1AF19165000C4D86 /* Images.xcassets */,
 				C734D5EF1AF19165000C4D86 /* LaunchScreen.xib */,
 				C734D6121AF19250000C4D86 /* ProductSwipe-Bridging-Header.h */,
+				C72703CF1AF3FCCC0002E3A6 /* Managers */,
+				C72703C91AF3F9D60002E3A6 /* Models */,
 				C7E237481AF1DD8300DC80B8 /* Resources */,
 				C734D5E41AF19164000C4D86 /* Supporting Files */,
 			);
@@ -158,6 +219,7 @@
 		C7E237481AF1DD8300DC80B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C72703D71AF406240002E3A6 /* Montserrat-Hairline.otf */,
 				C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */,
 				C7E2374A1AF1DD9700DC80B8 /* Montserrat-Regular.otf */,
 			);
@@ -249,7 +311,9 @@
 				C734D5EC1AF19165000C4D86 /* Main.storyboard in Resources */,
 				C734D5F11AF19165000C4D86 /* LaunchScreen.xib in Resources */,
 				C7A496671AF19A6B00310889 /* CardView.xib in Resources */,
+				C72703D31AF400710002E3A6 /* BaseFinishedView.xib in Resources */,
 				C734D5EE1AF19165000C4D86 /* Images.xcassets in Resources */,
+				C72703D81AF4062B0002E3A6 /* Montserrat-Hairline.otf in Resources */,
 				C7E2374C1AF1DD9700DC80B8 /* Montserrat-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,13 +332,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72703D11AF4005C0002E3A6 /* BaseFinishedView.swift in Sources */,
+				C72703CE1AF3FCC80002E3A6 /* AnimationManager.swift in Sources */,
 				C7F8F2481AF299FE00CD1309 /* CollectionViewController.swift in Sources */,
 				C7F8F2561AF2CAC400CD1309 /* MainVC.swift in Sources */,
 				C734D5E91AF19165000C4D86 /* ViewController.swift in Sources */,
 				C7A496621AF1936E00310889 /* ZLSwipeableView.m in Sources */,
 				C7F8F2501AF2B04300CD1309 /* PushNoAnimationSegue.swift in Sources */,
+				C70BD0FB1AF4138400C09EC1 /* CompaniesFinished.swift in Sources */,
 				C734D5E71AF19165000C4D86 /* AppDelegate.swift in Sources */,
 				C7F8F2541AF2B9F600CD1309 /* ReusableVCCell.swift in Sources */,
+				C72703C81AF3F9D00002E3A6 /* Card.swift in Sources */,
+				C72703CC1AF3FCBB0002E3A6 /* StyleManager.swift in Sources */,
 				C7A496611AF1936E00310889 /* ZLPanGestureRecognizer.m in Sources */,
 				C7A496651AF19A5B00310889 /* CardView.swift in Sources */,
 			);
@@ -285,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C734D5FD1AF19165000C4D86 /* ProductSwipeTests.swift in Sources */,
+				C72703CA1AF3FA8A0002E3A6 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

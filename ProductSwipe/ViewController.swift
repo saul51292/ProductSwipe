@@ -10,23 +10,27 @@ import UIKit
 
 class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableViewDelegate {
 
-    @IBOutlet weak var backBttnCircle: UIButton!
+    @IBOutlet weak var bttnBack: UIButton!
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var backImage: UIImageView!
     @IBOutlet weak var swipeableView: ZLSwipeableView!
     var likeImage = UIImageView(image: UIImage(named: "like"))
     var dislikeImage = UIImageView(image: UIImage(named: "dislike"))
     var realMid = UIScreen.mainScreen().bounds.width/2
+    var styleManager = StyleManager()
+    var animationManager = AnimationManager()
 
     var productIndex = 0
     var cellIndexPath:NSIndexPath!
     var currentIndex:Int!
     var deleteCompany:Bool!
     var count = 0
+    var newBase = BaseFinishedView()
+    var likeCount = 0
+    
     var productArray = ["Fitted Cropped Tank Top","COPE Babydoll Cami","High-Neck Crochet Bra Top","Cropped Tank Top","Recycled Trimmed Tank Top","Cropped Rib Tank Top","Crochet-Yoke Printed Dress","Ecote Clary Godet Trapeze Dress","Mock-Neck Mini Swing Dress","Riley Trapeze Dress","Witchy T-Shirt Dress"]
     
     @IBOutlet weak var companyName: UILabel!
-    
     var companyText:String!
     
     override func viewDidLoad() {
@@ -34,22 +38,11 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
         // Do any additional setup after loading the view, typically from a nib.
         self.swipeableView.delegate = self
         self.swipeableView.direction = .Horizontal
-
-        let blurEffect: UIBlurEffect = UIBlurEffect(style: .Light)
-        
-        let blurView: UIVisualEffectView = UIVisualEffectView(effect: blurEffect)
-        blurView.setTranslatesAutoresizingMaskIntoConstraints(false)
-        blurView.frame = self.view.frame
-        self.view.insertSubview(blurView, aboveSubview: backImage)
-        self.view.insertSubview(productName, aboveSubview: blurView)
         checkCurrent()
         productName.text = self.productArray[count]
         count++
-        backBttnCircle.layer.cornerRadius = backBttnCircle.frame.width/2
-        backBttnCircle.layer.borderWidth = 2
-        backBttnCircle.layer.borderColor = UIColor.whiteColor().CGColor
-        self.view.insertSubview(backBttnCircle, aboveSubview: blurView)
-        styleLikeDislikeImages()
+        styleManager.createBlur(view,backImage:backImage)
+        styleManager.styleLikeDislikeImages(likeImage,dislikeImage:dislikeImage)
     }
     
     func checkCurrent()
@@ -60,43 +53,38 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
             count = currentIndex
         }
         
-        
     }
     
-    func styleLikeDislikeImages()
-    {
-        likeImage.alpha = 0
-        likeImage.frame = CGRectMake(30, 30, likeImage.frame.width, likeImage.frame.height)
-        self.likeImage.transform = CGAffineTransformMakeRotation(((CGFloat)(-30 * M_PI) / 180))
-        
-        dislikeImage.alpha = 0
-        dislikeImage.frame = CGRectMake((256-dislikeImage.frame.width), 30, dislikeImage.frame.width, dislikeImage.frame.height)
-        self.dislikeImage.transform = CGAffineTransformMakeRotation(((CGFloat)(30 * M_PI) / 180))
-
-            }
-    
+       
     override func viewWillAppear(animated: Bool) {
         companyName.text = companyText
     }
     
     func swipeableView(swipeableView: ZLSwipeableView!, didSwipeView view: UIView!, inDirection direction: ZLSwipeableViewDirection) {
-        likeImage.alpha = 0
-        dislikeImage.alpha = 0
         productName.alpha = 1
         companyName.alpha = 1
         
+        if(direction == ZLSwipeableViewDirection.Right)
+        {
+            likeCount++
+        }
         if(count<productArray.count){
             productName.text = self.productArray[count]
             count++
         }
-        
-        
+            
         else{
+            self.view.addSubview(newBase)
+            newBase.frame = self.view.frame
+            newBase.likeCount.text = String(likeCount)
+            newBase.bttnBack.addTarget(self, action: "backBttnClicked:", forControlEvents: .TouchUpInside)
+            self.view.bringSubviewToFront(bttnBack)
             deleteCompany = true
             productName.alpha = 0
             companyName.alpha = 0
-           self.view.insertSubview(backBttnCircle, aboveSubview: swipeableView)
         }
+       
+        
     }
     
     func swipeableView(swipeableView: ZLSwipeableView!, didCancelSwipe view: UIView!) {
@@ -121,6 +109,8 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
         println("did start swiping at location: x \( location.x), y \(location.y)")
         view.addSubview(dislikeImage)
         view.addSubview(likeImage)
+        likeImage.alpha = 0
+        dislikeImage.alpha = 0 
 
     }
     
@@ -145,35 +135,14 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     }
     
     
-    @IBAction func reloadButton(sender: AnyObject) {
-        self.productIndex = 0;
-        count = 0
-        productName.text = self.productArray[count]
-        count++
-        self.view.insertSubview(backBttnCircle, belowSubview: swipeableView)
-        swipeableView.discardAllSwipeableViews()
-        swipeableView.loadNextSwipeableViewsIfNeeded()
-        
-
-    }
-    
-    func mainTransition()
-    {
-        var transition = CATransition()
-        transition.duration = 0.3
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        transition.type = kCATransitionFade
-        transition.subtype = kCATransitionFromBottom
-        self.navigationController?.view.layer.addAnimation(transition, forKey: nil)
-    }
-    
+   
     
     func popBackToMain()
     {
         if let navController = self.navigationController {
             let main = self.navigationController?.viewControllers.first as! MainVC
             let vc = main.childViewControllers.first as! CollectionViewController
-            mainTransition()
+            animationManager.mainTransition(self)
             navController.popViewControllerAnimated(false)
             currentIndex = count - 1
             vc.dictValues[find(vc.dictKeys,companyText)!] = currentIndex

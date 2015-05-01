@@ -8,9 +8,11 @@
 
 import UIKit
 
-class ReusableVCCell: UICollectionViewCell {
+class ReusableVCCell: UICollectionViewCell,UIGestureRecognizerDelegate {
     let textLabel =  UILabel()
     let imageView =  UIImageView()
+    let styleManager = StyleManager()
+
 
     
     override init(frame: CGRect) {
@@ -32,22 +34,11 @@ class ReusableVCCell: UICollectionViewCell {
         var yPos = (CGRectGetHeight(contentView.frame) - CGRectGetHeight(textLabel.frame)) / 3.0
         let textFrame = CGRect(x: 0, y: yPos, width: frame.size.width, height: frame.size.height/3)
         textLabel.frame = textFrame
-        textLabel.font = UIFont(name: "Montserrat", size: 18.0)
-        textLabel.textColor = UIColor.whiteColor()
-        textLabel.textAlignment = .Center
-        styleCell()
+        styleManager.styleLabel(textLabel)
+        styleManager.styleCell(contentView)
         contentView.addSubview(textLabel)
     
     
     }
     
-    
-    func styleCell()
-    {
-        contentView.layer.cornerRadius = contentView.bounds.width/2
-        contentView.backgroundColor = UIColor(red: 55/255, green: 55/255, blue: 55/255, alpha: 0.4)
-        contentView.layer.borderColor = UIColor.whiteColor().CGColor
-        contentView.layer.borderWidth = 2
-
-    }
 }

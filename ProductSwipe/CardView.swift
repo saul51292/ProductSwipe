@@ -23,22 +23,23 @@ class CardView: UIView {
         xibSetup()
     }
     
-    private func xibSetup() {
+       private func xibSetup() {
         NSBundle.mainBundle().loadNibNamed("CardView", owner: self, options: nil)
         contentView.layer.cornerRadius = 10
         contentView.layer.borderColor = UIColor.whiteColor().CGColor
         contentView.frame = bounds
-        
-        
+        styleImage()
         contentView.translatesAutoresizingMaskIntoConstraints()
+        contentView.addSubview(cardViewImage)
+        self.addSubview(contentView)
+    }
+
+    private func styleImage()
+    {
         cardViewImage.frame = contentView.frame
         cardViewImage.bounds = contentView.bounds
         cardViewImage.clipsToBounds = true
         cardViewImage.layer.masksToBounds = true
         cardViewImage.translatesAutoresizingMaskIntoConstraints()
-        contentView.addSubview(cardViewImage)
-        self.addSubview(contentView)
     }
-
-
 }
