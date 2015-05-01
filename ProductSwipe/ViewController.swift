@@ -14,6 +14,10 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var backImage: UIImageView!
     @IBOutlet weak var swipeableView: ZLSwipeableView!
+    var likeImage = UIImageView(image: UIImage(named: "like"))
+    var dislikeImage = UIImageView(image: UIImage(named: "dislike"))
+    var realMid = UIScreen.mainScreen().bounds.width/2
+
     var productIndex = 0
     var cellIndexPath:NSIndexPath!
     var currentIndex:Int!
@@ -74,9 +78,47 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
             deleteCompany = true
            self.view.insertSubview(backBttnCircle, aboveSubview: swipeableView)
         }
-        
-        
+    }
+    
+    func swipeableView(swipeableView: ZLSwipeableView!, didCancelSwipe view: UIView!) {
+        if(likeImage.alpha > 0)
+        {
+            UIView.animateWithDuration(0.2, animations: {
+                self.likeImage.alpha = 0
+            }, completion: nil)
+        }
+        if(dislikeImage.alpha > 0)
+        {
+            UIView.animateWithDuration(0.2, animations: {
+                self.dislikeImage.alpha = 0
+                }, completion: nil)
+        }
 
+    }
+    
+    func swipeableView(swipeableView: ZLSwipeableView!, didStartSwipingView view: UIView!, atLocation location: CGPoint) {
+        println("did start swiping at location: x \( location.x), y \(location.y)")
+        likeImage.alpha = 0
+        view.addSubview(likeImage)
+        dislikeImage.alpha = 0
+        dislikeImage.frame = CGRectMake((view.bounds.width-dislikeImage.bounds.width), 0, dislikeImage.bounds.width, dislikeImage.bounds.height)
+        view.addSubview(dislikeImage)
+    }
+    
+    func swipeableView(swipeableView: ZLSwipeableView!, swipingView view: UIView!, atLocation location: CGPoint, translation: CGPoint) {
+        println("translation: x \( translation.x)")
+
+        
+        if(translation.x > 0)
+        {
+            likeImage.alpha += ((1/view.frame.width)*10)
+            dislikeImage.alpha = 0
+
+        }
+        else{
+            likeImage.alpha = 0
+            dislikeImage.alpha += ((1/view.frame.width)*10)
+        }
 
     }
     

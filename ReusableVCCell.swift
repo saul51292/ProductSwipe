@@ -11,7 +11,7 @@ import UIKit
 class ReusableVCCell: UICollectionViewCell {
     let textLabel =  UILabel()
     let imageView =  UIImageView()
-    
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -28,7 +28,7 @@ class ReusableVCCell: UICollectionViewCell {
         imageView.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height*2/3)
         imageView.contentMode = UIViewContentMode.ScaleAspectFit
         contentView.addSubview(imageView)
-    
+
         var yPos = (CGRectGetHeight(contentView.frame) - CGRectGetHeight(textLabel.frame)) / 3.0
         let textFrame = CGRect(x: 0, y: yPos, width: frame.size.width, height: frame.size.height/3)
         textLabel.frame = textFrame
@@ -41,10 +41,11 @@ class ReusableVCCell: UICollectionViewCell {
     
     }
     
+    
     func styleCell()
     {
         contentView.layer.cornerRadius = contentView.bounds.width/2
-        contentView.backgroundColor = UIColor(red: 55/255, green: 55/255, blue: 55/255, alpha: 0.5)
+        contentView.backgroundColor = UIColor(red: 55/255, green: 55/255, blue: 55/255, alpha: 0.4)
         contentView.layer.borderColor = UIColor.whiteColor().CGColor
         contentView.layer.borderWidth = 2
 

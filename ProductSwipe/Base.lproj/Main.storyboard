@@ -111,7 +111,7 @@
                             <size key="itemSize" width="113" height="113"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="20"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dealCounterView" id="ViX-cj-FQq" customClass="ReusableVCCell" customModule="ProductSwipe" customModuleProvider="target">
@@ -171,7 +171,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Kt-fl-YTc" customClass="ZLSwipeableView">
-                                <rect key="frame" x="159" y="39" width="286" height="424"/>
+                                <rect key="frame" x="159" y="49" width="286" height="434"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="286" id="6b4-h1-9AL"/>
                                     <constraint firstAttribute="height" constant="357" id="OVx-ao-Kg6"/>
@@ -185,7 +185,7 @@
                                 </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Of Product" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zxg-LJ-Woa">
-                                <rect key="frame" x="18" y="477" width="568" height="34"/>
+                                <rect key="frame" x="18" y="497" width="568" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="37Y-5G-qzx"/>
                                     <constraint firstAttribute="height" constant="34" id="yeN-CV-eQm"/>
@@ -200,13 +200,13 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Urban Outfitters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vn-8h-JZp">
-                                <rect key="frame" x="223" y="524" width="159" height="24"/>
+                                <rect key="frame" x="223" y="539" width="159" height="24"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5z-bh-JU0">
-                                <rect key="frame" x="531" y="0.0" width="53" height="30"/>
+                                <rect key="frame" x="531" y="5" width="53" height="30"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                 <state key="normal" title="Reload">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -217,7 +217,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQe-SL-28Q">
-                                <rect key="frame" x="16" y="0.0" width="37" height="30"/>
+                                <rect key="frame" x="16" y="5" width="37" height="30"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -235,15 +235,17 @@
                             <constraint firstItem="3Vn-8h-JZp" firstAttribute="top" secondItem="Zxg-LJ-Woa" secondAttribute="bottom" constant="13" id="Cvj-tA-hAX"/>
                             <constraint firstItem="3Vn-8h-JZp" firstAttribute="centerX" secondItem="1Kt-fl-YTc" secondAttribute="centerX" constant="0.5" id="EIx-OG-7s9"/>
                             <constraint firstAttribute="centerX" secondItem="1Kt-fl-YTc" secondAttribute="centerX" constant="-5.5" id="EJk-dq-pxX"/>
+                            <constraint firstItem="Zxg-LJ-Woa" firstAttribute="top" secondItem="1Kt-fl-YTc" secondAttribute="bottom" constant="14" id="Gbb-le-dJV"/>
                             <constraint firstAttribute="centerY" secondItem="1Kt-fl-YTc" secondAttribute="centerY" constant="20.5" id="I9l-uU-91A"/>
                             <constraint firstItem="1Kt-fl-YTc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="159" id="IDn-uL-aBN"/>
-                            <constraint firstItem="1Kt-fl-YTc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="IJL-22-0nx"/>
+                            <constraint firstItem="1Kt-fl-YTc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="IJL-22-0nx"/>
                             <constraint firstItem="1Kt-fl-YTc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="47" id="IbR-aL-jOJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="euo-Ys-sgK" secondAttribute="trailing" constant="-16" id="Mju-ec-89Z"/>
                             <constraint firstAttribute="centerX" secondItem="1Kt-fl-YTc" secondAttribute="centerX" id="NbY-px-eoq"/>
                             <constraint firstItem="K5z-bh-JU0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="PoH-oy-Ikg"/>
                             <constraint firstItem="3Vn-8h-JZp" firstAttribute="leading" secondItem="1Kt-fl-YTc" secondAttribute="leading" constant="43" id="RJs-2P-dfV"/>
                             <constraint firstAttribute="centerY" secondItem="1Kt-fl-YTc" secondAttribute="centerY" id="STT-NU-iyD"/>
+                            <constraint firstItem="Zxg-LJ-Woa" firstAttribute="top" secondItem="1Kt-fl-YTc" secondAttribute="bottom" constant="9" id="Vac-eg-L2l"/>
                             <constraint firstItem="K5z-bh-JU0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="X21-co-Qqu"/>
                             <constraint firstItem="3Vn-8h-JZp" firstAttribute="top" secondItem="Zxg-LJ-Woa" secondAttribute="bottom" constant="13" id="Xfi-v6-nKC"/>
                             <constraint firstItem="K5z-bh-JU0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XoI-zo-NYq"/>
@@ -254,10 +256,13 @@
                             <constraint firstAttribute="centerY" secondItem="pOZ-Bu-HQd" secondAttribute="centerY" constant="37" id="fb4-OA-xR9"/>
                             <constraint firstAttribute="centerX" secondItem="pOZ-Bu-HQd" secondAttribute="centerX" constant="2" id="hcP-Zy-QPg"/>
                             <constraint firstItem="Zxg-LJ-Woa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="jxe-Pc-0x0"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Vn-8h-JZp" secondAttribute="bottom" constant="52" id="kXv-BW-9N8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Vn-8h-JZp" secondAttribute="bottom" constant="37" id="kXv-BW-9N8"/>
                             <constraint firstItem="3Vn-8h-JZp" firstAttribute="top" secondItem="Zxg-LJ-Woa" secondAttribute="bottom" constant="21" id="l4j-ZY-LLb"/>
                             <constraint firstItem="Zxg-LJ-Woa" firstAttribute="top" secondItem="1Kt-fl-YTc" secondAttribute="bottom" constant="19" id="nyC-x1-Z4s"/>
+                            <constraint firstItem="3Vn-8h-JZp" firstAttribute="top" secondItem="Zxg-LJ-Woa" secondAttribute="bottom" constant="8" id="pGi-j9-Jd9"/>
+                            <constraint firstItem="xQe-SL-28Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="qeD-e6-dye"/>
                             <constraint firstItem="Zxg-LJ-Woa" firstAttribute="top" secondItem="1Kt-fl-YTc" secondAttribute="bottom" constant="14" id="vGy-ha-CWA"/>
+                            <constraint firstItem="K5z-bh-JU0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="wfs-p4-wBU"/>
                             <constraint firstItem="xQe-SL-28Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wfu-WP-Gbg"/>
                             <constraint firstAttribute="centerY" secondItem="1Kt-fl-YTc" secondAttribute="centerY" constant="0.5" id="xTq-Un-13y"/>
                             <constraint firstItem="euo-Ys-sgK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="xdd-ZL-AR0"/>
@@ -266,6 +271,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="wfu-WP-Gbg"/>
                                 <exclude reference="4my-8u-o1D"/>
                                 <exclude reference="EJk-dq-pxX"/>
                                 <exclude reference="I9l-uU-91A"/>
@@ -275,9 +281,13 @@
                                 <exclude reference="STT-NU-iyD"/>
                                 <exclude reference="ccG-7i-Qtf"/>
                                 <exclude reference="xTq-Un-13y"/>
+                                <exclude reference="Vac-eg-L2l"/>
                                 <exclude reference="nyC-x1-Z4s"/>
+                                <exclude reference="vGy-ha-CWA"/>
+                                <exclude reference="PoH-oy-Ikg"/>
                                 <exclude reference="X21-co-Qqu"/>
                                 <exclude reference="bOm-4w-Oag"/>
+                                <exclude reference="Cvj-tA-hAX"/>
                                 <exclude reference="RJs-2P-dfV"/>
                                 <exclude reference="Xfi-v6-nKC"/>
                                 <exclude reference="l4j-ZY-LLb"/>

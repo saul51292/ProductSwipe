@@ -20,7 +20,6 @@
 		C7E2374B1AF1DD9700DC80B8 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */; };
 		C7E2374C1AF1DD9700DC80B8 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7E2374A1AF1DD9700DC80B8 /* Montserrat-Regular.otf */; };
 		C7F8F2481AF299FE00CD1309 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8F2471AF299FE00CD1309 /* CollectionViewController.swift */; };
-		C7F8F24C1AF29F7800CD1309 /* RDHCollectionViewGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F8F24B1AF29F7800CD1309 /* RDHCollectionViewGridLayout.m */; };
 		C7F8F2501AF2B04300CD1309 /* PushNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8F24F1AF2B04300CD1309 /* PushNoAnimationSegue.swift */; };
 		C7F8F2541AF2B9F600CD1309 /* ReusableVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8F2531AF2B9F600CD1309 /* ReusableVCCell.swift */; };
 		C7F8F2561AF2CAC400CD1309 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8F2551AF2CAC400CD1309 /* MainVC.swift */; };
@@ -57,8 +56,6 @@
 		C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
 		C7E2374A1AF1DD9700DC80B8 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		C7F8F2471AF299FE00CD1309 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = ../CollectionViewController.swift; sourceTree = "<group>"; };
-		C7F8F24A1AF29F7800CD1309 /* RDHCollectionViewGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDHCollectionViewGridLayout.h; sourceTree = "<group>"; };
-		C7F8F24B1AF29F7800CD1309 /* RDHCollectionViewGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDHCollectionViewGridLayout.m; sourceTree = "<group>"; };
 		C7F8F24F1AF2B04300CD1309 /* PushNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNoAnimationSegue.swift; sourceTree = "<group>"; };
 		C7F8F2531AF2B9F600CD1309 /* ReusableVCCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReusableVCCell.swift; path = ../ReusableVCCell.swift; sourceTree = "<group>"; };
 		C7F8F2551AF2CAC400CD1309 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -103,7 +100,6 @@
 		C734D5E31AF19164000C4D86 /* ProductSwipe */ = {
 			isa = PBXGroup;
 			children = (
-				C7F8F2491AF29F6B00CD1309 /* GridLayout */,
 				C7A496631AF1937500310889 /* ZLSwipe */,
 				C734D5E61AF19165000C4D86 /* AppDelegate.swift */,
 				C7F8F24F1AF2B04300CD1309 /* PushNoAnimationSegue.swift */,
@@ -168,15 +164,6 @@
 			name = Resources;
 			path = ProductSwipeTests;
 			sourceTree = SOURCE_ROOT;
-		};
-		C7F8F2491AF29F6B00CD1309 /* GridLayout */ = {
-			isa = PBXGroup;
-			children = (
-				C7F8F24A1AF29F7800CD1309 /* RDHCollectionViewGridLayout.h */,
-				C7F8F24B1AF29F7800CD1309 /* RDHCollectionViewGridLayout.m */,
-			);
-			name = GridLayout;
-			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -288,7 +275,6 @@
 				C7F8F2501AF2B04300CD1309 /* PushNoAnimationSegue.swift in Sources */,
 				C734D5E71AF19165000C4D86 /* AppDelegate.swift in Sources */,
 				C7F8F2541AF2B9F600CD1309 /* ReusableVCCell.swift in Sources */,
-				C7F8F24C1AF29F7800CD1309 /* RDHCollectionViewGridLayout.m in Sources */,
 				C7A496611AF1936E00310889 /* ZLPanGestureRecognizer.m in Sources */,
 				C7A496651AF19A5B00310889 /* CardView.swift in Sources */,
 			);

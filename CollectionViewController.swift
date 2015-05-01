@@ -11,9 +11,8 @@ import UIKit
 class CollectionViewController: UICollectionViewController {
 
     private let reuseIdentifier = "dealCounterView"
-    var searches :[String:Int]!
     var dictKeys : [String]!
-    var dictValues : [Int]!
+    var dictValues = [Int]()
 
 
     override func viewDidLoad() {
@@ -25,10 +24,11 @@ class CollectionViewController: UICollectionViewController {
         // Register cell classes
         self.collectionView!.registerClass(ReusableVCCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         self.collectionView!.backgroundColor = UIColor.clearColor()
-        searches = ["HM":0,"Urban":0,"JCrew":0,"Zara":0,"Mango":0,"Forever21":0]
-        dictKeys = Array(searches.keys)
-        dictValues = Array(searches.values)
-
+        dictKeys = ["HM","Urban","JCrew","Zara","Mango","Forever21"]
+        for key in dictKeys
+        {
+            dictValues.append(0)
+        }
 
         // Do any additional setup after loading the view.
   
@@ -44,9 +44,8 @@ class CollectionViewController: UICollectionViewController {
         println("HIT")
         let cell = collectionView?.cellForItemAtIndexPath(indexPath) as! ReusableVCCell
         
-        self.searches.removeValueForKey(key)
         dictKeys?.removeAtIndex(indexPath.row)
-        dictValues?.removeAtIndex(indexPath.row)
+        dictValues.removeAtIndex(indexPath.row)
         self.collectionView?.deleteItemsAtIndexPaths([indexPath])
         self.collectionView?.reloadData()
         println(dictKeys)
@@ -76,12 +75,13 @@ class CollectionViewController: UICollectionViewController {
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //#warning Incomplete method implementation -- Return the number of items in the section
-        return searches.count
+        return dictKeys.count
     }
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
           let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ReusableVCCell
         println(indexPath.row)
+        
         self.performSegueWithIdentifier("goToTinder", sender: cell)
 
     }
@@ -147,7 +147,7 @@ class CollectionViewController: UICollectionViewController {
             let indexPath: NSIndexPath = self.collectionView!.indexPathForItemAtPoint(makeSender.center)!
             
             var key  = dictKeys?[indexPath.row]
-            var value  = dictValues?[indexPath.row]
+            var value  = dictValues[indexPath.row]
             let theSelectedItem = key
             let theSelectedItemIndex = value
             mainTransition()
