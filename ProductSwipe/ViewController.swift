@@ -105,19 +105,20 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
         view.addSubview(dislikeImage)
     }
     
+    
     func swipeableView(swipeableView: ZLSwipeableView!, swipingView view: UIView!, atLocation location: CGPoint, translation: CGPoint) {
         println("translation: x \( translation.x)")
 
         
         if(translation.x > 0)
         {
-            likeImage.alpha += ((1/view.frame.width)*10)
+            likeImage.alpha = translation.x/150
             dislikeImage.alpha = 0
 
         }
         else{
             likeImage.alpha = 0
-            dislikeImage.alpha += ((1/view.frame.width)*10)
+            dislikeImage.alpha = abs(translation.x)/150
         }
 
     }
