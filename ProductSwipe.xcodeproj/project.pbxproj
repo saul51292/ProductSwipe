@@ -21,8 +21,6 @@
 		C734D5EE1AF19165000C4D86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C734D5ED1AF19165000C4D86 /* Images.xcassets */; };
 		C734D5F11AF19165000C4D86 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C734D5EF1AF19165000C4D86 /* LaunchScreen.xib */; };
 		C734D5FD1AF19165000C4D86 /* ProductSwipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C734D5FC1AF19165000C4D86 /* ProductSwipeTests.swift */; };
-		C7A496611AF1936E00310889 /* ZLPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A4965E1AF1936E00310889 /* ZLPanGestureRecognizer.m */; };
-		C7A496621AF1936E00310889 /* ZLSwipeableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A496601AF1936E00310889 /* ZLSwipeableView.m */; };
 		C7A496651AF19A5B00310889 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A496641AF19A5B00310889 /* CardView.swift */; };
 		C7A496671AF19A6B00310889 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A496661AF19A6B00310889 /* CardView.xib */; };
 		C7E2374B1AF1DD9700DC80B8 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */; };
@@ -31,6 +29,7 @@
 		C7F8F2501AF2B04300CD1309 /* PushNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8F24F1AF2B04300CD1309 /* PushNoAnimationSegue.swift */; };
 		C7F8F2541AF2B9F600CD1309 /* ReusableVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8F2531AF2B9F600CD1309 /* ReusableVCCell.swift */; };
 		C7F8F2561AF2CAC400CD1309 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8F2551AF2CAC400CD1309 /* MainVC.swift */; };
+		FE04D3ACE934C165E4917481 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 974CF9ECDDB070E99448BC10 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		483E0315B8A12C2CDCC6DE1F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		974CF9ECDDB070E99448BC10 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70BD0FA1AF4138400C09EC1 /* CompaniesFinished.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesFinished.swift; sourceTree = "<group>"; };
 		C72703C71AF3F9D00002E3A6 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		C72703CB1AF3FCBB0002E3A6 /* StyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
@@ -62,10 +63,6 @@
 		C734D5FB1AF19165000C4D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C734D5FC1AF19165000C4D86 /* ProductSwipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSwipeTests.swift; sourceTree = "<group>"; };
 		C734D6121AF19250000C4D86 /* ProductSwipe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProductSwipe-Bridging-Header.h"; sourceTree = "<group>"; };
-		C7A4965D1AF1936E00310889 /* ZLPanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPanGestureRecognizer.h; sourceTree = "<group>"; };
-		C7A4965E1AF1936E00310889 /* ZLPanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPanGestureRecognizer.m; sourceTree = "<group>"; };
-		C7A4965F1AF1936E00310889 /* ZLSwipeableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSwipeableView.h; sourceTree = "<group>"; };
-		C7A496601AF1936E00310889 /* ZLSwipeableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSwipeableView.m; sourceTree = "<group>"; };
 		C7A496641AF19A5B00310889 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C7A496661AF19A6B00310889 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
@@ -74,6 +71,7 @@
 		C7F8F24F1AF2B04300CD1309 /* PushNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNoAnimationSegue.swift; sourceTree = "<group>"; };
 		C7F8F2531AF2B9F600CD1309 /* ReusableVCCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReusableVCCell.swift; path = ../ReusableVCCell.swift; sourceTree = "<group>"; };
 		C7F8F2551AF2CAC400CD1309 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		FFB5604DF853088EC2637DEB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE04D3ACE934C165E4917481 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30746BA227CDCA418951602E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				483E0315B8A12C2CDCC6DE1F /* Pods.debug.xcconfig */,
+				FFB5604DF853088EC2637DEB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A52950726991E6A4A826F438 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				974CF9ECDDB070E99448BC10 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C72703C91AF3F9D60002E3A6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +162,8 @@
 				C734D5E31AF19164000C4D86 /* ProductSwipe */,
 				C734D5F91AF19165000C4D86 /* ProductSwipeTests */,
 				C734D5E21AF19164000C4D86 /* Products */,
+				30746BA227CDCA418951602E /* Pods */,
+				A52950726991E6A4A826F438 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,7 +179,6 @@
 		C734D5E31AF19164000C4D86 /* ProductSwipe */ = {
 			isa = PBXGroup;
 			children = (
-				C7A496631AF1937500310889 /* ZLSwipe */,
 				C734D5E61AF19165000C4D86 /* AppDelegate.swift */,
 				C72703D61AF400840002E3A6 /* CollectionView */,
 				C734D5E81AF19165000C4D86 /* ViewController.swift */,
@@ -205,17 +222,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C7A496631AF1937500310889 /* ZLSwipe */ = {
-			isa = PBXGroup;
-			children = (
-				C7A4965D1AF1936E00310889 /* ZLPanGestureRecognizer.h */,
-				C7A4965E1AF1936E00310889 /* ZLPanGestureRecognizer.m */,
-				C7A4965F1AF1936E00310889 /* ZLSwipeableView.h */,
-				C7A496601AF1936E00310889 /* ZLSwipeableView.m */,
-			);
-			name = ZLSwipe;
-			sourceTree = "<group>";
-		};
 		C7E237481AF1DD8300DC80B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C734D6001AF19165000C4D86 /* Build configuration list for PBXNativeTarget "ProductSwipe" */;
 			buildPhases = (
+				8BE52BAE858ED8BD6ACDE8DD /* Check Pods Manifest.lock */,
 				C734D5DD1AF19164000C4D86 /* Sources */,
 				C734D5DE1AF19164000C4D86 /* Frameworks */,
 				C734D5DF1AF19164000C4D86 /* Resources */,
+				AF6CBBBE10127C77DEC6E6D6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -327,6 +335,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8BE52BAE858ED8BD6ACDE8DD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF6CBBBE10127C77DEC6E6D6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C734D5DD1AF19164000C4D86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -337,14 +378,12 @@
 				C7F8F2481AF299FE00CD1309 /* CollectionViewController.swift in Sources */,
 				C7F8F2561AF2CAC400CD1309 /* MainVC.swift in Sources */,
 				C734D5E91AF19165000C4D86 /* ViewController.swift in Sources */,
-				C7A496621AF1936E00310889 /* ZLSwipeableView.m in Sources */,
 				C7F8F2501AF2B04300CD1309 /* PushNoAnimationSegue.swift in Sources */,
 				C70BD0FB1AF4138400C09EC1 /* CompaniesFinished.swift in Sources */,
 				C734D5E71AF19165000C4D86 /* AppDelegate.swift in Sources */,
 				C7F8F2541AF2B9F600CD1309 /* ReusableVCCell.swift in Sources */,
 				C72703C81AF3F9D00002E3A6 /* Card.swift in Sources */,
 				C72703CC1AF3FCBB0002E3A6 /* StyleManager.swift in Sources */,
-				C7A496611AF1936E00310889 /* ZLPanGestureRecognizer.m in Sources */,
 				C7A496651AF19A5B00310889 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +514,7 @@
 		};
 		C734D6011AF19165000C4D86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 483E0315B8A12C2CDCC6DE1F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ProductSwipe/Info.plist;
@@ -485,6 +525,7 @@
 		};
 		C734D6021AF19165000C4D86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFB5604DF853088EC2637DEB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ProductSwipe/Info.plist;
@@ -495,6 +536,7 @@
 		};
 		C734D6041AF19165000C4D86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 483E0315B8A12C2CDCC6DE1F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -514,6 +556,7 @@
 		};
 		C734D6051AF19165000C4D86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFB5604DF853088EC2637DEB /* Pods.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

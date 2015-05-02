@@ -12,6 +12,7 @@
         <mutableArray key="Montserrat-Regular.otf">
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -238,6 +239,17 @@
                                     <action selector="backBttnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nNY-G9-jDE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdt-sU-WOv">
+                                <rect key="frame" x="541" y="5" width="43" height="30"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareBttnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tKr-HI-dQ0"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Kt-fl-YTc" customClass="ZLSwipeableView">
                                 <rect key="frame" x="159" y="49" width="286" height="434"/>
                                 <constraints>
@@ -258,6 +270,7 @@
                             <constraint firstItem="euo-Ys-sgK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="2OC-mh-Srb"/>
                             <constraint firstItem="1Kt-fl-YTc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="4my-8u-o1D"/>
                             <constraint firstItem="3Vn-8h-JZp" firstAttribute="top" secondItem="Zxg-LJ-Woa" secondAttribute="bottom" constant="13" id="Cvj-tA-hAX"/>
+                            <constraint firstItem="bdt-sU-WOv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="DSK-Hg-p0u"/>
                             <constraint firstItem="3Vn-8h-JZp" firstAttribute="centerX" secondItem="1Kt-fl-YTc" secondAttribute="centerX" constant="0.5" id="EIx-OG-7s9"/>
                             <constraint firstAttribute="centerX" secondItem="1Kt-fl-YTc" secondAttribute="centerX" constant="-5.5" id="EJk-dq-pxX"/>
                             <constraint firstItem="Zxg-LJ-Woa" firstAttribute="top" secondItem="1Kt-fl-YTc" secondAttribute="bottom" constant="14" id="Gbb-le-dJV"/>
@@ -267,6 +280,7 @@
                             <constraint firstItem="1Kt-fl-YTc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="47" id="IbR-aL-jOJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="euo-Ys-sgK" secondAttribute="trailing" constant="-16" id="Mju-ec-89Z"/>
                             <constraint firstAttribute="centerX" secondItem="1Kt-fl-YTc" secondAttribute="centerX" id="NbY-px-eoq"/>
+                            <constraint firstItem="bdt-sU-WOv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="PDz-gN-Ql1"/>
                             <constraint firstItem="3Vn-8h-JZp" firstAttribute="leading" secondItem="1Kt-fl-YTc" secondAttribute="leading" constant="43" id="RJs-2P-dfV"/>
                             <constraint firstAttribute="centerY" secondItem="1Kt-fl-YTc" secondAttribute="centerY" id="STT-NU-iyD"/>
                             <constraint firstItem="Zxg-LJ-Woa" firstAttribute="top" secondItem="1Kt-fl-YTc" secondAttribute="bottom" constant="9" id="Vac-eg-L2l"/>

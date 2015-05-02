@@ -7,5 +7,6 @@
 //
 
 
-#import "ZLSwipeableView.h"
-#import "ZLPanGestureRecognizer.h"
+#import <ZLSwipeableView/ZLSwipeableView.h>
+#import <ZLSwipeableView/ZLPanGestureRecognizer.h>
+#import <MaveSDK/MaveSDK.h>

@@ -105,6 +105,18 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
 
     }
     
+    @IBAction func shareBttnPressed(sender: AnyObject) {
+        
+        var userData = MAVEUserData(userID: "1", firstName: "Test", lastName: "User")
+        MaveSDK.sharedInstance().identifyUser(userData)
+        MaveSDK.sharedInstance().presentInvitePageModallyWithBlock({ (inviteController:UIViewController!) -> Void in
+            self.view.window?.rootViewController?.presentViewController(inviteController, animated: true, completion: nil)
+            }, dismissBlock: { (controller:UIViewController!, numberSent:UInt) -> Void in
+            controller.dismissViewControllerAnimated(true, completion: nil)
+        }, inviteContext: "default")
+    }
+    
+    
     func swipeableView(swipeableView: ZLSwipeableView!, didStartSwipingView view: UIView!, atLocation location: CGPoint) {
         println("did start swiping at location: x \( location.x), y \(location.y)")
         view.addSubview(dislikeImage)
