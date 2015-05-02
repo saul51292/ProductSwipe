@@ -247,7 +247,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="shareBttnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tKr-HI-dQ0"/>
+                                    <action selector="shareProduct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0VI-Md-gx7"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Kt-fl-YTc" customClass="ZLSwipeableView">
@@ -327,6 +327,7 @@
                     <connections>
                         <outlet property="backImage" destination="euo-Ys-sgK" id="Y0f-Hi-qdO"/>
                         <outlet property="bttnBack" destination="xQe-SL-28Q" id="1zX-RH-jaW"/>
+                        <outlet property="bttnShare" destination="bdt-sU-WOv" id="MbW-G4-xXM"/>
                         <outlet property="companyName" destination="3Vn-8h-JZp" id="3Qb-GS-9um"/>
                         <outlet property="productName" destination="Zxg-LJ-Woa" id="2LK-v6-hY0"/>
                         <outlet property="swipeableView" destination="1Kt-fl-YTc" id="IyI-Y1-Kee"/>

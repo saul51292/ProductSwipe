@@ -35,6 +35,8 @@ class MainVC: UIViewController {
         
     }
     
+   
+    
     func hideAll()
     {
         statusBarBack.hidden = true

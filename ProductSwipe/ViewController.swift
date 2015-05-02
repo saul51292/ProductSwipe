@@ -20,6 +20,7 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     var styleManager = StyleManager()
     var animationManager = AnimationManager()
 
+    @IBOutlet weak var bttnShare: UIButton!
     var productIndex = 0
     var cellIndexPath:NSIndexPath!
     var currentIndex:Int!
@@ -75,6 +76,7 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
             
         else{
             self.view.addSubview(newBase)
+            bttnShare.hidden = true
             newBase.frame = self.view.frame
             newBase.likeCount.text = String(likeCount)
             newBase.bttnBack.addTarget(self, action: "backBttnClicked:", forControlEvents: .TouchUpInside)
@@ -105,18 +107,6 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
 
     }
     
-    @IBAction func shareBttnPressed(sender: AnyObject) {
-        
-        var userData = MAVEUserData(userID: "1", firstName: "Test", lastName: "User")
-        MaveSDK.sharedInstance().identifyUser(userData)
-        MaveSDK.sharedInstance().presentInvitePageModallyWithBlock({ (inviteController:UIViewController!) -> Void in
-            self.view.window?.rootViewController?.presentViewController(inviteController, animated: true, completion: nil)
-            }, dismissBlock: { (controller:UIViewController!, numberSent:UInt) -> Void in
-            controller.dismissViewControllerAnimated(true, completion: nil)
-        }, inviteContext: "default")
-    }
-    
-    
     func swipeableView(swipeableView: ZLSwipeableView!, didStartSwipingView view: UIView!, atLocation location: CGPoint) {
         println("did start swiping at location: x \( location.x), y \(location.y)")
         view.addSubview(dislikeImage)
@@ -126,6 +116,14 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
 
     }
     
+    @IBAction func shareProduct(sender: AnyObject) {
+        var shareImage: UIImage = UIImage(named: self.productArray[count-1])!
+        var objectArray : [AnyObject] = [shareImage,"You're going to love this! \nbit.ly/432592"]
+        let activityVC : UIActivityViewController = UIActivityViewController(activityItems: objectArray, applicationActivities: nil)
+
+        activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
+        self.presentViewController(activityVC, animated: true, completion: nil)
+    }
     
     func swipeableView(swipeableView: ZLSwipeableView!, swipingView view: UIView!, atLocation location: CGPoint, translation: CGPoint) {
         

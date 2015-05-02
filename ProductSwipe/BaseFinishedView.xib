@@ -6,9 +6,9 @@
     <customFonts key="customFonts">
         <mutableArray key="Montserrat-Hairline.otf">
             <string>Montserrat-Hairline</string>
-            <string>Montserrat-Hairline</string>
         </mutableArray>
         <mutableArray key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
             <string>Montserrat-Light</string>
             <string>Montserrat-Light</string>
         </mutableArray>
@@ -76,7 +76,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="61" id="OQO-AI-7yF"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Montserrat-Hairline" family="Montserrat" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
