@@ -1,0 +1,1 @@
+PODS_MAVESDK_OTHER_LDFLAGS = -l"z" -framework "AddressBook" -framework "UIKit"

@@ -1,0 +1,1 @@
+../../../MaveSDK/MaveSDK/Views/MAVEInviteMessageView.h

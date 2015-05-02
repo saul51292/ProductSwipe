@@ -1,0 +1,1 @@
+../../../MaveSDK/MaveSDK/Models/RemoteConfiguration/MAVERemoteConfigurationInvitePageChoice.h
