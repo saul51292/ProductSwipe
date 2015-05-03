@@ -15,6 +15,7 @@ class ControlVC: UIViewController {
     @IBOutlet weak var inviteButton: UIButton!
     @IBOutlet weak var mainBack: UIImageView!
     
+    @IBOutlet weak var timerLabel: MZTimerLabel!
     let styleManager = StyleManager()
     
     override func viewDidLoad() {
@@ -25,6 +26,10 @@ class ControlVC: UIViewController {
         inviteButton.setImage(UIImage(named: "invite"), forState: .Normal)
         settingsButton.setImage(UIImage(named: "settings"), forState: .Normal)
         // Do any additional setup after loading the view.
+        
+        timerLabel.timerType = MZTimerLabelTypeTimer
+        timerLabel.setCountDownTime(10800)
+        timerLabel.start()
     }
 
     override func didReceiveMemoryWarning() {

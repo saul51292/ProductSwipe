@@ -417,13 +417,13 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:34:23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="Apk-28-syP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:34:23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apk-28-syP" customClass="MZTimerLabel">
                                 <rect key="frame" x="32" y="97" width="536" height="69"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="FbG-gH-7Xb"/>
                                     <constraint firstAttribute="height" constant="106" id="sQy-nI-LA9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="80"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -613,6 +613,7 @@
                         <outlet property="inviteButton" destination="Rwt-Ot-vHE" id="9mM-db-bxX"/>
                         <outlet property="mainBack" destination="qa9-Gb-Pcd" id="2By-DQ-6bU"/>
                         <outlet property="settingsButton" destination="y2r-I8-042" id="tAq-iZ-6mI"/>
+                        <outlet property="timerLabel" destination="Apk-28-syP" id="alH-5q-d69"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSZ-T6-Tj5" userLabel="First Responder" sceneMemberID="firstResponder"/>
