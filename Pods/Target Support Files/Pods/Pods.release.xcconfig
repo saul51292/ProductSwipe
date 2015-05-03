@@ -1,6 +1,6 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CCTemplate" "${PODS_ROOT}/Headers/Public/MaveSDK" "${PODS_ROOT}/Headers/Public/ZLSwipeableView" "${PODS_ROOT}/Headers/Public/libPhoneNumber-iOS"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CCTemplate" -isystem "${PODS_ROOT}/Headers/Public/MaveSDK" -isystem "${PODS_ROOT}/Headers/Public/ZLSwipeableView" -isystem "${PODS_ROOT}/Headers/Public/libPhoneNumber-iOS"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-CCTemplate" -l"Pods-MaveSDK" -l"Pods-ZLSwipeableView" -l"Pods-libPhoneNumber-iOS" -l"z" -framework "AddressBook" -framework "CoreTelephony" -framework "Foundation" -framework "UIKit"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CCTemplate" "${PODS_ROOT}/Headers/Public/FXBlurView" "${PODS_ROOT}/Headers/Public/MaveSDK" "${PODS_ROOT}/Headers/Public/ZLSwipeableView" "${PODS_ROOT}/Headers/Public/libPhoneNumber-iOS"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CCTemplate" -isystem "${PODS_ROOT}/Headers/Public/FXBlurView" -isystem "${PODS_ROOT}/Headers/Public/MaveSDK" -isystem "${PODS_ROOT}/Headers/Public/ZLSwipeableView" -isystem "${PODS_ROOT}/Headers/Public/libPhoneNumber-iOS"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-CCTemplate" -l"Pods-FXBlurView" -l"Pods-MaveSDK" -l"Pods-ZLSwipeableView" -l"Pods-libPhoneNumber-iOS" -l"z" -framework "Accelerate" -framework "AddressBook" -framework "CoreTelephony" -framework "Foundation" -framework "QuartzCore" -framework "UIKit"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods

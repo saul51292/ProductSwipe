@@ -35,6 +35,21 @@ class StyleManager: NSObject {
         
     }
 
+    func styleButton(buttons:UIButton...)
+    {
+        for button in buttons{
+            button.layer.borderColor = UIColor.whiteColor().CGColor
+            button.layer.borderWidth = 2
+            button.layer.cornerRadius = button.frame.width/2
+            button.contentVerticalAlignment = UIControlContentVerticalAlignment.Center
+            button.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Center
+
+            
+        }
+    }
+    
+   
+    
     func styleLabel(textLabel:UILabel)
     {
         textLabel.font = UIFont(name: "Montserrat-Regular", size: 18.0)

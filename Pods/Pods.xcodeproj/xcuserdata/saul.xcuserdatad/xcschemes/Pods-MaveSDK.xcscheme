@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "798436C19D6C33F437D331E7"
+               BlueprintIdentifier = "B488E3B0AFAAED5820F15AAB"
                BuildableName = "libPods-MaveSDK.a"
                BlueprintName = "Pods-MaveSDK"
                ReferencedContainer = "container:Pods.xcodeproj">

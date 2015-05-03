@@ -150,7 +150,7 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     func popBackToMain()
     {
         if let navController = self.navigationController {
-            let main = self.navigationController?.viewControllers.first as! MainVC
+            let main = self.navigationController?.viewControllers[1] as! MainVC
             let vc = main.childViewControllers.first as! CollectionViewController
             animationManager.mainTransition(self)
             navController.popViewControllerAnimated(false)

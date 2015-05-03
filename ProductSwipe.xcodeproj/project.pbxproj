@@ -21,6 +21,11 @@
 		C734D5EE1AF19165000C4D86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C734D5ED1AF19165000C4D86 /* Images.xcassets */; };
 		C734D5F11AF19165000C4D86 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C734D5EF1AF19165000C4D86 /* LaunchScreen.xib */; };
 		C734D5FD1AF19165000C4D86 /* ProductSwipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C734D5FC1AF19165000C4D86 /* ProductSwipeTests.swift */; };
+		C768E2611AF5B74600ADB26A /* ControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768E2601AF5B74600ADB26A /* ControlVC.swift */; };
+		C768E2631AF5BE1800ADB26A /* HorizontalCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768E2621AF5BE1800ADB26A /* HorizontalCVC.swift */; };
+		C768E2651AF5C41500ADB26A /* CenterCVCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768E2641AF5C41500ADB26A /* CenterCVCells.swift */; };
+		C768E2681AF5C7B800ADB26A /* HorizontalCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768E2661AF5C7B800ADB26A /* HorizontalCVCell.swift */; };
+		C768E2691AF5C7B800ADB26A /* HorizontalCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C768E2671AF5C7B800ADB26A /* HorizontalCVCell.xib */; };
 		C7A496651AF19A5B00310889 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A496641AF19A5B00310889 /* CardView.swift */; };
 		C7A496671AF19A6B00310889 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A496661AF19A6B00310889 /* CardView.xib */; };
 		C7E2374B1AF1DD9700DC80B8 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */; };
@@ -63,6 +68,11 @@
 		C734D5FB1AF19165000C4D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C734D5FC1AF19165000C4D86 /* ProductSwipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSwipeTests.swift; sourceTree = "<group>"; };
 		C734D6121AF19250000C4D86 /* ProductSwipe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProductSwipe-Bridging-Header.h"; sourceTree = "<group>"; };
+		C768E2601AF5B74600ADB26A /* ControlVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlVC.swift; sourceTree = "<group>"; };
+		C768E2621AF5BE1800ADB26A /* HorizontalCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCVC.swift; sourceTree = "<group>"; };
+		C768E2641AF5C41500ADB26A /* CenterCVCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterCVCells.swift; sourceTree = "<group>"; };
+		C768E2661AF5C7B800ADB26A /* HorizontalCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCVCell.swift; sourceTree = "<group>"; };
+		C768E2671AF5C7B800ADB26A /* HorizontalCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalCVCell.xib; sourceTree = "<group>"; };
 		C7A496641AF19A5B00310889 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C7A496661AF19A6B00310889 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
@@ -186,6 +196,7 @@
 				C72703D41AF400750002E3A6 /* BaseFinished */,
 				C72703D51AF4007D0002E3A6 /* Card */,
 				C734D5EA1AF19165000C4D86 /* Main.storyboard */,
+				C768E26A1AF5C7BE00ADB26A /* ControlVC */,
 				C734D5ED1AF19165000C4D86 /* Images.xcassets */,
 				C734D5EF1AF19165000C4D86 /* LaunchScreen.xib */,
 				C734D6121AF19250000C4D86 /* ProductSwipe-Bridging-Header.h */,
@@ -220,6 +231,18 @@
 				C734D5FB1AF19165000C4D86 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C768E26A1AF5C7BE00ADB26A /* ControlVC */ = {
+			isa = PBXGroup;
+			children = (
+				C768E2601AF5B74600ADB26A /* ControlVC.swift */,
+				C768E2621AF5BE1800ADB26A /* HorizontalCVC.swift */,
+				C768E2661AF5C7B800ADB26A /* HorizontalCVCell.swift */,
+				C768E2671AF5C7B800ADB26A /* HorizontalCVCell.xib */,
+				C768E2641AF5C41500ADB26A /* CenterCVCells.swift */,
+			);
+			name = ControlVC;
 			sourceTree = "<group>";
 		};
 		C7E237481AF1DD8300DC80B8 /* Resources */ = {
@@ -318,6 +341,7 @@
 				C7E2374B1AF1DD9700DC80B8 /* Montserrat-Light.otf in Resources */,
 				C734D5EC1AF19165000C4D86 /* Main.storyboard in Resources */,
 				C734D5F11AF19165000C4D86 /* LaunchScreen.xib in Resources */,
+				C768E2691AF5C7B800ADB26A /* HorizontalCVCell.xib in Resources */,
 				C7A496671AF19A6B00310889 /* CardView.xib in Resources */,
 				C72703D31AF400710002E3A6 /* BaseFinishedView.xib in Resources */,
 				C734D5EE1AF19165000C4D86 /* Images.xcassets in Resources */,
@@ -376,12 +400,16 @@
 				C72703D11AF4005C0002E3A6 /* BaseFinishedView.swift in Sources */,
 				C72703CE1AF3FCC80002E3A6 /* AnimationManager.swift in Sources */,
 				C7F8F2481AF299FE00CD1309 /* CollectionViewController.swift in Sources */,
+				C768E2651AF5C41500ADB26A /* CenterCVCells.swift in Sources */,
+				C768E2681AF5C7B800ADB26A /* HorizontalCVCell.swift in Sources */,
 				C7F8F2561AF2CAC400CD1309 /* MainVC.swift in Sources */,
 				C734D5E91AF19165000C4D86 /* ViewController.swift in Sources */,
 				C7F8F2501AF2B04300CD1309 /* PushNoAnimationSegue.swift in Sources */,
 				C70BD0FB1AF4138400C09EC1 /* CompaniesFinished.swift in Sources */,
+				C768E2611AF5B74600ADB26A /* ControlVC.swift in Sources */,
 				C734D5E71AF19165000C4D86 /* AppDelegate.swift in Sources */,
 				C7F8F2541AF2B9F600CD1309 /* ReusableVCCell.swift in Sources */,
+				C768E2631AF5BE1800ADB26A /* HorizontalCVC.swift in Sources */,
 				C72703C81AF3F9D00002E3A6 /* Card.swift in Sources */,
 				C72703CC1AF3FCBB0002E3A6 /* StyleManager.swift in Sources */,
 				C7A496651AF19A5B00310889 /* CardView.swift in Sources */,

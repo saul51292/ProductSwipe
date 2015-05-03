@@ -23,20 +23,6 @@ class CompaniesFinished: BaseFinishedView {
         likeCount.hidden = true
         likeImageView.image = UIImage(named: "checkDone")
         bttnBack.setTitle("Share the love", forState: .Normal)
-        bttnBack.addTarget(self, action: "shareBttnPressed", forControlEvents: .TouchUpInside)
-
     }
-    
-    func shareBttnPressed() {
-        
-        var userData = MAVEUserData(userID: "1", firstName: "Test", lastName: "User")
-        MaveSDK.sharedInstance().identifyUser(userData)
-        MaveSDK.sharedInstance().presentInvitePageModallyWithBlock({ (inviteController:UIViewController!) -> Void in
-            self.window?.rootViewController!.presentViewController(inviteController, animated: true, completion: nil)
-            }, dismissBlock: { (controller:UIViewController!, numberSent:UInt) -> Void in
-                controller.dismissViewControllerAnimated(true, completion: nil)
-            }, inviteContext: "default")
-    }
-    
 
 }

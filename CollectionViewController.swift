@@ -40,6 +40,7 @@ class CollectionViewController: UICollectionViewController,UIGestureRecognizerDe
         // Do any additional setup after loading the view.
   
     }
+    
 
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
@@ -67,14 +68,17 @@ class CollectionViewController: UICollectionViewController,UIGestureRecognizerDe
     {
         if(dictKeys.isEmpty)
         {
-            var finishedView = CompaniesFinished()
-            self.view.addSubview(finishedView)
             let vc = parentViewController as! MainVC
+            vc.disableSwipeButton = true
+            vc.backBttnClicked(vc.backBttn)
             vc.createViewOnBack()
             vc.hideAll()
-            finishedView.frame = self.view.frame
+
+            
         }
     }
+    
+    
     
     //3
        

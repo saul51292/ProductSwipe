@@ -1,6 +1,6 @@
 #include "Pods-ZLSwipeableView.xcconfig"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/ZLSwipeableView" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CCTemplate" "${PODS_ROOT}/Headers/Public/MaveSDK" "${PODS_ROOT}/Headers/Public/ZLSwipeableView" "${PODS_ROOT}/Headers/Public/libPhoneNumber-iOS"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/ZLSwipeableView" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CCTemplate" "${PODS_ROOT}/Headers/Public/FXBlurView" "${PODS_ROOT}/Headers/Public/MaveSDK" "${PODS_ROOT}/Headers/Public/ZLSwipeableView" "${PODS_ROOT}/Headers/Public/libPhoneNumber-iOS"
 OTHER_LDFLAGS = ${PODS_ZLSWIPEABLEVIEW_OTHER_LDFLAGS} -ObjC
 PODS_ROOT = ${SRCROOT}
 SKIP_INSTALL = YES

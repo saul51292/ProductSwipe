@@ -11,6 +11,7 @@ link_with 'ProductSwipe', 'ProductSwipe Tests'
 
 pod 'MaveSDK'
 pod 'ZLSwipeableView'
+pod 'FXBlurView'
 
 post_install do |installer|
     installer.project.targets.each do |target|

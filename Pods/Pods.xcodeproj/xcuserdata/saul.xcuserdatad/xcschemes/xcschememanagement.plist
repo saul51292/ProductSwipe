@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-FXBlurView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MaveSDK-MaveSDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1E7EC4E31CB4576FF098EC35</key>
+		<key>16FAA3A476948554F3202325</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4455144930B6E92208995A96</key>
+		<key>3C87F7E6E492ACB9191D3AFE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>68DFF44BE23029185B68869E</key>
+		<key>8E46997B97E34C86E08154F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>798436C19D6C33F437D331E7</key>
+		<key>B488E3B0AFAAED5820F15AAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>933971D91285DE8A4AA61C86</key>
+		<key>E5330B9233E607B92CDABE6F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A5D412871F00B0BBE7392F26</key>
+		<key>ED8E01B797C6D923D4EF9C6C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE52BFAA156BF5EEBFD8CA58</key>
 		<dict>
 			<key>primary</key>
 			<true/>
