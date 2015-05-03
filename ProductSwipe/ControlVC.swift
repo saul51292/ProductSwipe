@@ -17,7 +17,9 @@ class ControlVC: UIViewController {
     
     @IBOutlet weak var timerLabel: MZTimerLabel!
     let styleManager = StyleManager()
-    
+    var keepCurrentIndex:Int!
+    var currentLikeCount:Int!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         createViewOnBack()
@@ -65,11 +67,13 @@ class ControlVC: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "goToMain"
+        if segue.identifier == "goToTinder"
         {
-            
             AnimationManager().mainTransition(self)
-            let targetVC = segue.destinationViewController as! MainVC
+            let targetVC = segue.destinationViewController as! ViewController
+            targetVC.currentIndex = keepCurrentIndex
+            targetVC.currentLikeCount = currentLikeCount
+
         }
 
     }

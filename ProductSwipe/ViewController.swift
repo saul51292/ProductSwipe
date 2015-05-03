@@ -28,23 +28,41 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     var count = 0
     var newBase = BaseFinishedView()
     var likeCount = 0
-    
-    var productArray = ["Fitted Cropped Tank Top","COPE Babydoll Cami","High-Neck Crochet Bra Top","Cropped Tank Top","Recycled Trimmed Tank Top","Cropped Rib Tank Top","Crochet-Yoke Printed Dress","Ecote Clary Godet Trapeze Dress","Mock-Neck Mini Swing Dress","Riley Trapeze Dress","Witchy T-Shirt Dress"]
+    var currentLikeCount:Int!
+    var productArray = [Card]()
     
     @IBOutlet weak var companyName: UILabel!
     var companyText:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        productArray = addTestData()
         // Do any additional setup after loading the view, typically from a nib.
         self.swipeableView.delegate = self
         self.swipeableView.direction = .Horizontal
         checkCurrent()
-        productName.text = self.productArray[count]
+        productName.text = self.productArray[count].name
+        companyName.text = self.productArray[count].company
         count++
         styleManager.createBlur(view,backImage:backImage)
         styleManager.styleLikeDislikeImages(likeImage,dislikeImage:dislikeImage)
     }
+    
+    
+    func addTestData() ->[Card]
+    {
+        
+        var productDic = ["Fitted Cropped Tank Top":"Urban Outfitters","COPE Babydoll Cami":"H&M","High-Neck Crochet Bra Top":"Forever21","Cropped Tank Top":"JCrew","Recycled Trimmed Tank Top":"Hollister","Cropped Rib Tank Top":"Theory","Crochet-Yoke Printed Dress":"Urban Outfitters","Ecote Clary Godet Trapeze Dress":"Bloomingdales","Mock-Neck Mini Swing Dress":"H&M","Riley Trapeze Dress":"Forever21","Witchy T-Shirt Dress":"Theory"]
+        var cardArray = [Card]()
+        
+        for (key,value) in productDic{
+            var card = Card(name: key, company: value, image: UIImage(named: key)!)
+            cardArray.append(card)
+        }
+        
+        return cardArray
+    }
+
     
     func checkCurrent()
     {
@@ -53,12 +71,15 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
             productIndex = currentIndex
             count = currentIndex
         }
+        if currentLikeCount != nil{
+            likeCount = currentLikeCount
+        }
         
     }
     
-       
+    
     override func viewWillAppear(animated: Bool) {
-        companyName.text = companyText
+        companyName.text = self.productArray[count-1].company
     }
     
     func swipeableView(swipeableView: ZLSwipeableView!, didSwipeView view: UIView!, inDirection direction: ZLSwipeableViewDirection) {
@@ -70,7 +91,9 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
             likeCount++
         }
         if(count<productArray.count){
-            productName.text = self.productArray[count]
+            productName.text = self.productArray[count].name
+            companyName.text = self.productArray[count].company
+
             count++
         }
             
@@ -117,7 +140,7 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     }
     
     @IBAction func shareProduct(sender: AnyObject) {
-        var shareImage: UIImage = UIImage(named: self.productArray[count-1])!
+        var shareImage: UIImage = self.productArray[count-1].image!
         var objectArray : [AnyObject] = [shareImage,"You're going to love this! \nbit.ly/432592"]
         let activityVC : UIActivityViewController = UIActivityViewController(activityItems: objectArray, applicationActivities: nil)
 
@@ -150,22 +173,22 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     func popBackToMain()
     {
         if let navController = self.navigationController {
-            let main = self.navigationController?.viewControllers[1] as! MainVC
-            let vc = main.childViewControllers.first as! CollectionViewController
+            let control = self.navigationController?.viewControllers.first as! ControlVC
             animationManager.mainTransition(self)
             navController.popViewControllerAnimated(false)
             currentIndex = count - 1
-            vc.dictValues[find(vc.dictKeys,companyText)!] = currentIndex
+            control.currentLikeCount = likeCount
+            control.keepCurrentIndex = currentIndex
             if(deleteCompany != nil)
             {
-                vc.disableCell(cellIndexPath,key:companyText)
-                
+                control.cardButton.enabled = false
+                control.cardButton.layer.borderColor = UIColor.lightGrayColor().CGColor
             }
         }
     }
     
     @IBAction func backBttnClicked(sender: AnyObject) {
-        println("Back To Main")
+        println("Back To Control")
         popBackToMain()
     }
 
@@ -181,7 +204,7 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     
     func nextViewForSwipeableView(swipeableView: ZLSwipeableView!) -> UIView! {
         if (self.productIndex < self.productArray.count){
-            var currentProductImage = UIImage(named: self.productArray[self.productIndex])
+            var currentProductImage = self.productArray[self.productIndex].image
 
             var view = CardView(frame:swipeableView.bounds)
             view.cardViewImage.image = currentProductImage

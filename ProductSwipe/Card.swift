@@ -20,4 +20,5 @@ class Card: NSObject{
         self.company = company
         self.image = image
     }
+    
 }

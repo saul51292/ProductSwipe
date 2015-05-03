@@ -12,6 +12,7 @@ class CardView: UIView {
 
     @IBOutlet weak var cardViewImage: UIImageView!
     @IBOutlet var contentView: UIView!
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)

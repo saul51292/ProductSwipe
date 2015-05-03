@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C70BD0FB1AF4138400C09EC1 /* CompaniesFinished.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70BD0FA1AF4138400C09EC1 /* CompaniesFinished.swift */; };
 		C72703C81AF3F9D00002E3A6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72703C71AF3F9D00002E3A6 /* Card.swift */; };
 		C72703CA1AF3FA8A0002E3A6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72703C71AF3F9D00002E3A6 /* Card.swift */; };
 		C72703CC1AF3FCBB0002E3A6 /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72703CB1AF3FCBB0002E3A6 /* StyleManager.swift */; };
@@ -30,10 +29,7 @@
 		C7A496671AF19A6B00310889 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A496661AF19A6B00310889 /* CardView.xib */; };
 		C7E2374B1AF1DD9700DC80B8 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */; };
 		C7E2374C1AF1DD9700DC80B8 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7E2374A1AF1DD9700DC80B8 /* Montserrat-Regular.otf */; };
-		C7F8F2481AF299FE00CD1309 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8F2471AF299FE00CD1309 /* CollectionViewController.swift */; };
 		C7F8F2501AF2B04300CD1309 /* PushNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8F24F1AF2B04300CD1309 /* PushNoAnimationSegue.swift */; };
-		C7F8F2541AF2B9F600CD1309 /* ReusableVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8F2531AF2B9F600CD1309 /* ReusableVCCell.swift */; };
-		C7F8F2561AF2CAC400CD1309 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8F2551AF2CAC400CD1309 /* MainVC.swift */; };
 		FE04D3ACE934C165E4917481 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 974CF9ECDDB070E99448BC10 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +46,6 @@
 /* Begin PBXFileReference section */
 		483E0315B8A12C2CDCC6DE1F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		974CF9ECDDB070E99448BC10 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C70BD0FA1AF4138400C09EC1 /* CompaniesFinished.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesFinished.swift; sourceTree = "<group>"; };
 		C72703C71AF3F9D00002E3A6 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		C72703CB1AF3FCBB0002E3A6 /* StyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
 		C72703CD1AF3FCC80002E3A6 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
@@ -77,10 +72,7 @@
 		C7A496661AF19A6B00310889 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
 		C7E2374A1AF1DD9700DC80B8 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
-		C7F8F2471AF299FE00CD1309 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = ../CollectionViewController.swift; sourceTree = "<group>"; };
 		C7F8F24F1AF2B04300CD1309 /* PushNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNoAnimationSegue.swift; sourceTree = "<group>"; };
-		C7F8F2531AF2B9F600CD1309 /* ReusableVCCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReusableVCCell.swift; path = ../ReusableVCCell.swift; sourceTree = "<group>"; };
-		C7F8F2551AF2CAC400CD1309 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FFB5604DF853088EC2637DEB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,7 +135,6 @@
 			children = (
 				C72703D01AF4005C0002E3A6 /* BaseFinishedView.swift */,
 				C72703D21AF400710002E3A6 /* BaseFinishedView.xib */,
-				C70BD0FA1AF4138400C09EC1 /* CompaniesFinished.swift */,
 			);
 			name = BaseFinished;
 			sourceTree = "<group>";
@@ -155,15 +146,6 @@
 				C7A496661AF19A6B00310889 /* CardView.xib */,
 			);
 			name = Card;
-			sourceTree = "<group>";
-		};
-		C72703D61AF400840002E3A6 /* CollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				C7F8F2471AF299FE00CD1309 /* CollectionViewController.swift */,
-				C7F8F2531AF2B9F600CD1309 /* ReusableVCCell.swift */,
-			);
-			name = CollectionView;
 			sourceTree = "<group>";
 		};
 		C734D5D81AF19164000C4D86 = {
@@ -190,9 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				C734D5E61AF19165000C4D86 /* AppDelegate.swift */,
-				C72703D61AF400840002E3A6 /* CollectionView */,
 				C734D5E81AF19165000C4D86 /* ViewController.swift */,
-				C7F8F2551AF2CAC400CD1309 /* MainVC.swift */,
 				C72703D41AF400750002E3A6 /* BaseFinished */,
 				C72703D51AF4007D0002E3A6 /* Card */,
 				C734D5EA1AF19165000C4D86 /* Main.storyboard */,
@@ -399,16 +379,12 @@
 			files = (
 				C72703D11AF4005C0002E3A6 /* BaseFinishedView.swift in Sources */,
 				C72703CE1AF3FCC80002E3A6 /* AnimationManager.swift in Sources */,
-				C7F8F2481AF299FE00CD1309 /* CollectionViewController.swift in Sources */,
 				C768E2651AF5C41500ADB26A /* CenterCVCells.swift in Sources */,
 				C768E2681AF5C7B800ADB26A /* HorizontalCVCell.swift in Sources */,
-				C7F8F2561AF2CAC400CD1309 /* MainVC.swift in Sources */,
 				C734D5E91AF19165000C4D86 /* ViewController.swift in Sources */,
 				C7F8F2501AF2B04300CD1309 /* PushNoAnimationSegue.swift in Sources */,
-				C70BD0FB1AF4138400C09EC1 /* CompaniesFinished.swift in Sources */,
 				C768E2611AF5B74600ADB26A /* ControlVC.swift in Sources */,
 				C734D5E71AF19165000C4D86 /* AppDelegate.swift in Sources */,
-				C7F8F2541AF2B9F600CD1309 /* ReusableVCCell.swift in Sources */,
 				C768E2631AF5BE1800ADB26A /* HorizontalCVC.swift in Sources */,
 				C72703C81AF3F9D00002E3A6 /* Card.swift in Sources */,
 				C72703CC1AF3FCBB0002E3A6 /* StyleManager.swift in Sources */,
