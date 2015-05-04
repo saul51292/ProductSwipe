@@ -13,8 +13,8 @@ let reuseIdentifier = "BrandCell"
 class HorizontalCVC: UICollectionViewController,UIScrollViewDelegate {
 
     var image = UIImage(named: "mainBack")
-    var dictKeys = ["HM","Urban","JCrew","Forever21","Hollister","Theory"]
-      var dictImages = ["Fitted Cropped Tank Top","COPE Babydoll Cami","High-Neck Crochet Bra Top","Cropped Tank Top","Recycled Trimmed Tank Top","Cropped Rib Tank Top"]
+    var upcomingDealDict = [UpcomingDealCard]()
+    var count  = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,8 +30,41 @@ class HorizontalCVC: UICollectionViewController,UIScrollViewDelegate {
         self.collectionView!.registerNib(nib, forCellWithReuseIdentifier: reuseIdentifier)
         self.collectionView!.backgroundColor = UIColor.clearColor()
         self.collectionView?.contentInset = UIEdgeInsetsMake(0, UIScreen.mainScreen().bounds.width/2 - 175, 0, 50)
+        upcomingDealDict = addTestData()
         // Do any additional setup after loading the view.
     }
+    
+    func formatADate(date:NSDate)->String {
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM/dd"
+         let s = dateFormatter.stringFromDate(date)
+        return s
+    }
+    
+    func addMore(d:NSDate)->String
+    {
+        let moreDates = NSCalendar.currentCalendar().dateByAddingUnit(
+                .CalendarUnitDay,
+                value: count,
+                toDate: d,
+                options: NSCalendarOptions(0))
+        count++
+        return formatADate(moreDates!)
+    }
+    
+    func addTestData() ->[UpcomingDealCard]
+    {
+        var productDict = ["Fitted Cropped Tank Top":"HM","COPE Babydoll Cami":"Urban","High-Neck Crochet Bra Top":"JCrew","Cropped Tank Top":"Forever21","Recycled Trimmed Tank Top":"Hollister","Cropped Rib Tank Top":"Mango"]
+        var upcomingDealArray = [UpcomingDealCard]()
+        
+        for (key,value) in productDict{
+            var upcomingDeal = UpcomingDealCard(time:addMore(NSDate()), companyLogo: UIImage(named: value)!, image: UIImage(named: key)!)
+            upcomingDealArray.append(upcomingDeal)
+        }
+        
+        return upcomingDealArray
+    }
+
     
     
     override func didReceiveMemoryWarning() {
@@ -59,12 +92,12 @@ class HorizontalCVC: UICollectionViewController,UIScrollViewDelegate {
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //#warning Incomplete method implementation -- Return the number of items in the section
-        return dictKeys.count
+        return upcomingDealDict.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> HorizontalCVCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! HorizontalCVCell
-        cell.loadItem(title: dictKeys[indexPath.row], image: dictImages[indexPath.row])
+        cell.loadItem(title: upcomingDealDict[indexPath.row].time, backImage: upcomingDealDict[indexPath.row].image,logoImage: upcomingDealDict[indexPath.row].companyLogo!)
         cell.styleCell()
         // Configure the cell
         return cell

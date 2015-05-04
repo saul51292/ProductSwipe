@@ -12,14 +12,17 @@ class HorizontalCVCell: UICollectionViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     
+    @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet weak var blurView: FXBlurView!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var addMoreTint: UIView!
     
-    func loadItem(#title: String, image: String) {
+    func loadItem(#title: String, backImage: UIImage, logoImage:UIImage) {
         backgroundImage.bounds = contentView.bounds
         backgroundImage.contentMode = .ScaleAspectFill
-        backgroundImage.image = UIImage(named: image)
+        backgroundImage.image = backImage
+        self.logoImage.image = logoImage
+
         titleLabel.text = title
     }
     
@@ -30,6 +33,8 @@ class HorizontalCVCell: UICollectionViewCell {
         contentView.layer.borderColor = UIColor.whiteColor().CGColor
         backgroundImage.clipsToBounds = true
         backgroundImage.layer.masksToBounds = true
+        logoImage.clipsToBounds = true
+        logoImage.layer.masksToBounds = true
         contentView.layer.masksToBounds = true
         blurView.tintColor = UIColor.clearColor()
         blurView.blurRadius = 30

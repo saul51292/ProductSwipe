@@ -27,6 +27,7 @@
 		C768E2691AF5C7B800ADB26A /* HorizontalCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C768E2671AF5C7B800ADB26A /* HorizontalCVCell.xib */; };
 		C7A496651AF19A5B00310889 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A496641AF19A5B00310889 /* CardView.swift */; };
 		C7A496671AF19A6B00310889 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A496661AF19A6B00310889 /* CardView.xib */; };
+		C7A617AB1AF7EE3B004478A5 /* UpcomingDealCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A617AA1AF7EE3B004478A5 /* UpcomingDealCard.swift */; };
 		C7E2374B1AF1DD9700DC80B8 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */; };
 		C7E2374C1AF1DD9700DC80B8 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7E2374A1AF1DD9700DC80B8 /* Montserrat-Regular.otf */; };
 		C7F8F2501AF2B04300CD1309 /* PushNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8F24F1AF2B04300CD1309 /* PushNoAnimationSegue.swift */; };
@@ -70,6 +71,7 @@
 		C768E2671AF5C7B800ADB26A /* HorizontalCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalCVCell.xib; sourceTree = "<group>"; };
 		C7A496641AF19A5B00310889 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C7A496661AF19A6B00310889 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		C7A617AA1AF7EE3B004478A5 /* UpcomingDealCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingDealCard.swift; sourceTree = "<group>"; };
 		C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
 		C7E2374A1AF1DD9700DC80B8 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		C7F8F24F1AF2B04300CD1309 /* PushNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNoAnimationSegue.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				C72703C71AF3F9D00002E3A6 /* Card.swift */,
+				C7A617AA1AF7EE3B004478A5 /* UpcomingDealCard.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				C768E2631AF5BE1800ADB26A /* HorizontalCVC.swift in Sources */,
 				C72703C81AF3F9D00002E3A6 /* Card.swift in Sources */,
 				C72703CC1AF3FCBB0002E3A6 /* StyleManager.swift in Sources */,
+				C7A617AB1AF7EE3B004478A5 /* UpcomingDealCard.swift in Sources */,
 				C7A496651AF19A5B00310889 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
