@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MGk-fV-g6c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MGk-fV-g6c">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -249,21 +250,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwt-Ot-vHE">
-                                <rect key="frame" x="270" y="510" width="60" height="60"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="UJw-8x-DNx"/>
-                                    <constraint firstAttribute="height" constant="60" id="cFp-xF-L2O"/>
-                                </constraints>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="inviteButtonClicked:" destination="bue-xO-Jw4" eventType="touchUpInside" id="6cs-Q3-HlB"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xk-YP-4OT">
                                 <rect key="frame" x="381" y="510" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
@@ -284,36 +270,31 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="9xk-YP-4OT" secondAttribute="centerY" constant="-255" id="0fj-Hi-Usr"/>
-                            <constraint firstAttribute="centerX" secondItem="Rwt-Ot-vHE" secondAttribute="centerX" id="1oB-d3-SCn"/>
                             <constraint firstItem="Apk-28-syP" firstAttribute="top" secondItem="ppR-g7-ZLY" secondAttribute="bottom" constant="44" id="2dX-5A-Wqe"/>
-                            <constraint firstItem="Rwt-Ot-vHE" firstAttribute="top" secondItem="y2r-I8-042" secondAttribute="top" id="2eV-qr-Gm8"/>
                             <constraint firstItem="dOe-bs-810" firstAttribute="top" secondItem="S6G-Fb-YVf" secondAttribute="bottom" constant="52" id="3O9-8Q-ZDg"/>
                             <constraint firstAttribute="centerX" secondItem="9xk-YP-4OT" secondAttribute="centerX" constant="-111" id="3av-eQ-SIE"/>
                             <constraint firstItem="S6G-Fb-YVf" firstAttribute="leading" secondItem="ppR-g7-ZLY" secondAttribute="leading" constant="-43" id="4iv-5f-Vfc"/>
                             <constraint firstItem="Apk-28-syP" firstAttribute="leading" secondItem="e5g-Jf-tIi" secondAttribute="leadingMargin" constant="16" id="66N-we-SsG"/>
                             <constraint firstItem="dOe-bs-810" firstAttribute="leading" secondItem="e5g-Jf-tIi" secondAttribute="leadingMargin" constant="-16" id="6OR-z4-W90"/>
-                            <constraint firstItem="9xk-YP-4OT" firstAttribute="leading" secondItem="Rwt-Ot-vHE" secondAttribute="trailing" constant="61" id="6qK-lb-r1O"/>
                             <constraint firstItem="S6G-Fb-YVf" firstAttribute="leading" secondItem="ppR-g7-ZLY" secondAttribute="leading" constant="-43" id="6yo-wX-P1v"/>
                             <constraint firstAttribute="centerX" secondItem="y2r-I8-042" secondAttribute="centerX" constant="111" id="72M-aG-CAE"/>
                             <constraint firstItem="qa9-Gb-Pcd" firstAttribute="leading" secondItem="e5g-Jf-tIi" secondAttribute="leadingMargin" constant="-16" id="7bY-vH-5DL"/>
                             <constraint firstItem="S6G-Fb-YVf" firstAttribute="trailing" secondItem="ppR-g7-ZLY" secondAttribute="trailing" constant="42" id="9Dv-ld-BZK"/>
-                            <constraint firstAttribute="centerY" secondItem="Rwt-Ot-vHE" secondAttribute="centerY" constant="-255" id="ARk-cr-8aq"/>
                             <constraint firstItem="S6G-Fb-YVf" firstAttribute="top" secondItem="Apk-28-syP" secondAttribute="bottom" constant="8" id="Ar2-La-Vh2"/>
+                            <constraint firstItem="9xk-YP-4OT" firstAttribute="top" secondItem="y2r-I8-042" secondAttribute="top" id="Bi1-A2-kCk"/>
                             <constraint firstAttribute="centerY" secondItem="Apk-28-syP" secondAttribute="centerY" constant="165" id="CdM-fc-n5T"/>
                             <constraint firstAttribute="centerX" secondItem="y2r-I8-042" secondAttribute="centerX" constant="111" id="D0W-ut-vOV"/>
                             <constraint firstItem="S6G-Fb-YVf" firstAttribute="top" secondItem="Apk-28-syP" secondAttribute="bottom" constant="8" symbolic="YES" id="FTV-uy-qVv"/>
                             <constraint firstItem="D2z-wl-QXX" firstAttribute="top" secondItem="y2r-I8-042" secondAttribute="bottom" constant="30" id="GJn-LM-U7y"/>
-                            <constraint firstItem="Rwt-Ot-vHE" firstAttribute="bottom" secondItem="9xk-YP-4OT" secondAttribute="bottom" id="HKH-Xu-UPl"/>
+                            <constraint firstItem="9xk-YP-4OT" firstAttribute="baseline" secondItem="y2r-I8-042" secondAttribute="baseline" id="GKx-LM-YVU"/>
                             <constraint firstItem="Apk-28-syP" firstAttribute="leading" secondItem="e5g-Jf-tIi" secondAttribute="leadingMargin" id="HRa-4R-neU"/>
-                            <constraint firstAttribute="centerX" secondItem="Rwt-Ot-vHE" secondAttribute="centerX" id="J3O-aT-4cA"/>
                             <constraint firstAttribute="centerX" secondItem="ppR-g7-ZLY" secondAttribute="centerX" id="Lqh-8h-wVC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dOe-bs-810" secondAttribute="trailing" constant="-16" id="Nl2-cN-cEk"/>
                             <constraint firstItem="Apk-28-syP" firstAttribute="top" secondItem="ppR-g7-ZLY" secondAttribute="bottom" constant="8" id="PNB-cj-E56"/>
                             <constraint firstItem="ppR-g7-ZLY" firstAttribute="top" secondItem="VG4-i2-7uA" secondAttribute="bottom" constant="20" id="RCK-fe-cLo"/>
                             <constraint firstItem="qa9-Gb-Pcd" firstAttribute="top" secondItem="VG4-i2-7uA" secondAttribute="bottom" constant="-20" id="RXn-rG-YKC"/>
+                            <constraint firstItem="9xk-YP-4OT" firstAttribute="firstBaseline" secondItem="y2r-I8-042" secondAttribute="firstBaseline" id="Srw-Ld-L6g"/>
                             <constraint firstAttribute="centerX" secondItem="S6G-Fb-YVf" secondAttribute="centerX" constant="3.5" id="ToP-I6-R8h"/>
-                            <constraint firstItem="Rwt-Ot-vHE" firstAttribute="bottom" secondItem="y2r-I8-042" secondAttribute="bottom" id="UPg-f3-UwT"/>
-                            <constraint firstItem="Rwt-Ot-vHE" firstAttribute="top" secondItem="9xk-YP-4OT" secondAttribute="top" id="VJK-Ib-2dO"/>
                             <constraint firstItem="D2z-wl-QXX" firstAttribute="top" secondItem="y2r-I8-042" secondAttribute="bottom" constant="20" id="WLR-Tw-xm1"/>
                             <constraint firstItem="Apk-28-syP" firstAttribute="top" secondItem="ppR-g7-ZLY" secondAttribute="bottom" constant="15" id="Wn7-rb-xzt"/>
                             <constraint firstItem="D2z-wl-QXX" firstAttribute="top" secondItem="qa9-Gb-Pcd" secondAttribute="bottom" id="Y7t-QF-b55"/>
@@ -322,24 +303,18 @@
                             <constraint firstItem="S6G-Fb-YVf" firstAttribute="top" secondItem="Apk-28-syP" secondAttribute="bottom" constant="-8" id="YKU-MZ-Ib0"/>
                             <constraint firstItem="dOe-bs-810" firstAttribute="top" secondItem="S6G-Fb-YVf" secondAttribute="bottom" constant="10" id="YYo-Ej-se3"/>
                             <constraint firstAttribute="centerX" secondItem="y2r-I8-042" secondAttribute="centerX" constant="111" id="Ywu-mX-Tm7"/>
-                            <constraint firstItem="Rwt-Ot-vHE" firstAttribute="top" secondItem="y2r-I8-042" secondAttribute="top" id="bjg-T6-waw"/>
                             <constraint firstItem="ppR-g7-ZLY" firstAttribute="top" secondItem="VG4-i2-7uA" secondAttribute="bottom" constant="20" id="bua-RP-NgD"/>
                             <constraint firstItem="Apk-28-syP" firstAttribute="centerX" secondItem="qa9-Gb-Pcd" secondAttribute="centerX" id="cAj-FR-IXd"/>
                             <constraint firstAttribute="centerY" secondItem="ppR-g7-ZLY" secondAttribute="centerY" constant="222.5" id="cWd-ea-GY5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qa9-Gb-Pcd" secondAttribute="trailing" constant="-16" id="eef-y5-Xvt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Apk-28-syP" secondAttribute="trailing" constant="46" id="efQ-dc-s7V"/>
-                            <constraint firstItem="Rwt-Ot-vHE" firstAttribute="bottom" secondItem="y2r-I8-042" secondAttribute="bottom" id="fYc-4w-f0i"/>
                             <constraint firstAttribute="centerX" secondItem="9xk-YP-4OT" secondAttribute="centerX" constant="-111" id="gV2-8O-2O9"/>
-                            <constraint firstItem="Rwt-Ot-vHE" firstAttribute="leading" secondItem="y2r-I8-042" secondAttribute="trailing" constant="61" id="h74-X8-lrp"/>
                             <constraint firstItem="Apk-28-syP" firstAttribute="top" secondItem="ppR-g7-ZLY" secondAttribute="bottom" id="hKY-ZB-Ksx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Apk-28-syP" secondAttribute="trailing" constant="11" id="hLO-tj-7CS"/>
                             <constraint firstAttribute="centerY" secondItem="dOe-bs-810" secondAttribute="centerY" constant="-59" id="k1h-qe-GYH"/>
-                            <constraint firstItem="Rwt-Ot-vHE" firstAttribute="bottom" secondItem="9xk-YP-4OT" secondAttribute="bottom" id="kzI-zY-h3T"/>
-                            <constraint firstItem="Rwt-Ot-vHE" firstAttribute="top" secondItem="9xk-YP-4OT" secondAttribute="top" id="mi9-Et-6v1"/>
                             <constraint firstAttribute="centerY" secondItem="dOe-bs-810" secondAttribute="centerY" constant="-67" id="nkx-JY-hDI"/>
                             <constraint firstItem="Apk-28-syP" firstAttribute="centerX" secondItem="ppR-g7-ZLY" secondAttribute="centerX" id="oNt-rc-2Sp"/>
                             <constraint firstAttribute="centerX" secondItem="Apk-28-syP" secondAttribute="centerX" id="q4l-J6-YPZ"/>
-                            <constraint firstAttribute="centerX" secondItem="Rwt-Ot-vHE" secondAttribute="centerX" id="r0Q-aV-jWm"/>
                             <constraint firstAttribute="centerY" secondItem="y2r-I8-042" secondAttribute="centerY" constant="-255" id="rxc-8Y-xNM"/>
                             <constraint firstItem="Apk-28-syP" firstAttribute="top" secondItem="ppR-g7-ZLY" secondAttribute="bottom" id="tWw-8g-NzB"/>
                             <constraint firstItem="Apk-28-syP" firstAttribute="centerX" secondItem="S6G-Fb-YVf" secondAttribute="centerX" id="tdX-ph-TaY"/>
@@ -377,25 +352,15 @@
                                 <exclude reference="Ywu-mX-Tm7"/>
                                 <exclude reference="rxc-8Y-xNM"/>
                                 <exclude reference="z17-Ir-gAw"/>
-                                <exclude reference="1oB-d3-SCn"/>
-                                <exclude reference="ARk-cr-8aq"/>
-                                <exclude reference="VJK-Ib-2dO"/>
-                                <exclude reference="bjg-T6-waw"/>
-                                <exclude reference="fYc-4w-f0i"/>
-                                <exclude reference="h74-X8-lrp"/>
-                                <exclude reference="kzI-zY-h3T"/>
-                                <exclude reference="r0Q-aV-jWm"/>
                                 <exclude reference="WLR-Tw-xm1"/>
                                 <exclude reference="0fj-Hi-Usr"/>
                                 <exclude reference="3av-eQ-SIE"/>
-                                <exclude reference="6qK-lb-r1O"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Mqn-Wf-RHa"/>
                     <connections>
                         <outlet property="cardButton" destination="9xk-YP-4OT" id="2mt-Qn-NW1"/>
-                        <outlet property="inviteButton" destination="Rwt-Ot-vHE" id="9mM-db-bxX"/>
                         <outlet property="mainBack" destination="qa9-Gb-Pcd" id="2By-DQ-6bU"/>
                         <outlet property="settingsButton" destination="y2r-I8-042" id="tAq-iZ-6mI"/>
                         <outlet property="timerLabel" destination="Apk-28-syP" id="alH-5q-d69"/>

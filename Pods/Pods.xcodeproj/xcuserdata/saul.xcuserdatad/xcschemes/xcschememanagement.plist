@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-CCTemplate.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-FXBlurView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,22 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-MaveSDK-MaveSDK.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-MaveSDK.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-ZLSwipeableView.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-libPhoneNumber-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,42 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>27183DAFC102F8E43003A720</key>
+		<key>2A46A927B19F6ED65FAAA9E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2B9C26CCC74953E7D43EE0F8</key>
+		<key>400B1B014B7BE774127A3A3E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D866099945AEB33AE2B3C01</key>
+		<key>9922C668461F094212012B43</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>68324421B0AD38ADEDFBE9D0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>781933A4BA0EA04154BB6BF0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A30B5AA44E5DC7F7270E9D40</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AFB3192CD2E4D6A1D4E43F8B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C40B150F6FBF3BA2395577EC</key>
+		<key>FD8803032780CBD92B45EF82</key>
 		<dict>
 			<key>primary</key>
 			<true/>

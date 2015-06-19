@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         self.window?.backgroundColor = UIColor.whiteColor()
-        MaveSDK.setupSharedInstanceWithApplicationID("619514555026191")
         return true
     }
 

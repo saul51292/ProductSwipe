@@ -1,24 +1,15 @@
 PODS:
-  - CCTemplate (0.2.0)
   - FXBlurView (1.6.3)
-  - libPhoneNumber-iOS (0.8.4)
-  - MaveSDK (0.6.2):
-    - CCTemplate (= 0.2.0)
-    - libPhoneNumber-iOS (~> 0.8.3)
   - MZTimerLabel (0.5.2)
   - ZLSwipeableView (0.0.7)
 
 DEPENDENCIES:
   - FXBlurView
-  - MaveSDK
   - MZTimerLabel
   - ZLSwipeableView
 
 SPEC CHECKSUMS:
-  CCTemplate: f00efa85dad31e12b8a766b8e8198eb772c71c4f
   FXBlurView: c6d23f3d35af2c6282296a2930f61c6e2c788d01
-  libPhoneNumber-iOS: dbfc7b4128510a4955df3e5a6f125393fc9ebc2f
-  MaveSDK: 00825f72969f146d8f0d62a67851b11c904d5228
   MZTimerLabel: 1bce6b93ec9f017fffad7ea7ee2bc721b53b64ee
   ZLSwipeableView: acf50179911c5f1e6150e0a279561344fbcda839
 

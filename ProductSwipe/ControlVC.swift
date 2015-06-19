@@ -12,7 +12,6 @@ class ControlVC: UIViewController {
 
     @IBOutlet weak var settingsButton: UIButton!
     @IBOutlet weak var cardButton: UIButton!
-    @IBOutlet weak var inviteButton: UIButton!
     @IBOutlet weak var mainBack: UIImageView!
     
     @IBOutlet weak var timerLabel: MZTimerLabel!
@@ -23,9 +22,8 @@ class ControlVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createViewOnBack()
-        styleManager.styleButton(cardButton,inviteButton,settingsButton)
+        styleManager.styleButton(cardButton,settingsButton)
         cardButton.setImage(UIImage(named: "Cards"), forState: .Normal)
-        inviteButton.setImage(UIImage(named: "invite"), forState: .Normal)
         settingsButton.setImage(UIImage(named: "settings"), forState: .Normal)
         // Do any additional setup after loading the view.
         
@@ -48,18 +46,6 @@ class ControlVC: UIViewController {
         view.insertSubview(newView, aboveSubview: mainBack)
         
     }
-    
-    @IBAction func inviteButtonClicked(sender: AnyObject) {
-        var userData = MAVEUserData(userID: "1", firstName: "Test", lastName: "User")
-        MaveSDK.sharedInstance().identifyUser(userData)
-        MaveSDK.sharedInstance().presentInvitePageModallyWithBlock({ (inviteController:UIViewController!) -> Void in
-            self.view.window?.rootViewController!.presentViewController(inviteController, animated: true, completion: nil)
-            }, dismissBlock: { (controller:UIViewController!, numberSent:UInt) -> Void in
-                controller.dismissViewControllerAnimated(true, completion: nil)
-            }, inviteContext: "default")
-
-    }
-
     
     // MARK: - Navigation
 

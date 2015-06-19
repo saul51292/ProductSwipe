@@ -1,1 +1,0 @@
-../../../MaveSDK/MaveSDK/Models/RemoteConfiguration/MAVERemoteConfigurationContactsSync.h

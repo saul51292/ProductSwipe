@@ -54,7 +54,7 @@ class HorizontalCVC: UICollectionViewController,UIScrollViewDelegate {
     
     func addTestData() ->[UpcomingDealCard]
     {
-        var productDict = ["Fitted Cropped Tank Top":"HM","COPE Babydoll Cami":"Urban","High-Neck Crochet Bra Top":"JCrew","Cropped Tank Top":"Forever21","Recycled Trimmed Tank Top":"Hollister","Cropped Rib Tank Top":"Mango"]
+        var productDict = ["Fitted Cropped Tank Top":"HM","COPE Babydoll Cami":"Urban","High-Neck Crochet Bra Top":"jcrew","Cropped Tank Top":"Forever21","Recycled Trimmed Tank Top":"Hollister","Cropped Rib Tank Top":"Mango"]
         var upcomingDealArray = [UpcomingDealCard]()
         
         for (key,value) in productDict{

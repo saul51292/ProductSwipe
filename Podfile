@@ -8,8 +8,6 @@ xcodeproj 'ProductSwipe'
 
 link_with 'ProductSwipe', 'ProductSwipe Tests'
 
-
-pod 'MaveSDK'
 pod 'ZLSwipeableView'
 pod 'FXBlurView'
 pod 'MZTimerLabel'

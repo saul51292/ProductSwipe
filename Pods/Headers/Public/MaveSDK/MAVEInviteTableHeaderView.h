@@ -1,1 +1,0 @@
-../../../MaveSDK/MaveSDK/Views/MAVEInviteTableHeaderView.h

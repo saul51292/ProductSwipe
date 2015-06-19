@@ -1,1 +1,0 @@
-../../../MaveSDK/MaveSDK/Models/RemoteConfiguration/MAVERemoteConfiguration.h
