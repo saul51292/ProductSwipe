@@ -7,326 +7,309 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12CE265C07ED492E6E324AA4 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07376038DDE4155AB744940E /* FXBlurView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		16D3FD53078A9A9A4D85EAEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1666EC0BFD6478264305CE /* Foundation.framework */; };
-		17F66CFD2DD278811D71F8C9 /* ZLPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B133710ECB0C0A5F09B318 /* ZLPanGestureRecognizer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		1EA9EBDA086E5DA307E0AE2C /* Pods-FXBlurView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 426AD7E82C2969A524E9DFEB /* Pods-FXBlurView-dummy.m */; };
-		25E5223B667556C438729C8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E340E49B67DE93B03506F336 /* UIKit.framework */; };
-		2776C18E1D081EC99CAF3642 /* ZLPanGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A7104E21E92EDD7361A8017E /* ZLPanGestureRecognizer.h */; };
-		48FCA6DA2AECD6889453BA7F /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 292B457435B14316DAAFA8C9 /* MZTimerLabel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		4B5A370156A5C6CC15D58C64 /* Pods-ZLSwipeableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 694E8BF3861C9EC2279FD8DD /* Pods-ZLSwipeableView-dummy.m */; };
-		6DF4B282C16E16A066B6C61B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CCB1CA842B91FD2C65A29C /* Accelerate.framework */; };
-		75F640FAD26F47BDE8F6F833 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09258686E7429FF6398C1533 /* Pods-dummy.m */; };
-		82F26344A555032EEEE1CD17 /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8F3341F63D5D8CD457CA69 /* FXBlurView.h */; };
-		9C3CAFA810698CB41BA7DBF2 /* Pods-MZTimerLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C16A3221FD4E6830BFF9447 /* Pods-MZTimerLabel-dummy.m */; };
-		9E68B8B38CDD563E98AC4E17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1666EC0BFD6478264305CE /* Foundation.framework */; };
-		A4F32D656040B0D51DBCD621 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C4C4D97C59AEBB3B8F071D /* QuartzCore.framework */; };
-		A94D0C65C15BA01A57DFD436 /* ZLSwipeableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89237D32A2B030332B68095A /* ZLSwipeableView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		AA29D7C3E056611379D30A13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1666EC0BFD6478264305CE /* Foundation.framework */; };
-		C3AC418BD3BB31948B4BD3C3 /* MZTimerLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 12101742ABBB87F2F20B0A13 /* MZTimerLabel.h */; };
-		F50479A8272D18D6243BF75A /* ZLSwipeableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 54809FBE2E8E34754C881E1F /* ZLSwipeableView.h */; };
-		FBF166AA98F47CC630762705 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1666EC0BFD6478264305CE /* Foundation.framework */; };
+		0208D18B0FA64F1A9046418B /* ZLPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE77B65407265743ABC297B /* ZLPanGestureRecognizer.m */; };
+		0E3761A00FA28C2B0022682F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B2B4F3474F2D375CEB6F39 /* Foundation.framework */; };
+		1941F31D4AE748AFD3D413BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B2B4F3474F2D375CEB6F39 /* Foundation.framework */; };
+		1D1913A84A61A81B91CBD8A2 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2E8A2772DF6BEA87267AB0 /* FXBlurView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1D5B343F282640E202D8CB97 /* Pods-MZTimerLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB04D05C1AC84641C87DE8C /* Pods-MZTimerLabel-dummy.m */; };
+		23FD4B0B7ED25B5A7AB93903 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A167635781883F56C41C434 /* Accelerate.framework */; };
+		29D0B0DE9CBA63BF64C9E732 /* MZTimerLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B20CA896096762FC8C74F9 /* MZTimerLabel.h */; };
+		304B8811D42FD7B9099BADC5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26276F19953BE6E1FEB8CE0E /* QuartzCore.framework */; };
+		39B45CE840982256FF3AAA40 /* Pods-ZLSwipeableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFDDD683ACE021E43745C0F /* Pods-ZLSwipeableView-dummy.m */; };
+		5BBDE3087A7AF0A71B8678A6 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7552E9EDAFFB894CC3CAB3 /* MZTimerLabel.m */; };
+		60EDC038E5366D50043145E0 /* ZLPanGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8C2AF9BDE221100C3EC77F /* ZLPanGestureRecognizer.h */; };
+		76843667C0C33D77160A41DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B2B4F3474F2D375CEB6F39 /* Foundation.framework */; };
+		955A098785935E42C3B1A51E /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 418BB9B469815C436311E933 /* Pods-dummy.m */; };
+		A2EBC0114F2AD40C07584FD5 /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 871965FCDFC3D7CFCC02B5CB /* FXBlurView.h */; };
+		A981ADF58089BBA1362D79E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF6CFA0753BED3623CCD44C /* UIKit.framework */; };
+		BC1F82F6A81D89C302403160 /* ZLSwipeableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A03E49917C848FE94850D7 /* ZLSwipeableView.m */; };
+		C539705EBD780479F1EAE479 /* Pods-FXBlurView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D87F056878E0BCFBB01044B1 /* Pods-FXBlurView-dummy.m */; };
+		DEAB8756DBF10967DD77ABE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B2B4F3474F2D375CEB6F39 /* Foundation.framework */; };
+		E3115D536BB3B7DD65A4A126 /* ZLSwipeableView.h in Headers */ = {isa = PBXBuildFile; fileRef = A881131F98DDF5BF280DB22E /* ZLSwipeableView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A989ED4610023F1761080B9 /* PBXContainerItemProxy */ = {
+		319B111DC8FA49D4ADBEB779 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6272E05D227AA2D35559D6BA /* Project object */;
+			containerPortal = 193CBDC73B18366120734791 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 400B1B014B7BE774127A3A3E;
-			remoteInfo = "Pods-FXBlurView";
-		};
-		82B4D30A53A5B28CB1C33C0B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6272E05D227AA2D35559D6BA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2A46A927B19F6ED65FAAA9E0;
+			remoteGlobalIDString = 586B719C6D419938517E1885;
 			remoteInfo = "Pods-ZLSwipeableView";
 		};
-		DFE51EE2984B1870CDAB271B /* PBXContainerItemProxy */ = {
+		5D20466E1827950116921E24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6272E05D227AA2D35559D6BA /* Project object */;
+			containerPortal = 193CBDC73B18366120734791 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9922C668461F094212012B43;
+			remoteGlobalIDString = 9FB076024701BEC7D2728114;
 			remoteInfo = "Pods-MZTimerLabel";
+		};
+		DBB1F62F900CF67DE809EE22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 193CBDC73B18366120734791 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A7BB21D0E3CAC19321CBB26;
+			remoteInfo = "Pods-FXBlurView";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03DD657D60133A3CC1EA3FBE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		04B133710ECB0C0A5F09B318 /* ZLPanGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZLPanGestureRecognizer.m; path = ZLSwipeableView/ZLPanGestureRecognizer.m; sourceTree = "<group>"; };
-		07376038DDE4155AB744940E /* FXBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXBlurView.m; path = FXBlurView/FXBlurView.m; sourceTree = "<group>"; };
-		09258686E7429FF6398C1533 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		0DFB618BB4F1E37CA49E3BC4 /* Pods-MZTimerLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MZTimerLabel-prefix.pch"; sourceTree = "<group>"; };
-		101A71F7B9AFE3B162FEED52 /* libPods-FXBlurView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FXBlurView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		12101742ABBB87F2F20B0A13 /* MZTimerLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZTimerLabel.h; path = MZTimerLabel/MZTimerLabel.h; sourceTree = "<group>"; };
-		1C291EC2F22FA3C72DCA726F /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1D1666EC0BFD6478264305CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		20027D5C1D5E1E6B80261D31 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		2662C17914019504702D70DB /* Pods-MZTimerLabel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MZTimerLabel-Private.xcconfig"; sourceTree = "<group>"; };
-		292B457435B14316DAAFA8C9 /* MZTimerLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZTimerLabel.m; path = MZTimerLabel/MZTimerLabel.m; sourceTree = "<group>"; };
-		3E1B19B4ACDAA86FAC5963CC /* libPods-ZLSwipeableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZLSwipeableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		409B8D4A302A1AF1F5414527 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		426AD7E82C2969A524E9DFEB /* Pods-FXBlurView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FXBlurView-dummy.m"; sourceTree = "<group>"; };
-		44115346FF514D6DC3AAFF01 /* libPods-MZTimerLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MZTimerLabel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5393A57F0410D90268CBB3C2 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		54809FBE2E8E34754C881E1F /* ZLSwipeableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZLSwipeableView.h; path = ZLSwipeableView/ZLSwipeableView.h; sourceTree = "<group>"; };
-		56E73C6B22B9B2E59D1BB89B /* Pods-ZLSwipeableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZLSwipeableView.xcconfig"; sourceTree = "<group>"; };
-		5E0153B93958FB67284276BB /* Pods-FXBlurView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FXBlurView.xcconfig"; sourceTree = "<group>"; };
-		694E8BF3861C9EC2279FD8DD /* Pods-ZLSwipeableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZLSwipeableView-dummy.m"; sourceTree = "<group>"; };
-		6BD0EB50B996A52A0F9ABDCA /* Pods-FXBlurView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FXBlurView-prefix.pch"; sourceTree = "<group>"; };
-		6C16A3221FD4E6830BFF9447 /* Pods-MZTimerLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MZTimerLabel-dummy.m"; sourceTree = "<group>"; };
-		7BCD5B50BB2DEBD58A761B14 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		7FA5FBF5F98AAB2870447AF6 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		89237D32A2B030332B68095A /* ZLSwipeableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZLSwipeableView.m; path = ZLSwipeableView/ZLSwipeableView.m; sourceTree = "<group>"; };
-		95530B4CB98CB1BA3F4126D1 /* Pods-ZLSwipeableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZLSwipeableView-prefix.pch"; sourceTree = "<group>"; };
-		98A609E993CA8740769235E2 /* Pods-ZLSwipeableView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZLSwipeableView-Private.xcconfig"; sourceTree = "<group>"; };
-		9A8F3341F63D5D8CD457CA69 /* FXBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXBlurView.h; path = FXBlurView/FXBlurView.h; sourceTree = "<group>"; };
-		A7104E21E92EDD7361A8017E /* ZLPanGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZLPanGestureRecognizer.h; path = ZLSwipeableView/ZLPanGestureRecognizer.h; sourceTree = "<group>"; };
-		A772FA2191683A98C103266E /* Pods-MZTimerLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MZTimerLabel.xcconfig"; sourceTree = "<group>"; };
-		B9C4C4D97C59AEBB3B8F071D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		BED712AD5F3040367DE0ED91 /* Pods-FXBlurView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FXBlurView-Private.xcconfig"; sourceTree = "<group>"; };
-		DA715D929DF3B6BB97DD8B5A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E340E49B67DE93B03506F336 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F0CCB1CA842B91FD2C65A29C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		04B20CA896096762FC8C74F9 /* MZTimerLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZTimerLabel.h; path = MZTimerLabel/MZTimerLabel.h; sourceTree = "<group>"; };
+		05A68F93C086FC88DF2D4FA7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		13AA1AF8C43C0916571BEE11 /* Pods-MZTimerLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MZTimerLabel.xcconfig"; sourceTree = "<group>"; };
+		26276F19953BE6E1FEB8CE0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		3FD68819515887105860461D /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		418BB9B469815C436311E933 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		4A167635781883F56C41C434 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		4B9B5B59D42BE1F69E81E38B /* Pods-MZTimerLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MZTimerLabel-prefix.pch"; sourceTree = "<group>"; };
+		4D195F68ED15D04F8BD25CE8 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		4DFDDD683ACE021E43745C0F /* Pods-ZLSwipeableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZLSwipeableView-dummy.m"; sourceTree = "<group>"; };
+		56A03E49917C848FE94850D7 /* ZLSwipeableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZLSwipeableView.m; path = ZLSwipeableView/ZLSwipeableView.m; sourceTree = "<group>"; };
+		5E7552E9EDAFFB894CC3CAB3 /* MZTimerLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZTimerLabel.m; path = MZTimerLabel/MZTimerLabel.m; sourceTree = "<group>"; };
+		78F88C6584B583C47217DED6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		79F91F541F52AD9AD3707325 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		836FD47E72843D5CBC58A9DF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		855DFF713F548E58F43E5804 /* Pods-FXBlurView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FXBlurView-Private.xcconfig"; sourceTree = "<group>"; };
+		871965FCDFC3D7CFCC02B5CB /* FXBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXBlurView.h; path = FXBlurView/FXBlurView.h; sourceTree = "<group>"; };
+		8D8EEEB5734B517C494C8B83 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		943ACCF91BFFC5CFDBC143ED /* libPods-ZLSwipeableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZLSwipeableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D204807DC6735906BB6EA5 /* Pods-ZLSwipeableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZLSwipeableView-prefix.pch"; sourceTree = "<group>"; };
+		A475FDC4BB5233590FFC1FB5 /* Pods-ZLSwipeableView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZLSwipeableView-Private.xcconfig"; sourceTree = "<group>"; };
+		A881131F98DDF5BF280DB22E /* ZLSwipeableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZLSwipeableView.h; path = ZLSwipeableView/ZLSwipeableView.h; sourceTree = "<group>"; };
+		ACB6FDC7862B22EB09C58E5B /* libPods-FXBlurView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FXBlurView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF8C2AF9BDE221100C3EC77F /* ZLPanGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZLPanGestureRecognizer.h; path = ZLSwipeableView/ZLPanGestureRecognizer.h; sourceTree = "<group>"; };
+		B0769A6203C9D3D3BD84FFBD /* Pods-FXBlurView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FXBlurView.xcconfig"; sourceTree = "<group>"; };
+		BD2E8A2772DF6BEA87267AB0 /* FXBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXBlurView.m; path = FXBlurView/FXBlurView.m; sourceTree = "<group>"; };
+		BD5D061DAC731CBF84C77D64 /* Pods-FXBlurView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FXBlurView-prefix.pch"; sourceTree = "<group>"; };
+		BDE77B65407265743ABC297B /* ZLPanGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZLPanGestureRecognizer.m; path = ZLSwipeableView/ZLPanGestureRecognizer.m; sourceTree = "<group>"; };
+		D7B2B4F3474F2D375CEB6F39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D87F056878E0BCFBB01044B1 /* Pods-FXBlurView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FXBlurView-dummy.m"; sourceTree = "<group>"; };
+		DA0B05DA996BF4D261107ABB /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		DEF6CFA0753BED3623CCD44C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EEB04D05C1AC84641C87DE8C /* Pods-MZTimerLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MZTimerLabel-dummy.m"; sourceTree = "<group>"; };
+		FD52D53FCF040CEA10DB081A /* libPods-MZTimerLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MZTimerLabel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDAB20A969128C563012C683 /* Pods-ZLSwipeableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZLSwipeableView.xcconfig"; sourceTree = "<group>"; };
+		FFDB797E4BFB5FB8C4399D26 /* Pods-MZTimerLabel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MZTimerLabel-Private.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6DA9C02542B4A469787BFCCB /* Frameworks */ = {
+		1229BED6595E5049BF8CE009 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DF4B282C16E16A066B6C61B /* Accelerate.framework in Frameworks */,
-				16D3FD53078A9A9A4D85EAEF /* Foundation.framework in Frameworks */,
-				A4F32D656040B0D51DBCD621 /* QuartzCore.framework in Frameworks */,
+				23FD4B0B7ED25B5A7AB93903 /* Accelerate.framework in Frameworks */,
+				0E3761A00FA28C2B0022682F /* Foundation.framework in Frameworks */,
+				304B8811D42FD7B9099BADC5 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C96F3C79193FD768512A3DB /* Frameworks */ = {
+		3EFE19E7C9E1AF66312B451F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA29D7C3E056611379D30A13 /* Foundation.framework in Frameworks */,
+				76843667C0C33D77160A41DE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BDA30891D5B06F2071A2DC43 /* Frameworks */ = {
+		F421D863D07773F8F8FE705E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E68B8B38CDD563E98AC4E17 /* Foundation.framework in Frameworks */,
-				25E5223B667556C438729C8C /* UIKit.framework in Frameworks */,
+				DEAB8756DBF10967DD77ABE4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA4C976BC53A4A5B338B3976 /* Frameworks */ = {
+		FAC7D9DAE223CC7F9A6945DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBF166AA98F47CC630762705 /* Foundation.framework in Frameworks */,
+				1941F31D4AE748AFD3D413BB /* Foundation.framework in Frameworks */,
+				A981ADF58089BBA1362D79E5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06A3868944C8B266F68153AF /* Products */ = {
+		18D666C8C036DA0F47901559 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DA715D929DF3B6BB97DD8B5A /* libPods.a */,
-				101A71F7B9AFE3B162FEED52 /* libPods-FXBlurView.a */,
-				44115346FF514D6DC3AAFF01 /* libPods-MZTimerLabel.a */,
-				3E1B19B4ACDAA86FAC5963CC /* libPods-ZLSwipeableView.a */,
+				A9F473A84D11D12B86FFA33D /* FXBlurView */,
+				7B2B864F361E941D3FC8BD0B /* MZTimerLabel */,
+				9AC2EF70CEC863290A0EBD27 /* ZLSwipeableView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		22AAE2BB774BE659E11E2E26 = {
+			isa = PBXGroup;
+			children = (
+				05A68F93C086FC88DF2D4FA7 /* Podfile */,
+				53EF5162A9EAD622C704804B /* Frameworks */,
+				18D666C8C036DA0F47901559 /* Pods */,
+				24E8685DE2F11247AF52924D /* Products */,
+				F6F43A29D495B991BC0D028E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		24E8685DE2F11247AF52924D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D8EEEB5734B517C494C8B83 /* libPods.a */,
+				ACB6FDC7862B22EB09C58E5B /* libPods-FXBlurView.a */,
+				FD52D53FCF040CEA10DB081A /* libPods-MZTimerLabel.a */,
+				943ACCF91BFFC5CFDBC143ED /* libPods-ZLSwipeableView.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		06B0F986A6906AD8301E34D0 /* Support Files */ = {
+		53EF5162A9EAD622C704804B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A772FA2191683A98C103266E /* Pods-MZTimerLabel.xcconfig */,
-				2662C17914019504702D70DB /* Pods-MZTimerLabel-Private.xcconfig */,
-				6C16A3221FD4E6830BFF9447 /* Pods-MZTimerLabel-dummy.m */,
-				0DFB618BB4F1E37CA49E3BC4 /* Pods-MZTimerLabel-prefix.pch */,
+				6107D7EAB420A91529EA61C3 /* iOS */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-MZTimerLabel";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		17B79920DCDF60844FB78521 /* iOS */ = {
+		6107D7EAB420A91529EA61C3 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F0CCB1CA842B91FD2C65A29C /* Accelerate.framework */,
-				1D1666EC0BFD6478264305CE /* Foundation.framework */,
-				B9C4C4D97C59AEBB3B8F071D /* QuartzCore.framework */,
-				E340E49B67DE93B03506F336 /* UIKit.framework */,
+				4A167635781883F56C41C434 /* Accelerate.framework */,
+				D7B2B4F3474F2D375CEB6F39 /* Foundation.framework */,
+				26276F19953BE6E1FEB8CE0E /* QuartzCore.framework */,
+				DEF6CFA0753BED3623CCD44C /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		18328DD9F1C09B99E6B2AAF6 = {
+		7264A40B9495A478640138D3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5393A57F0410D90268CBB3C2 /* Podfile */,
-				E00A711FE7752C74961AEDF1 /* Frameworks */,
-				9A04811989A2C6B137B1B0CB /* Pods */,
-				06A3868944C8B266F68153AF /* Products */,
-				78B3030D600E195AE7649BAC /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		1EFCC6C917047D7F0D8196CC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1C291EC2F22FA3C72DCA726F /* Pods-acknowledgements.markdown */,
-				409B8D4A302A1AF1F5414527 /* Pods-acknowledgements.plist */,
-				09258686E7429FF6398C1533 /* Pods-dummy.m */,
-				7BCD5B50BB2DEBD58A761B14 /* Pods-environment.h */,
-				7FA5FBF5F98AAB2870447AF6 /* Pods-resources.sh */,
-				20027D5C1D5E1E6B80261D31 /* Pods.debug.xcconfig */,
-				03DD657D60133A3CC1EA3FBE /* Pods.release.xcconfig */,
+				79F91F541F52AD9AD3707325 /* Pods-acknowledgements.markdown */,
+				4D195F68ED15D04F8BD25CE8 /* Pods-acknowledgements.plist */,
+				418BB9B469815C436311E933 /* Pods-dummy.m */,
+				DA0B05DA996BF4D261107ABB /* Pods-environment.h */,
+				3FD68819515887105860461D /* Pods-resources.sh */,
+				836FD47E72843D5CBC58A9DF /* Pods.debug.xcconfig */,
+				78F88C6584B583C47217DED6 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		51E982241ED8DFC6E7CAC96B /* Support Files */ = {
+		7B2B864F361E941D3FC8BD0B /* MZTimerLabel */ = {
 			isa = PBXGroup;
 			children = (
-				5E0153B93958FB67284276BB /* Pods-FXBlurView.xcconfig */,
-				BED712AD5F3040367DE0ED91 /* Pods-FXBlurView-Private.xcconfig */,
-				426AD7E82C2969A524E9DFEB /* Pods-FXBlurView-dummy.m */,
-				6BD0EB50B996A52A0F9ABDCA /* Pods-FXBlurView-prefix.pch */,
+				04B20CA896096762FC8C74F9 /* MZTimerLabel.h */,
+				5E7552E9EDAFFB894CC3CAB3 /* MZTimerLabel.m */,
+				C6A60C455444D7D083E24C3C /* Support Files */,
+			);
+			path = MZTimerLabel;
+			sourceTree = "<group>";
+		};
+		8BDADE1754E3EF051F250BA3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0769A6203C9D3D3BD84FFBD /* Pods-FXBlurView.xcconfig */,
+				855DFF713F548E58F43E5804 /* Pods-FXBlurView-Private.xcconfig */,
+				D87F056878E0BCFBB01044B1 /* Pods-FXBlurView-dummy.m */,
+				BD5D061DAC731CBF84C77D64 /* Pods-FXBlurView-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-FXBlurView";
 			sourceTree = "<group>";
 		};
-		5E27ADD33FB581E3372EB18B /* Support Files */ = {
+		9AC2EF70CEC863290A0EBD27 /* ZLSwipeableView */ = {
 			isa = PBXGroup;
 			children = (
-				56E73C6B22B9B2E59D1BB89B /* Pods-ZLSwipeableView.xcconfig */,
-				98A609E993CA8740769235E2 /* Pods-ZLSwipeableView-Private.xcconfig */,
-				694E8BF3861C9EC2279FD8DD /* Pods-ZLSwipeableView-dummy.m */,
-				95530B4CB98CB1BA3F4126D1 /* Pods-ZLSwipeableView-prefix.pch */,
+				AF8C2AF9BDE221100C3EC77F /* ZLPanGestureRecognizer.h */,
+				BDE77B65407265743ABC297B /* ZLPanGestureRecognizer.m */,
+				A881131F98DDF5BF280DB22E /* ZLSwipeableView.h */,
+				56A03E49917C848FE94850D7 /* ZLSwipeableView.m */,
+				BEAEE4B8D2AC82A87F826958 /* Support Files */,
+			);
+			path = ZLSwipeableView;
+			sourceTree = "<group>";
+		};
+		A9F473A84D11D12B86FFA33D /* FXBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				871965FCDFC3D7CFCC02B5CB /* FXBlurView.h */,
+				BD2E8A2772DF6BEA87267AB0 /* FXBlurView.m */,
+				8BDADE1754E3EF051F250BA3 /* Support Files */,
+			);
+			path = FXBlurView;
+			sourceTree = "<group>";
+		};
+		BEAEE4B8D2AC82A87F826958 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDAB20A969128C563012C683 /* Pods-ZLSwipeableView.xcconfig */,
+				A475FDC4BB5233590FFC1FB5 /* Pods-ZLSwipeableView-Private.xcconfig */,
+				4DFDDD683ACE021E43745C0F /* Pods-ZLSwipeableView-dummy.m */,
+				94D204807DC6735906BB6EA5 /* Pods-ZLSwipeableView-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-ZLSwipeableView";
 			sourceTree = "<group>";
 		};
-		78B3030D600E195AE7649BAC /* Targets Support Files */ = {
+		C6A60C455444D7D083E24C3C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1EFCC6C917047D7F0D8196CC /* Pods */,
+				13AA1AF8C43C0916571BEE11 /* Pods-MZTimerLabel.xcconfig */,
+				FFDB797E4BFB5FB8C4399D26 /* Pods-MZTimerLabel-Private.xcconfig */,
+				EEB04D05C1AC84641C87DE8C /* Pods-MZTimerLabel-dummy.m */,
+				4B9B5B59D42BE1F69E81E38B /* Pods-MZTimerLabel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-MZTimerLabel";
+			sourceTree = "<group>";
+		};
+		F6F43A29D495B991BC0D028E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7264A40B9495A478640138D3 /* Pods */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		8F973D311F9568740E927479 /* ZLSwipeableView */ = {
-			isa = PBXGroup;
-			children = (
-				A7104E21E92EDD7361A8017E /* ZLPanGestureRecognizer.h */,
-				04B133710ECB0C0A5F09B318 /* ZLPanGestureRecognizer.m */,
-				54809FBE2E8E34754C881E1F /* ZLSwipeableView.h */,
-				89237D32A2B030332B68095A /* ZLSwipeableView.m */,
-				5E27ADD33FB581E3372EB18B /* Support Files */,
-			);
-			path = ZLSwipeableView;
-			sourceTree = "<group>";
-		};
-		938EC0496BF83A702D6C8691 /* MZTimerLabel */ = {
-			isa = PBXGroup;
-			children = (
-				12101742ABBB87F2F20B0A13 /* MZTimerLabel.h */,
-				292B457435B14316DAAFA8C9 /* MZTimerLabel.m */,
-				06B0F986A6906AD8301E34D0 /* Support Files */,
-			);
-			path = MZTimerLabel;
-			sourceTree = "<group>";
-		};
-		9A04811989A2C6B137B1B0CB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B305AD4D0CA690EBC8DDF310 /* FXBlurView */,
-				938EC0496BF83A702D6C8691 /* MZTimerLabel */,
-				8F973D311F9568740E927479 /* ZLSwipeableView */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B305AD4D0CA690EBC8DDF310 /* FXBlurView */ = {
-			isa = PBXGroup;
-			children = (
-				9A8F3341F63D5D8CD457CA69 /* FXBlurView.h */,
-				07376038DDE4155AB744940E /* FXBlurView.m */,
-				51E982241ED8DFC6E7CAC96B /* Support Files */,
-			);
-			path = FXBlurView;
-			sourceTree = "<group>";
-		};
-		E00A711FE7752C74961AEDF1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				17B79920DCDF60844FB78521 /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5CA501311C73BEAA8C46829B /* Headers */ = {
+		3A50BE0E56B1CAC53A2225C3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3AC418BD3BB31948B4BD3C3 /* MZTimerLabel.h in Headers */,
+				29D0B0DE9CBA63BF64C9E732 /* MZTimerLabel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E262B9D051639955B94CCBFC /* Headers */ = {
+		728D0D474457EFE367D18638 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2776C18E1D081EC99CAF3642 /* ZLPanGestureRecognizer.h in Headers */,
-				F50479A8272D18D6243BF75A /* ZLSwipeableView.h in Headers */,
+				A2EBC0114F2AD40C07584FD5 /* FXBlurView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F280A3D587735768D796F29F /* Headers */ = {
+		C616A480513A384D66735260 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82F26344A555032EEEE1CD17 /* FXBlurView.h in Headers */,
+				60EDC038E5366D50043145E0 /* ZLPanGestureRecognizer.h in Headers */,
+				E3115D536BB3B7DD65A4A126 /* ZLSwipeableView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2A46A927B19F6ED65FAAA9E0 /* Pods-ZLSwipeableView */ = {
+		0A7BB21D0E3CAC19321CBB26 /* Pods-FXBlurView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6D6F1B5E2237D62F1C264F57 /* Build configuration list for PBXNativeTarget "Pods-ZLSwipeableView" */;
+			buildConfigurationList = 97F9759E7BA545341C54D950 /* Build configuration list for PBXNativeTarget "Pods-FXBlurView" */;
 			buildPhases = (
-				30608CE60F6BED4C530AA8C7 /* Sources */,
-				BDA30891D5B06F2071A2DC43 /* Frameworks */,
-				E262B9D051639955B94CCBFC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-ZLSwipeableView";
-			productName = "Pods-ZLSwipeableView";
-			productReference = 3E1B19B4ACDAA86FAC5963CC /* libPods-ZLSwipeableView.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		400B1B014B7BE774127A3A3E /* Pods-FXBlurView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AF7DC67CFABAFB3A2620D862 /* Build configuration list for PBXNativeTarget "Pods-FXBlurView" */;
-			buildPhases = (
-				57E150AE140FBF062DF21E13 /* Sources */,
-				6DA9C02542B4A469787BFCCB /* Frameworks */,
-				F280A3D587735768D796F29F /* Headers */,
+				3C1FF25C73E88F3A1CC8C324 /* Sources */,
+				1229BED6595E5049BF8CE009 /* Frameworks */,
+				728D0D474457EFE367D18638 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -334,16 +317,52 @@
 			);
 			name = "Pods-FXBlurView";
 			productName = "Pods-FXBlurView";
-			productReference = 101A71F7B9AFE3B162FEED52 /* libPods-FXBlurView.a */;
+			productReference = ACB6FDC7862B22EB09C58E5B /* libPods-FXBlurView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		9922C668461F094212012B43 /* Pods-MZTimerLabel */ = {
+		586B719C6D419938517E1885 /* Pods-ZLSwipeableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D63926672EE913743550114 /* Build configuration list for PBXNativeTarget "Pods-MZTimerLabel" */;
+			buildConfigurationList = 41864009F4EC99D68412A73F /* Build configuration list for PBXNativeTarget "Pods-ZLSwipeableView" */;
 			buildPhases = (
-				D14FE672CD1978AB8D7DDC62 /* Sources */,
-				8C96F3C79193FD768512A3DB /* Frameworks */,
-				5CA501311C73BEAA8C46829B /* Headers */,
+				E20DF7CF3EFE31D0649D2E1C /* Sources */,
+				FAC7D9DAE223CC7F9A6945DA /* Frameworks */,
+				C616A480513A384D66735260 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ZLSwipeableView";
+			productName = "Pods-ZLSwipeableView";
+			productReference = 943ACCF91BFFC5CFDBC143ED /* libPods-ZLSwipeableView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		80DD1D7FF08B7FF89D9F71FC /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 295DB665FC79236993FAE3EA /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				F0854F083395B484037523BB /* Sources */,
+				3EFE19E7C9E1AF66312B451F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C031850CFE95E7ACE9FFED8 /* PBXTargetDependency */,
+				CC977F8FE51D1BB639D41A79 /* PBXTargetDependency */,
+				2907B4269355D3B5DBC3216D /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 8D8EEEB5734B517C494C8B83 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9FB076024701BEC7D2728114 /* Pods-MZTimerLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CFC8E97669E73D5351656F9 /* Build configuration list for PBXNativeTarget "Pods-MZTimerLabel" */;
+			buildPhases = (
+				4CCBDD90143068378D3205F9 /* Sources */,
+				F421D863D07773F8F8FE705E /* Frameworks */,
+				3A50BE0E56B1CAC53A2225C3 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -351,118 +370,261 @@
 			);
 			name = "Pods-MZTimerLabel";
 			productName = "Pods-MZTimerLabel";
-			productReference = 44115346FF514D6DC3AAFF01 /* libPods-MZTimerLabel.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		FD8803032780CBD92B45EF82 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6940B0CD9D8E3E26ED22AAC5 /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				76F7BC1ECD227BCC0F80EBF0 /* Sources */,
-				CA4C976BC53A4A5B338B3976 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				033FB06E73E1B9BB51461AD4 /* PBXTargetDependency */,
-				1FEBE552D4C9F0329C3D3857 /* PBXTargetDependency */,
-				7A2FB5E835CC70592189F885 /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = DA715D929DF3B6BB97DD8B5A /* libPods.a */;
+			productReference = FD52D53FCF040CEA10DB081A /* libPods-MZTimerLabel.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6272E05D227AA2D35559D6BA /* Project object */ = {
+		193CBDC73B18366120734791 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 31356F53BF9AFC1BF8812BF4 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 453EB2B03E685D1DCAC5C66D /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 18328DD9F1C09B99E6B2AAF6;
-			productRefGroup = 06A3868944C8B266F68153AF /* Products */;
+			mainGroup = 22AAE2BB774BE659E11E2E26;
+			productRefGroup = 24E8685DE2F11247AF52924D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FD8803032780CBD92B45EF82 /* Pods */,
-				400B1B014B7BE774127A3A3E /* Pods-FXBlurView */,
-				9922C668461F094212012B43 /* Pods-MZTimerLabel */,
-				2A46A927B19F6ED65FAAA9E0 /* Pods-ZLSwipeableView */,
+				80DD1D7FF08B7FF89D9F71FC /* Pods */,
+				0A7BB21D0E3CAC19321CBB26 /* Pods-FXBlurView */,
+				9FB076024701BEC7D2728114 /* Pods-MZTimerLabel */,
+				586B719C6D419938517E1885 /* Pods-ZLSwipeableView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		30608CE60F6BED4C530AA8C7 /* Sources */ = {
+		3C1FF25C73E88F3A1CC8C324 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5A370156A5C6CC15D58C64 /* Pods-ZLSwipeableView-dummy.m in Sources */,
-				17F66CFD2DD278811D71F8C9 /* ZLPanGestureRecognizer.m in Sources */,
-				A94D0C65C15BA01A57DFD436 /* ZLSwipeableView.m in Sources */,
+				1D1913A84A61A81B91CBD8A2 /* FXBlurView.m in Sources */,
+				C539705EBD780479F1EAE479 /* Pods-FXBlurView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57E150AE140FBF062DF21E13 /* Sources */ = {
+		4CCBDD90143068378D3205F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12CE265C07ED492E6E324AA4 /* FXBlurView.m in Sources */,
-				1EA9EBDA086E5DA307E0AE2C /* Pods-FXBlurView-dummy.m in Sources */,
+				5BBDE3087A7AF0A71B8678A6 /* MZTimerLabel.m in Sources */,
+				1D5B343F282640E202D8CB97 /* Pods-MZTimerLabel-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76F7BC1ECD227BCC0F80EBF0 /* Sources */ = {
+		E20DF7CF3EFE31D0649D2E1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75F640FAD26F47BDE8F6F833 /* Pods-dummy.m in Sources */,
+				39B45CE840982256FF3AAA40 /* Pods-ZLSwipeableView-dummy.m in Sources */,
+				0208D18B0FA64F1A9046418B /* ZLPanGestureRecognizer.m in Sources */,
+				BC1F82F6A81D89C302403160 /* ZLSwipeableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D14FE672CD1978AB8D7DDC62 /* Sources */ = {
+		F0854F083395B484037523BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48FCA6DA2AECD6889453BA7F /* MZTimerLabel.m in Sources */,
-				9C3CAFA810698CB41BA7DBF2 /* Pods-MZTimerLabel-dummy.m in Sources */,
+				955A098785935E42C3B1A51E /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		033FB06E73E1B9BB51461AD4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-FXBlurView";
-			target = 400B1B014B7BE774127A3A3E /* Pods-FXBlurView */;
-			targetProxy = 0A989ED4610023F1761080B9 /* PBXContainerItemProxy */;
-		};
-		1FEBE552D4C9F0329C3D3857 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-MZTimerLabel";
-			target = 9922C668461F094212012B43 /* Pods-MZTimerLabel */;
-			targetProxy = DFE51EE2984B1870CDAB271B /* PBXContainerItemProxy */;
-		};
-		7A2FB5E835CC70592189F885 /* PBXTargetDependency */ = {
+		2907B4269355D3B5DBC3216D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ZLSwipeableView";
-			target = 2A46A927B19F6ED65FAAA9E0 /* Pods-ZLSwipeableView */;
-			targetProxy = 82B4D30A53A5B28CB1C33C0B /* PBXContainerItemProxy */;
+			target = 586B719C6D419938517E1885 /* Pods-ZLSwipeableView */;
+			targetProxy = 319B111DC8FA49D4ADBEB779 /* PBXContainerItemProxy */;
+		};
+		6C031850CFE95E7ACE9FFED8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FXBlurView";
+			target = 0A7BB21D0E3CAC19321CBB26 /* Pods-FXBlurView */;
+			targetProxy = DBB1F62F900CF67DE809EE22 /* PBXContainerItemProxy */;
+		};
+		CC977F8FE51D1BB639D41A79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MZTimerLabel";
+			target = 9FB076024701BEC7D2728114 /* Pods-MZTimerLabel */;
+			targetProxy = 5D20466E1827950116921E24 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		34D8B5B6AA543FC60B6880D9 /* Debug */ = {
+		296BB2E4488ECD35278C865A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A475FDC4BB5233590FFC1FB5 /* Pods-ZLSwipeableView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZLSwipeableView/Pods-ZLSwipeableView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6855167FC38C2F896B76F571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836FD47E72843D5CBC58A9DF /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		697CF3269CD8D05480D463EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78F88C6584B583C47217DED6 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9F0F3E72FFE4DF5A4BD3F0BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 855DFF713F548E58F43E5804 /* Pods-FXBlurView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-FXBlurView/Pods-FXBlurView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BD15686C73AB84CEBA23602E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 855DFF713F548E58F43E5804 /* Pods-FXBlurView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-FXBlurView/Pods-FXBlurView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C29BF9660E708237CECBDCDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A475FDC4BB5233590FFC1FB5 /* Pods-ZLSwipeableView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZLSwipeableView/Pods-ZLSwipeableView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D5B863DFD5B85AC2177F2013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFDB797E4BFB5FB8C4399D26 /* Pods-MZTimerLabel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MZTimerLabel/Pods-MZTimerLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E836809DB009AE6D80DDF9A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC5CD4D44C72EB60A43C0921 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFDB797E4BFB5FB8C4399D26 /* Pods-MZTimerLabel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MZTimerLabel/Pods-MZTimerLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F045F169C0834926D48C5EB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -501,217 +663,55 @@
 			};
 			name = Debug;
 		};
-		3B94A48AF31C44BF4382B405 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98A609E993CA8740769235E2 /* Pods-ZLSwipeableView-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZLSwipeableView/Pods-ZLSwipeableView-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		6270DB556560037282B258F0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03DD657D60133A3CC1EA3FBE /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		7C0FA213AC500674726C0BFE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		82D12690275C003B3CD84FD2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2662C17914019504702D70DB /* Pods-MZTimerLabel-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MZTimerLabel/Pods-MZTimerLabel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		9524D440A85B55EE7EE8144C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98A609E993CA8740769235E2 /* Pods-ZLSwipeableView-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZLSwipeableView/Pods-ZLSwipeableView-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		B5C1E89A891D81B9B7F461BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20027D5C1D5E1E6B80261D31 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		D1AC9B8D7421BDABB412200E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BED712AD5F3040367DE0ED91 /* Pods-FXBlurView-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-FXBlurView/Pods-FXBlurView-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D94FCFC3286C3D3318351195 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2662C17914019504702D70DB /* Pods-MZTimerLabel-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MZTimerLabel/Pods-MZTimerLabel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		FF3ABD89853414C3CB130C03 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BED712AD5F3040367DE0ED91 /* Pods-FXBlurView-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-FXBlurView/Pods-FXBlurView-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D63926672EE913743550114 /* Build configuration list for PBXNativeTarget "Pods-MZTimerLabel" */ = {
+		0CFC8E97669E73D5351656F9 /* Build configuration list for PBXNativeTarget "Pods-MZTimerLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				82D12690275C003B3CD84FD2 /* Debug */,
-				D94FCFC3286C3D3318351195 /* Release */,
+				EC5CD4D44C72EB60A43C0921 /* Debug */,
+				D5B863DFD5B85AC2177F2013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		31356F53BF9AFC1BF8812BF4 /* Build configuration list for PBXProject "Pods" */ = {
+		295DB665FC79236993FAE3EA /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				34D8B5B6AA543FC60B6880D9 /* Debug */,
-				7C0FA213AC500674726C0BFE /* Release */,
+				6855167FC38C2F896B76F571 /* Debug */,
+				697CF3269CD8D05480D463EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6940B0CD9D8E3E26ED22AAC5 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		41864009F4EC99D68412A73F /* Build configuration list for PBXNativeTarget "Pods-ZLSwipeableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B5C1E89A891D81B9B7F461BC /* Debug */,
-				6270DB556560037282B258F0 /* Release */,
+				296BB2E4488ECD35278C865A /* Debug */,
+				C29BF9660E708237CECBDCDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6D6F1B5E2237D62F1C264F57 /* Build configuration list for PBXNativeTarget "Pods-ZLSwipeableView" */ = {
+		453EB2B03E685D1DCAC5C66D /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B94A48AF31C44BF4382B405 /* Debug */,
-				9524D440A85B55EE7EE8144C /* Release */,
+				F045F169C0834926D48C5EB3 /* Debug */,
+				E836809DB009AE6D80DDF9A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF7DC67CFABAFB3A2620D862 /* Build configuration list for PBXNativeTarget "Pods-FXBlurView" */ = {
+		97F9759E7BA545341C54D950 /* Build configuration list for PBXNativeTarget "Pods-FXBlurView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF3ABD89853414C3CB130C03 /* Debug */,
-				D1AC9B8D7421BDABB412200E /* Release */,
+				BD15686C73AB84CEBA23602E /* Debug */,
+				9F0F3E72FFE4DF5A4BD3F0BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6272E05D227AA2D35559D6BA /* Project object */;
+	rootObject = 193CBDC73B18366120734791 /* Project object */;
 }

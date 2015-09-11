@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A46A927B19F6ED65FAAA9E0"
+               BlueprintIdentifier = "586B719C6D419938517E1885"
                BuildableName = "libPods-ZLSwipeableView.a"
                BlueprintName = "Pods-ZLSwipeableView"
                ReferencedContainer = "container:Pods.xcodeproj">
