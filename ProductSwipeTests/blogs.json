@@ -1,0 +1,17 @@
+{
+    "bumper":[
+                {
+                    "title": "My first bumper is about my ~nemesis~",
+                    "postDate": "6 days ago",
+                    "numberOfListens": "100",
+                    "backgroundImageName": "firstBump"
+              
+                },
+                {
+                    "title": "My first bumper",
+                    "postDate": "7 days ago",
+                    "numberOfListens": "100",
+                    "backgroundImageName": "firstBump"
+                }
+              ]
+}

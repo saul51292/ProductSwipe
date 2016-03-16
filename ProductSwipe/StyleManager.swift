@@ -16,7 +16,7 @@ class StyleManager: NSObject {
         let blurEffect: UIBlurEffect = UIBlurEffect(style: .Light)
         
         let blurView: UIVisualEffectView = UIVisualEffectView(effect: blurEffect)
-        blurView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        blurView.translatesAutoresizingMaskIntoConstraints = false
         blurView.frame = view.frame
         view.insertSubview(blurView, aboveSubview: backImage)
     }

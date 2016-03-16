@@ -31,6 +31,9 @@
 		C7E2374B1AF1DD9700DC80B8 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */; };
 		C7E2374C1AF1DD9700DC80B8 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7E2374A1AF1DD9700DC80B8 /* Montserrat-Regular.otf */; };
 		C7F8F2501AF2B04300CD1309 /* PushNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8F24F1AF2B04300CD1309 /* PushNoAnimationSegue.swift */; };
+		C7FAEAFA1C99ACAC00F32187 /* Bumper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FAEAF91C99ACAC00F32187 /* Bumper.swift */; };
+		C7FAEAFC1C99AD3400F32187 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FAEAFB1C99AD3400F32187 /* User.swift */; };
+		C7FAEAFE1C99AF4400F32187 /* blogs.json in Resources */ = {isa = PBXBuildFile; fileRef = C7FAEAFD1C99AF4400F32187 /* blogs.json */; };
 		FE04D3ACE934C165E4917481 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 974CF9ECDDB070E99448BC10 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +78,9 @@
 		C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
 		C7E2374A1AF1DD9700DC80B8 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		C7F8F24F1AF2B04300CD1309 /* PushNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNoAnimationSegue.swift; sourceTree = "<group>"; };
+		C7FAEAF91C99ACAC00F32187 /* Bumper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bumper.swift; sourceTree = "<group>"; };
+		C7FAEAFB1C99AD3400F32187 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C7FAEAFD1C99AF4400F32187 /* blogs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = blogs.json; sourceTree = "<group>"; };
 		FFB5604DF853088EC2637DEB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +125,8 @@
 			children = (
 				C72703C71AF3F9D00002E3A6 /* Card.swift */,
 				C7A617AA1AF7EE3B004478A5 /* UpcomingDealCard.swift */,
+				C7FAEAF91C99ACAC00F32187 /* Bumper.swift */,
+				C7FAEAFB1C99AD3400F32187 /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 		C7E237481AF1DD8300DC80B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C7FAEAFD1C99AF4400F32187 /* blogs.json */,
 				C72703D71AF406240002E3A6 /* Montserrat-Hairline.otf */,
 				C7E237491AF1DD9700DC80B8 /* Montserrat-Light.otf */,
 				C7E2374A1AF1DD9700DC80B8 /* Montserrat-Regular.otf */,
@@ -285,7 +294,9 @@
 		C734D5D91AF19164000C4D86 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Saul;
 				TargetAttributes = {
 					C734D5E01AF19164000C4D86 = {
@@ -330,6 +341,7 @@
 				C734D5EE1AF19165000C4D86 /* Images.xcassets in Resources */,
 				C72703D81AF4062B0002E3A6 /* Montserrat-Hairline.otf in Resources */,
 				C7E2374C1AF1DD9700DC80B8 /* Montserrat-Regular.otf in Resources */,
+				C7FAEAFE1C99AF4400F32187 /* blogs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,9 +396,11 @@
 				C72703CE1AF3FCC80002E3A6 /* AnimationManager.swift in Sources */,
 				C768E2651AF5C41500ADB26A /* CenterCVCells.swift in Sources */,
 				C768E2681AF5C7B800ADB26A /* HorizontalCVCell.swift in Sources */,
+				C7FAEAFA1C99ACAC00F32187 /* Bumper.swift in Sources */,
 				C734D5E91AF19165000C4D86 /* ViewController.swift in Sources */,
 				C7F8F2501AF2B04300CD1309 /* PushNoAnimationSegue.swift in Sources */,
 				C768E2611AF5B74600ADB26A /* ControlVC.swift in Sources */,
+				C7FAEAFC1C99AD3400F32187 /* User.swift in Sources */,
 				C734D5E71AF19165000C4D86 /* AppDelegate.swift in Sources */,
 				C768E2631AF5BE1800ADB26A /* HorizontalCVC.swift in Sources */,
 				C72703C81AF3F9D00002E3A6 /* Card.swift in Sources */,
@@ -456,6 +470,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -527,6 +542,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ProductSwipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "checkit.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -538,6 +554,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ProductSwipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "checkit.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -557,6 +574,7 @@
 				);
 				INFOPLIST_FILE = ProductSwipeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "checkit.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProductSwipe.app/ProductSwipe";
 			};
@@ -573,6 +591,7 @@
 				);
 				INFOPLIST_FILE = ProductSwipeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "checkit.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProductSwipe.app/ProductSwipe";
 			};

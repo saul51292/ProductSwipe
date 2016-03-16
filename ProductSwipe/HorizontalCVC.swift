@@ -10,7 +10,7 @@ import UIKit
 
 let reuseIdentifier = "BrandCell"
 
-class HorizontalCVC: UICollectionViewController,UIScrollViewDelegate {
+class HorizontalCVC: UICollectionViewController {
 
     var image = UIImage(named: "mainBack")
     var upcomingDealDict = [UpcomingDealCard]()
@@ -24,7 +24,7 @@ class HorizontalCVC: UICollectionViewController,UIScrollViewDelegate {
 
         // Register cell classes
 
-        var nib = UINib(nibName: "HorizontalCVCell", bundle: nil)
+        let nib = UINib(nibName: "HorizontalCVCell", bundle: nil)
         
        
         self.collectionView!.registerNib(nib, forCellWithReuseIdentifier: reuseIdentifier)
@@ -35,7 +35,7 @@ class HorizontalCVC: UICollectionViewController,UIScrollViewDelegate {
     }
     
     func formatADate(date:NSDate)->String {
-        var dateFormatter = NSDateFormatter()
+        let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "MM/dd"
          let s = dateFormatter.stringFromDate(date)
         return s
@@ -44,21 +44,21 @@ class HorizontalCVC: UICollectionViewController,UIScrollViewDelegate {
     func addMore(d:NSDate)->String
     {
         let moreDates = NSCalendar.currentCalendar().dateByAddingUnit(
-                .CalendarUnitDay,
+                .Day,
                 value: count,
                 toDate: d,
-                options: NSCalendarOptions(0))
+                options: NSCalendarOptions(rawValue: 0))
         count++
         return formatADate(moreDates!)
     }
     
     func addTestData() ->[UpcomingDealCard]
     {
-        var productDict = ["Fitted Cropped Tank Top":"HM","COPE Babydoll Cami":"Urban","High-Neck Crochet Bra Top":"jcrew","Cropped Tank Top":"Forever21","Recycled Trimmed Tank Top":"Hollister","Cropped Rib Tank Top":"Mango"]
+        let productDict = ["Fitted Cropped Tank Top":"HM","COPE Babydoll Cami":"Urban","High-Neck Crochet Bra Top":"jcrew","Cropped Tank Top":"Forever21","Recycled Trimmed Tank Top":"Hollister","Cropped Rib Tank Top":"Mango"]
         var upcomingDealArray = [UpcomingDealCard]()
         
         for (key,value) in productDict{
-            var upcomingDeal = UpcomingDealCard(time:addMore(NSDate()), companyLogo: UIImage(named: value)!, image: UIImage(named: key)!)
+            let upcomingDeal = UpcomingDealCard(time:addMore(NSDate()), companyLogo: UIImage(named: value)!, image: UIImage(named: key)!)
             upcomingDealArray.append(upcomingDeal)
         }
         

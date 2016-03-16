@@ -24,7 +24,7 @@ class BaseFinishedView: UIView {
         xibSetup()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         xibSetup()
     }
@@ -42,7 +42,7 @@ class BaseFinishedView: UIView {
     private func xibSetup() {
         NSBundle.mainBundle().loadNibNamed("BaseFinishedView", owner: self, options: nil)
         contentView.frame = bounds
-        contentView.translatesAutoresizingMaskIntoConstraints()
+        contentView.translatesAutoresizingMaskIntoConstraints = true
         styleBttnBack()
         setContent()
         self.addSubview(contentView)

@@ -11,9 +11,8 @@ import UIKit
 class AnimationManager: NSObject {
     
 
-    func mainTransition(vc:UIViewController)
-    {
-        var transition = CATransition()
+    func mainTransition(vc:UIViewController){
+        let transition = CATransition()
         transition.duration = 0.3
         transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         transition.type = kCATransitionFade
@@ -31,7 +30,7 @@ class AnimationManager: NSObject {
                 initialSpringVelocity: 0.8,
                 options: .CurveEaseInOut,
                 animations:  {
-                    view.frame.offset(dx: 0, dy: -300)
+                    view.frame.offsetInPlace(dx: 0, dy: -300)
                 }, completion: nil)
             time += Double(1.0/Double(views.count))
             

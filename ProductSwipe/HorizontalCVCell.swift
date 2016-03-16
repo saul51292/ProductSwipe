@@ -17,7 +17,7 @@ class HorizontalCVCell: UICollectionViewCell {
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var addMoreTint: UIView!
     
-    func loadItem(#title: String, backImage: UIImage, logoImage:UIImage) {
+    func loadItem(title title: String, backImage: UIImage, logoImage:UIImage) {
         backgroundImage.bounds = contentView.bounds
         backgroundImage.contentMode = .ScaleAspectFill
         backgroundImage.image = backImage

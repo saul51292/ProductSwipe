@@ -19,7 +19,7 @@ class CardView: UIView {
         xibSetup()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         xibSetup()
     }
@@ -30,7 +30,6 @@ class CardView: UIView {
         contentView.layer.borderColor = UIColor.whiteColor().CGColor
         contentView.frame = bounds
         styleImage()
-        contentView.translatesAutoresizingMaskIntoConstraints()
         contentView.addSubview(cardViewImage)
         self.addSubview(contentView)
     }
@@ -41,6 +40,5 @@ class CardView: UIView {
         cardViewImage.bounds = contentView.bounds
         cardViewImage.clipsToBounds = true
         cardViewImage.layer.masksToBounds = true
-        cardViewImage.translatesAutoresizingMaskIntoConstraints()
     }
 }

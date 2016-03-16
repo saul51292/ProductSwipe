@@ -29,45 +29,56 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     var newBase = BaseFinishedView()
     var likeCount = 0
     var currentLikeCount:Int!
-    var productArray = [Card]()
+    var productArray = [Bumper]()
     
     @IBOutlet weak var companyName: UILabel!
     var companyText:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         productArray = addTestData()
         // Do any additional setup after loading the view, typically from a nib.
         self.swipeableView.delegate = self
         self.swipeableView.direction = .Horizontal
         checkCurrent()
-        productName.text = self.productArray[count].name
-        companyName.text = self.productArray[count].company
+        productName.text = self.productArray[count].title
+        companyName.text = self.productArray[count].postDate
         count++
         styleManager.createBlur(view,backImage:backImage)
         styleManager.styleLikeDislikeImages(likeImage,dislikeImage:dislikeImage)
     }
     
     
-    func addTestData() ->[Card]
-    {
+    
+    func addTestData() ->[Bumper]{
+        var bumperArray = [Bumper]()
+
+        //Create Bumper
         
-        var productDic = ["Fitted Cropped Tank Top":"Urban Outfitters","COPE Babydoll Cami":"H&M","High-Neck Crochet Bra Top":"Forever21","Cropped Tank Top":"JCrew","Recycled Trimmed Tank Top":"Hollister","Cropped Rib Tank Top":"Theory","Crochet-Yoke Printed Dress":"Urban Outfitters","Ecote Clary Godet Trapeze Dress":"Bloomingdales","Mock-Neck Mini Swing Dress":"H&M","Riley Trapeze Dress":"Forever21","Witchy T-Shirt Dress":"Theory"]
-        var cardArray = [Card]()
-        
-        for (key,value) in productDic{
-            var card = Card(name: key, company: value, image: UIImage(named: key)!)
-            cardArray.append(card)
+        if let path = NSBundle.mainBundle().pathForResource("blogs", ofType: "json") {
+            do {
+                let jsonData = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe)
+                do {
+                    let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+                    if let bumpers : [NSDictionary] = jsonResult["bumper"] as? [NSDictionary] {
+                        for bumper: NSDictionary in bumpers {
+                            let title = bumper["title"] as? String
+                            let postDate = bumper["postDate"] as? String
+                            let bump = Bumper(title: title!, postDate: postDate!, numberOfListens: 4, backgroundImageName: "hello")
+                            bumperArray.append(bump)
+                        }
+                    }
+                } catch {}
+            } catch {}
         }
         
-        return cardArray
+        return bumperArray
     }
 
     
-    func checkCurrent()
-    {
-        if currentIndex != nil
-        {
+    func checkCurrent(){
+        if currentIndex != nil{
             productIndex = currentIndex
             count = currentIndex
         }
@@ -79,20 +90,19 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     
     
     override func viewWillAppear(animated: Bool) {
-        companyName.text = self.productArray[count-1].company
+        companyName.text = self.productArray[count-1].postDate
     }
     
     func swipeableView(swipeableView: ZLSwipeableView!, didSwipeView view: UIView!, inDirection direction: ZLSwipeableViewDirection) {
         productName.alpha = 1
         companyName.alpha = 1
         
-        if(direction == ZLSwipeableViewDirection.Right)
-        {
+        if(direction == ZLSwipeableViewDirection.Right){
             likeCount++
         }
         if(count<productArray.count){
-            productName.text = self.productArray[count].name
-            companyName.text = self.productArray[count].company
+            productName.text = self.productArray[count].title
+            companyName.text = self.productArray[count].postDate
 
             count++
         }
@@ -115,14 +125,12 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     func swipeableView(swipeableView: ZLSwipeableView!, didCancelSwipe view: UIView!) {
         productName.alpha = 1
         companyName.alpha = 1
-        if(likeImage.alpha > 0)
-        {
+        if(likeImage.alpha > 0){
             UIView.animateWithDuration(0.2, animations: {
                 self.likeImage.alpha = 0
             }, completion: nil)
         }
-        if(dislikeImage.alpha > 0)
-        {
+        if(dislikeImage.alpha > 0){
             UIView.animateWithDuration(0.2, animations: {
                 self.dislikeImage.alpha = 0
                 }, completion: nil)
@@ -131,7 +139,7 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     }
     
     func swipeableView(swipeableView: ZLSwipeableView!, didStartSwipingView view: UIView!, atLocation location: CGPoint) {
-        println("did start swiping at location: x \( location.x), y \(location.y)")
+        print("did start swiping at location: x \( location.x), y \(location.y)")
         view.addSubview(dislikeImage)
         view.addSubview(likeImage)
         likeImage.alpha = 0
@@ -140,21 +148,19 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     }
     
     @IBAction func shareProduct(sender: AnyObject) {
-        var shareImage: UIImage = self.productArray[count-1].image!
-        var objectArray : [AnyObject] = [shareImage,"You're going to love this! \nbit.ly/432592"]
-        let activityVC : UIActivityViewController = UIActivityViewController(activityItems: objectArray, applicationActivities: nil)
-
-        activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
-        self.presentViewController(activityVC, animated: true, completion: nil)
+//        let shareImage: UIImage = self.productArray[count-1].image!
+//        let objectArray : [AnyObject] = [shareImage,"You're going to love this! \nbit.ly/432592"]
+//        let activityVC : UIActivityViewController = UIActivityViewController(activityItems: objectArray, applicationActivities: nil)
+//
+//        activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
+//        self.presentViewController(activityVC, animated: true, completion: nil)
     }
     
     func swipeableView(swipeableView: ZLSwipeableView!, swipingView view: UIView!, atLocation location: CGPoint, translation: CGPoint) {
         
-        if(translation.x > 0)
-        {
+        if(translation.x > 0){
             likeImage.alpha = translation.x/100
             dislikeImage.alpha = 0
-
         }
         else{
             likeImage.alpha = 0
@@ -170,8 +176,7 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     
    
     
-    func popBackToMain()
-    {
+    func popBackToMain(){
         if let navController = self.navigationController {
             let control = self.navigationController?.viewControllers.first as! ControlVC
             animationManager.mainTransition(self)
@@ -188,7 +193,7 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     }
     
     @IBAction func backBttnClicked(sender: AnyObject) {
-        println("Back To Control")
+        print("Back To Control")
         popBackToMain()
     }
 
@@ -204,9 +209,9 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     
     func nextViewForSwipeableView(swipeableView: ZLSwipeableView!) -> UIView! {
         if (self.productIndex < self.productArray.count){
-            var currentProductImage = self.productArray[self.productIndex].image
+            let currentProductImage = UIImage(named: "Riley Trapeze Dress")
 
-            var view = CardView(frame:swipeableView.bounds)
+            let view = CardView(frame:swipeableView.bounds)
             view.cardViewImage.image = currentProductImage
             productIndex++
              return view

@@ -38,13 +38,11 @@ class ControlVC: UIViewController {
     }
     
     
-    func createViewOnBack()
-    {
-        var newView = FXBlurView(frame: view.frame)
+    func createViewOnBack(){
+        let newView = FXBlurView(frame: view.frame)
         newView.blurRadius = 5
         newView.tintColor = UIColor.clearColor()
         view.insertSubview(newView, aboveSubview: mainBack)
-        
     }
     
     // MARK: - Navigation

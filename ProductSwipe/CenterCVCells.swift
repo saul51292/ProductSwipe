@@ -18,7 +18,7 @@ class CenterCVCells: UICollectionViewFlowLayout {
             let halfWidth = cvBounds.size.width * 0.5;
             let proposedContentOffsetCenterX = proposedContentOffset.x + halfWidth;
             
-            if let attributesForVisibleCells = self.layoutAttributesForElementsInRect(cvBounds) as? [UICollectionViewLayoutAttributes] {
+            if let attributesForVisibleCells = self.layoutAttributesForElementsInRect(cvBounds) {
                 
                 var candidateAttributes : UICollectionViewLayoutAttributes?
                 for attributes in attributesForVisibleCells {
