@@ -9,6 +9,6 @@
 
 #import <ZLSwipeableView/ZLSwipeableView.h>
 #import <ZLSwipeableView/ZLPanGestureRecognizer.h>
-#import <FXBlurView/FXBlurView.h>
-#import <MZTimerLabel/MZTimerLabel.h>
+#import <ImgurSession/ImgurSession.h>
+
 

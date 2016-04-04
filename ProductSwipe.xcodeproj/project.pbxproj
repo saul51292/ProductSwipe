@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		874AA49C0689C51D49087F0B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E158DADC6FF64606F4A1C921 /* libPods.a */; };
 		C72703C81AF3F9D00002E3A6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72703C71AF3F9D00002E3A6 /* Card.swift */; };
 		C72703CA1AF3FA8A0002E3A6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72703C71AF3F9D00002E3A6 /* Card.swift */; };
 		C72703CC1AF3FCBB0002E3A6 /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72703CB1AF3FCBB0002E3A6 /* StyleManager.swift */; };
@@ -20,11 +21,6 @@
 		C734D5EE1AF19165000C4D86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C734D5ED1AF19165000C4D86 /* Images.xcassets */; };
 		C734D5F11AF19165000C4D86 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C734D5EF1AF19165000C4D86 /* LaunchScreen.xib */; };
 		C734D5FD1AF19165000C4D86 /* ProductSwipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C734D5FC1AF19165000C4D86 /* ProductSwipeTests.swift */; };
-		C768E2611AF5B74600ADB26A /* ControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768E2601AF5B74600ADB26A /* ControlVC.swift */; };
-		C768E2631AF5BE1800ADB26A /* HorizontalCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768E2621AF5BE1800ADB26A /* HorizontalCVC.swift */; };
-		C768E2651AF5C41500ADB26A /* CenterCVCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768E2641AF5C41500ADB26A /* CenterCVCells.swift */; };
-		C768E2681AF5C7B800ADB26A /* HorizontalCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768E2661AF5C7B800ADB26A /* HorizontalCVCell.swift */; };
-		C768E2691AF5C7B800ADB26A /* HorizontalCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C768E2671AF5C7B800ADB26A /* HorizontalCVCell.xib */; };
 		C7A496651AF19A5B00310889 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A496641AF19A5B00310889 /* CardView.swift */; };
 		C7A496671AF19A6B00310889 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A496661AF19A6B00310889 /* CardView.xib */; };
 		C7A617AB1AF7EE3B004478A5 /* UpcomingDealCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A617AA1AF7EE3B004478A5 /* UpcomingDealCard.swift */; };
@@ -32,9 +28,7 @@
 		C7E2374C1AF1DD9700DC80B8 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C7E2374A1AF1DD9700DC80B8 /* Montserrat-Regular.otf */; };
 		C7F8F2501AF2B04300CD1309 /* PushNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8F24F1AF2B04300CD1309 /* PushNoAnimationSegue.swift */; };
 		C7FAEAFA1C99ACAC00F32187 /* Bumper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FAEAF91C99ACAC00F32187 /* Bumper.swift */; };
-		C7FAEAFC1C99AD3400F32187 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FAEAFB1C99AD3400F32187 /* User.swift */; };
 		C7FAEAFE1C99AF4400F32187 /* blogs.json in Resources */ = {isa = PBXBuildFile; fileRef = C7FAEAFD1C99AF4400F32187 /* blogs.json */; };
-		FE04D3ACE934C165E4917481 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 974CF9ECDDB070E99448BC10 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +43,6 @@
 
 /* Begin PBXFileReference section */
 		483E0315B8A12C2CDCC6DE1F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		974CF9ECDDB070E99448BC10 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72703C71AF3F9D00002E3A6 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		C72703CB1AF3FCBB0002E3A6 /* StyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
 		C72703CD1AF3FCC80002E3A6 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
@@ -67,11 +60,6 @@
 		C734D5FB1AF19165000C4D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C734D5FC1AF19165000C4D86 /* ProductSwipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSwipeTests.swift; sourceTree = "<group>"; };
 		C734D6121AF19250000C4D86 /* ProductSwipe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProductSwipe-Bridging-Header.h"; sourceTree = "<group>"; };
-		C768E2601AF5B74600ADB26A /* ControlVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlVC.swift; sourceTree = "<group>"; };
-		C768E2621AF5BE1800ADB26A /* HorizontalCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCVC.swift; sourceTree = "<group>"; };
-		C768E2641AF5C41500ADB26A /* CenterCVCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterCVCells.swift; sourceTree = "<group>"; };
-		C768E2661AF5C7B800ADB26A /* HorizontalCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCVCell.swift; sourceTree = "<group>"; };
-		C768E2671AF5C7B800ADB26A /* HorizontalCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalCVCell.xib; sourceTree = "<group>"; };
 		C7A496641AF19A5B00310889 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C7A496661AF19A6B00310889 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		C7A617AA1AF7EE3B004478A5 /* UpcomingDealCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingDealCard.swift; sourceTree = "<group>"; };
@@ -79,8 +67,8 @@
 		C7E2374A1AF1DD9700DC80B8 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		C7F8F24F1AF2B04300CD1309 /* PushNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNoAnimationSegue.swift; sourceTree = "<group>"; };
 		C7FAEAF91C99ACAC00F32187 /* Bumper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bumper.swift; sourceTree = "<group>"; };
-		C7FAEAFB1C99AD3400F32187 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C7FAEAFD1C99AF4400F32187 /* blogs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = blogs.json; sourceTree = "<group>"; };
+		E158DADC6FF64606F4A1C921 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB5604DF853088EC2637DEB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE04D3ACE934C165E4917481 /* libPods.a in Frameworks */,
+				874AA49C0689C51D49087F0B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +103,7 @@
 		A52950726991E6A4A826F438 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				974CF9ECDDB070E99448BC10 /* libPods.a */,
+				E158DADC6FF64606F4A1C921 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,7 +114,6 @@
 				C72703C71AF3F9D00002E3A6 /* Card.swift */,
 				C7A617AA1AF7EE3B004478A5 /* UpcomingDealCard.swift */,
 				C7FAEAF91C99ACAC00F32187 /* Bumper.swift */,
-				C7FAEAFB1C99AD3400F32187 /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -187,7 +174,6 @@
 				C72703D41AF400750002E3A6 /* BaseFinished */,
 				C72703D51AF4007D0002E3A6 /* Card */,
 				C734D5EA1AF19165000C4D86 /* Main.storyboard */,
-				C768E26A1AF5C7BE00ADB26A /* ControlVC */,
 				C734D5ED1AF19165000C4D86 /* Images.xcassets */,
 				C734D5EF1AF19165000C4D86 /* LaunchScreen.xib */,
 				C734D6121AF19250000C4D86 /* ProductSwipe-Bridging-Header.h */,
@@ -224,18 +210,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C768E26A1AF5C7BE00ADB26A /* ControlVC */ = {
-			isa = PBXGroup;
-			children = (
-				C768E2601AF5B74600ADB26A /* ControlVC.swift */,
-				C768E2621AF5BE1800ADB26A /* HorizontalCVC.swift */,
-				C768E2661AF5C7B800ADB26A /* HorizontalCVCell.swift */,
-				C768E2671AF5C7B800ADB26A /* HorizontalCVCell.xib */,
-				C768E2641AF5C41500ADB26A /* CenterCVCells.swift */,
-			);
-			name = ControlVC;
-			sourceTree = "<group>";
-		};
 		C7E237481AF1DD8300DC80B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +234,7 @@
 				C734D5DE1AF19164000C4D86 /* Frameworks */,
 				C734D5DF1AF19164000C4D86 /* Resources */,
 				AF6CBBBE10127C77DEC6E6D6 /* Copy Pods Resources */,
+				8A642C87842702840B6569AA /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,7 +310,6 @@
 				C7E2374B1AF1DD9700DC80B8 /* Montserrat-Light.otf in Resources */,
 				C734D5EC1AF19165000C4D86 /* Main.storyboard in Resources */,
 				C734D5F11AF19165000C4D86 /* LaunchScreen.xib in Resources */,
-				C768E2691AF5C7B800ADB26A /* HorizontalCVCell.xib in Resources */,
 				C7A496671AF19A6B00310889 /* CardView.xib in Resources */,
 				C72703D31AF400710002E3A6 /* BaseFinishedView.xib in Resources */,
 				C734D5EE1AF19165000C4D86 /* Images.xcassets in Resources */,
@@ -355,6 +329,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8A642C87842702840B6569AA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8BE52BAE858ED8BD6ACDE8DD /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,15 +383,10 @@
 			files = (
 				C72703D11AF4005C0002E3A6 /* BaseFinishedView.swift in Sources */,
 				C72703CE1AF3FCC80002E3A6 /* AnimationManager.swift in Sources */,
-				C768E2651AF5C41500ADB26A /* CenterCVCells.swift in Sources */,
-				C768E2681AF5C7B800ADB26A /* HorizontalCVCell.swift in Sources */,
 				C7FAEAFA1C99ACAC00F32187 /* Bumper.swift in Sources */,
 				C734D5E91AF19165000C4D86 /* ViewController.swift in Sources */,
 				C7F8F2501AF2B04300CD1309 /* PushNoAnimationSegue.swift in Sources */,
-				C768E2611AF5B74600ADB26A /* ControlVC.swift in Sources */,
-				C7FAEAFC1C99AD3400F32187 /* User.swift in Sources */,
 				C734D5E71AF19165000C4D86 /* AppDelegate.swift in Sources */,
-				C768E2631AF5BE1800ADB26A /* HorizontalCVC.swift in Sources */,
 				C72703C81AF3F9D00002E3A6 /* Card.swift in Sources */,
 				C72703CC1AF3FCBB0002E3A6 /* StyleManager.swift in Sources */,
 				C7A617AB1AF7EE3B004478A5 /* UpcomingDealCard.swift in Sources */,

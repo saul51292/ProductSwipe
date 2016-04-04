@@ -10,17 +10,18 @@ import UIKit
 
 class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableViewDelegate {
 
-    @IBOutlet weak var bttnBack: UIButton!
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var backImage: UIImageView!
     @IBOutlet weak var swipeableView: ZLSwipeableView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var bttnShare: UIButton!
+    
     var likeImage = UIImageView(image: UIImage(named: "like"))
     var dislikeImage = UIImageView(image: UIImage(named: "dislike"))
     var realMid = UIScreen.mainScreen().bounds.width/2
     var styleManager = StyleManager()
     var animationManager = AnimationManager()
 
-    @IBOutlet weak var bttnShare: UIButton!
     var productIndex = 0
     var cellIndexPath:NSIndexPath!
     var currentIndex:Int!
@@ -29,21 +30,16 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     var newBase = BaseFinishedView()
     var likeCount = 0
     var currentLikeCount:Int!
-    var productArray = [Bumper]()
+    var productArray = [Card]()
+    var finishedLoading = false
     
-    @IBOutlet weak var companyName: UILabel!
-    var companyText:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        productArray = addTestData()
+        runImgurTest()
         // Do any additional setup after loading the view, typically from a nib.
         self.swipeableView.delegate = self
         self.swipeableView.direction = .Horizontal
-        checkCurrent()
-        productName.text = self.productArray[count].title
-        companyName.text = self.productArray[count].postDate
         count++
         styleManager.createBlur(view,backImage:backImage)
         styleManager.styleLikeDislikeImages(likeImage,dislikeImage:dislikeImage)
@@ -51,29 +47,36 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     
     
     
-    func addTestData() ->[Bumper]{
-        var bumperArray = [Bumper]()
-
-        //Create Bumper
+    
+    func runImgurTest() -> [Card]{
         
-        if let path = NSBundle.mainBundle().pathForResource("blogs", ofType: "json") {
-            do {
-                let jsonData = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe)
-                do {
-                    let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
-                    if let bumpers : [NSDictionary] = jsonResult["bumper"] as? [NSDictionary] {
-                        for bumper: NSDictionary in bumpers {
-                            let title = bumper["title"] as? String
-                            let postDate = bumper["postDate"] as? String
-                            let bump = Bumper(title: title!, postDate: postDate!, numberOfListens: 4, backgroundImageName: "hello")
-                            bumperArray.append(bump)
-                        }
-                    }
-                } catch {}
-            } catch {}
+        var cardArray = [Card]()
+        IMGGalleryRequest.hotGalleryPage(0, withViralSort: true, success: { (objects) -> Void in
+            for object in objects{
+                let cover = object.coverImage()
+                var title = cover.title
+                let coverURL = cover.URLWithSize(IMGSize.LargeThumbnailSize)
+                if(title == nil){
+                    title = ""
+                }
+                if let data = NSData(contentsOfURL: coverURL){
+                    let image = UIImage(data: data)
+                    let card = Card(name: String(title),image: image!,link:coverURL)
+                    cardArray.append(card)
+                  }
+                
+            }
+            self.checkCurrent()
+            self.productArray = cardArray
+            self.productName.text = self.productArray[self.productIndex].name
+            self.finishedLoading = true
+            self.nextViewForSwipeableView(self.swipeableView)
+            
+            }) { (error) -> Void in
+                print("Error")
         }
         
-        return bumperArray
+        return cardArray
     }
 
     
@@ -89,21 +92,14 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     }
     
     
-    override func viewWillAppear(animated: Bool) {
-        companyName.text = self.productArray[count-1].postDate
-    }
-    
     func swipeableView(swipeableView: ZLSwipeableView!, didSwipeView view: UIView!, inDirection direction: ZLSwipeableViewDirection) {
         productName.alpha = 1
-        companyName.alpha = 1
         
         if(direction == ZLSwipeableViewDirection.Right){
             likeCount++
         }
         if(count<productArray.count){
-            productName.text = self.productArray[count].title
-            companyName.text = self.productArray[count].postDate
-
+            productName.text = self.productArray[count+1].name
             count++
         }
             
@@ -113,10 +109,8 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
             newBase.frame = self.view.frame
             newBase.likeCount.text = String(likeCount)
             newBase.bttnBack.addTarget(self, action: "backBttnClicked:", forControlEvents: .TouchUpInside)
-            self.view.bringSubviewToFront(bttnBack)
             deleteCompany = true
             productName.alpha = 0
-            companyName.alpha = 0
         }
        
         
@@ -124,7 +118,6 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     
     func swipeableView(swipeableView: ZLSwipeableView!, didCancelSwipe view: UIView!) {
         productName.alpha = 1
-        companyName.alpha = 1
         if(likeImage.alpha > 0){
             UIView.animateWithDuration(0.2, animations: {
                 self.likeImage.alpha = 0
@@ -148,12 +141,12 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     }
     
     @IBAction func shareProduct(sender: AnyObject) {
-//        let shareImage: UIImage = self.productArray[count-1].image!
-//        let objectArray : [AnyObject] = [shareImage,"You're going to love this! \nbit.ly/432592"]
-//        let activityVC : UIActivityViewController = UIActivityViewController(activityItems: objectArray, applicationActivities: nil)
-//
-//        activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
-//        self.presentViewController(activityVC, animated: true, completion: nil)
+        let shareImage: UIImage = self.productArray[count-1].image!
+        let objectArray : [AnyObject] = [shareImage,"You're going to love this! \n\(self.productArray[count-1].link!)"]
+        let activityVC : UIActivityViewController = UIActivityViewController(activityItems: objectArray, applicationActivities: nil)
+
+        activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
+        self.presentViewController(activityVC, animated: true, completion: nil)
     }
     
     func swipeableView(swipeableView: ZLSwipeableView!, swipingView view: UIView!, atLocation location: CGPoint, translation: CGPoint) {
@@ -168,33 +161,13 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
         }
         
         productName.alpha = 1 - abs(translation.x)/250
-        companyName.alpha = 1 - abs(translation.x)/250
-
 
     }
-    
-    
    
     
-    func popBackToMain(){
-        if let navController = self.navigationController {
-            let control = self.navigationController?.viewControllers.first as! ControlVC
-            animationManager.mainTransition(self)
-            navController.popViewControllerAnimated(false)
-            currentIndex = count - 1
-            control.currentLikeCount = likeCount
-            control.keepCurrentIndex = currentIndex
-            if(deleteCompany != nil)
-            {
-                control.cardButton.enabled = false
-                control.cardButton.layer.borderColor = UIColor.lightGrayColor().CGColor
-            }
-        }
-    }
     
     @IBAction func backBttnClicked(sender: AnyObject) {
         print("Back To Control")
-        popBackToMain()
     }
 
     override func didReceiveMemoryWarning() {
@@ -208,15 +181,15 @@ class ViewController: UIViewController, ZLSwipeableViewDataSource,ZLSwipeableVie
     
     
     func nextViewForSwipeableView(swipeableView: ZLSwipeableView!) -> UIView! {
-        if (self.productIndex < self.productArray.count){
-            let currentProductImage = UIImage(named: "Riley Trapeze Dress")
-
+        if (finishedLoading){
+            activityIndicator.stopAnimating()
+            let currentProductImage = self.productArray[self.productIndex].image
             let view = CardView(frame:swipeableView.bounds)
             view.cardViewImage.image = currentProductImage
             productIndex++
-             return view
+            return view
         }
-       return nil
+        return nil
     }
 }
 

@@ -16,10 +16,11 @@
             <rect key="frame" x="0.0" y="0.0" width="286" height="428"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonobos" translatesAutoresizingMaskIntoConstraints="NO" id="h8T-sH-FkR">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonobos" translatesAutoresizingMaskIntoConstraints="NO" id="h8T-sH-FkR">
                     <rect key="frame" x="0.0" y="0.0" width="286" height="428"/>
                 </imageView>
             </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <constraints>
                 <constraint firstItem="h8T-sH-FkR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1Dv-7a-MKT"/>
                 <constraint firstItem="h8T-sH-FkR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RaD-qc-OMR"/>

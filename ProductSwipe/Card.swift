@@ -11,14 +11,14 @@ import Foundation
 
 class Card: NSObject{
     var name : String!
-    var company : String!
     var image : UIImage!
+    var link : NSURL!
     
-    init(name: String, company: String, image: UIImage) {
+    init(name: String, image: UIImage,link:NSURL) {
         super.init()
         self.name = name
-        self.company = company
         self.image = image
+        self.link = link
     }
     
 }

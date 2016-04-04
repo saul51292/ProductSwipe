@@ -1,6 +1,5 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FXBlurView" "${PODS_ROOT}/Headers/Public/MZTimerLabel" "${PODS_ROOT}/Headers/Public/ZLSwipeableView"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FXBlurView" -isystem "${PODS_ROOT}/Headers/Public/MZTimerLabel" -isystem "${PODS_ROOT}/Headers/Public/ZLSwipeableView"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-FXBlurView" -l"Pods-MZTimerLabel" -l"Pods-ZLSwipeableView" -framework "Accelerate" -framework "QuartzCore" -framework "UIKit"
-OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/ImgurSession" "${PODS_ROOT}/Headers/Public/ZLSwipeableView"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/ImgurSession" -isystem "${PODS_ROOT}/Headers/Public/ZLSwipeableView"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"ImgurSession" -l"ZLSwipeableView" -framework "CoreGraphics" -framework "Foundation" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
 PODS_ROOT = ${SRCROOT}/Pods

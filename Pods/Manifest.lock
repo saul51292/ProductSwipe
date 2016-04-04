@@ -1,16 +1,36 @@
 PODS:
-  - FXBlurView (1.6.3)
-  - MZTimerLabel (0.5.2)
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - ImgurSession (1.3):
+    - AFNetworking (= 2.6.3)
   - ZLSwipeableView (0.0.7)
 
 DEPENDENCIES:
-  - FXBlurView
-  - MZTimerLabel
+  - ImgurSession
   - ZLSwipeableView
 
 SPEC CHECKSUMS:
-  FXBlurView: c6d23f3d35af2c6282296a2930f61c6e2c788d01
-  MZTimerLabel: 1bce6b93ec9f017fffad7ea7ee2bc721b53b64ee
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  ImgurSession: 76e5ef98cb0224866f571acd39f6170bdcc66c2b
   ZLSwipeableView: acf50179911c5f1e6150e0a279561344fbcda839
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.39.0

@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,IMGSessionDelegate {
 
     var window: UIWindow?
 
@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         self.window?.backgroundColor = UIColor.whiteColor()
+        //[IMGSession anonymousSessionWithClientID:@"e254a73ec4dd21e" withDelegate:self];
+        
+        IMGSession.anonymousSessionWithClientID("e254a73ec4dd21e", withDelegate: self)
         return true
     }
 

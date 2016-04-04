@@ -10,10 +10,9 @@ import UIKit
 
 class StyleManager: NSObject {
     
-    func createBlur(view:UIView,backImage:UIView)
-    {
+    func createBlur(view:UIView,backImage:UIView){
         
-        let blurEffect: UIBlurEffect = UIBlurEffect(style: .Light)
+        let blurEffect: UIBlurEffect = UIBlurEffect(style: .Dark)
         
         let blurView: UIVisualEffectView = UIVisualEffectView(effect: blurEffect)
         blurView.translatesAutoresizingMaskIntoConstraints = false
@@ -23,8 +22,7 @@ class StyleManager: NSObject {
     
     
     
-    func styleLikeDislikeImages(likeImage:UIImageView,dislikeImage:UIImageView)
-    {
+    func styleLikeDislikeImages(likeImage:UIImageView,dislikeImage:UIImageView){
         likeImage.alpha = 0
         likeImage.frame = CGRectMake(30, 30, likeImage.frame.width, likeImage.frame.height)
         likeImage.transform = CGAffineTransformMakeRotation(((CGFloat)(-30 * M_PI) / 180))

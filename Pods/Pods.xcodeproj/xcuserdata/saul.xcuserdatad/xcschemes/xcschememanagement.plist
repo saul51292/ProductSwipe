@@ -4,17 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-FXBlurView.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-MZTimerLabel.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-ZLSwipeableView.xcscheme</key>
+		<key>ImgurSession.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,25 +19,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ZLSwipeableView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>48BFD39BD943ED071E7D0363</key>
+		<key>108C8FD6D7BA8107B35B8F45FAC51C88</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6076A5B1DC9C111A52FFC960</key>
+		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7C185E2E47E061C8C0E0A78F</key>
+		<key>AF081323FB980E17CAC303FB62F63FE2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B5A44DAF30C985AD01F78CA0</key>
+		<key>CEEBD6ADD402F6876FE130558A3A1903</key>
 		<dict>
 			<key>primary</key>
 			<true/>

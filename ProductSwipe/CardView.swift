@@ -34,11 +34,11 @@ class CardView: UIView {
         self.addSubview(contentView)
     }
 
-    private func styleImage()
-    {
+    private func styleImage(){
         cardViewImage.frame = contentView.frame
         cardViewImage.bounds = contentView.bounds
         cardViewImage.clipsToBounds = true
         cardViewImage.layer.masksToBounds = true
+        cardViewImage.contentMode = .ScaleAspectFit
     }
 }
